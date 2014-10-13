@@ -865,6 +865,10 @@
                 if(isset($user_data['personality_type']) && $user_data['personality_type'] && $this->active_user->getPersonalityType() != $user_data['personality_type']) {
                   $this->active_user->setPersonalityType($user_data['personality_type']);
                 } // if
+				
+				if(isset($user_data['private_url']) && $user_data['private_url'] && $this->active_user->getPrivateUrl() != $user_data['private_url']) {
+                  $this->active_user->setPrivateUrl($user_data['private_url']);
+                } // if
 
                 if(isset($user_data['private_url_enabled']) && $user_data['private_url_enabled'] && $this->active_user->getPrivateUrlEnabled() != $user_data['private_url_enabled']) {
                   $this->active_user->setPrivateUrlEnabled($user_data['private_url_enabled']);
