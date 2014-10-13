@@ -768,7 +768,7 @@
           case 'private_url':
             return parent::setFieldValue($real_name, (string) $value);
           case 'private_url_enabled':
-            return parent::setFieldValue($real_name, (string) $value);
+            return parent::setFieldValue($real_name, (boolean) $value);
         } // switch
 
         throw new InvalidParamError('name', $name, "Field $name (maps to $real_name) does not exist in this table");
