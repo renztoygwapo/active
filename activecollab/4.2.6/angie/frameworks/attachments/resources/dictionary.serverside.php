@@ -1,0 +1,17 @@
+<?php return array(
+  'File is not correctly uploaded',
+  'Disk Quota Reached. Please consult your system administrator.',
+  'Failed to write uploaded file to the :folder_name folder',
+  'Uploaded Attachments',
+  'Temporary Attachments',
+  'Remove temporary attachments',
+  'Temporary attachments removed successfully',
+  'Are you sure that you want to remove temporary attachments?',
+  'Download',
+  'Trash',
+  'File name is required',
+  'Attach Files',
+  'Attachments preview for ":name" ',
+  'Attachments',
+  'There are no files attached to this :type',
+); ?>

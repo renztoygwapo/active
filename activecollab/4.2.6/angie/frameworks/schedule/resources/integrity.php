@@ -1,0 +1,17 @@
+<?php return array (
+  '/views/default/fw_schedule/reschedule.tpl' => '0b52335e20f502411f36491d42189f46',
+  '/init.php' => '1cdaccb438c0c3d4bbf3084a5ee61191',
+  '/ScheduleFramework.class.php' => '32cecdfeefb72c32ccb03cf6f1ad2f55',
+  '/models/ISchedule.class.php' => '4b3f289f81e0eb867a4b069b89875627',
+  '/assets/default/images/object-schedule-active.png' => '6f8cee94feef64e0f04d5c4453804b66',
+  '/widgets/object_schedule/widget.object_schedule.js' => '71793e66402932efa1b41e43aa5fb3ed',
+  '/assets/phone/javascript/jquery.objectSchedule.js' => '866ecd48f297dcbc17fa2333748985b1',
+  '/assets/foundation/javascript/inspector.properties.Schedule.js' => '98fcc1ee80272d290e497b8d3457548c',
+  '/helpers/function.object_schedule.php' => 'ab8c0fb503b88b563d5e6ca86ca6dd6a',
+  '/models/IScheduleImplementation.class.php' => 'b6a10842dd05c31bf14f9c039c414082',
+  '/assets/default/images/object-schedule-inactive.png' => 'ba87cbf40b86b38fc26cc9d17fb6bf6a',
+  '/widgets/object_schedule/widget.object_schedule.css' => 'd41d8cd98f00b204e9800998ecf8427e',
+  '/resources/dictionary.clientside.php' => 'dbeab2d4f4f890a65ae23369a0c3d219',
+  '/resources/dictionary.serverside.php' => 'e94ccb7c87c0b548c77b45d48d6f2f33',
+  '/controllers/FwScheduleController.class.php' => 'ec0f0fcbe29a9cccef30984b4a30c34d',
+);

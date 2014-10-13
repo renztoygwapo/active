@@ -1,0 +1,48 @@
+Logged on: Tuesday, 09-Sep-2014 16:03:44 GMT
+Memory usage: 12.36MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - SELECT name, value FROM acx_config_options
+#4 - info - SELECT name, is_enabled FROM acx_modules WHERE name != 'system' ORDER BY position
+#5 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-09 16:03:43'
+#6 - info - SELECT * FROM acx_languages WHERE id = '1' LIMIT 0, 1
+#7 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#8 - info - Routing string ''
+#9 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = ''
+#10 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '132'
+#11 - info - SELECT * FROM acx_currencies    ORDER BY is_default DESC LIMIT 0, 1
+#12 - info - SELECT DAY(event_date) AS 'day', MONTH(event_date) AS 'month', YEAR(event_date) AS 'year', repeat_yearly, name FROM acx_day_offs ORDER BY event_date
+#13 - info - Event 'on_initial_javascript_assign' triggered
+#14 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#15 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - SELECT name, value FROM acx_config_options
+#4 - info - SELECT name, is_enabled FROM acx_modules WHERE name != 'system' ORDER BY position
+#5 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-09 16:03:43'
+#6 - info - SELECT * FROM acx_languages WHERE id = '1' LIMIT 0, 1
+#7 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#8 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = ''
+#9 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '132'
+#10 - info - SELECT * FROM acx_currencies    ORDER BY is_default DESC LIMIT 0, 1
+#11 - info - SELECT DAY(event_date) AS 'day', MONTH(event_date) AS 'month', YEAR(event_date) AS 'year', repeat_yearly, name FROM acx_day_offs ORDER BY event_date
+
+routing
+
+#1 - info - Routing string ''
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_shutdown' triggered
+
+======================================================
+

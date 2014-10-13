@@ -1,0 +1,18 @@
+<?php return array(
+  'Assignment Labels',
+  ':reassigned_by_name has just made you responsible for "<a href=":url" style=":link_style" target="_blank">:name</a>" :type.',
+  'It is due on <u>:due_on</u>',
+  'No assignees',
+  'Nobody',
+  'Assigned to',
+  'Select responsible',
+  'Other assignees:',
+  'Choose assignees',
+  ':type Reassigned',
+  ':type Assigned',
+  'You are now Responsible for \':name\' :type',
+  'You are no Longer Responsible for \':name\' :type',
+  'You are no longer responsible for "<a href=":url" style=":link_style" target="_blank">:name</a>" :type',
+  'Choose Assignees',
+  'Update Assignees',
+); ?>

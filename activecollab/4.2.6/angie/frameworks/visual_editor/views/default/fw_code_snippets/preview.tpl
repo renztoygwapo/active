@@ -1,0 +1,1 @@
+{HyperlightForAngie::htmlPreview($code, $syntax) nofilter}

@@ -1,0 +1,1 @@
+{$active_code_snippet->render() nofilter}

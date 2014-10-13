@@ -1,0 +1,3589 @@
+Logged on: Monday, 17-Mar-14 14:32:26 GMT
+Memory usage: 140.46MB
+Available groups: all, sql, cache, routing, events
+
+all:
+
+#1 - error - [Notice] Use of undefined constant WORK_PATH - assumed 'WORK_PATH' (in /Build/Workspaces/QA/angie/vendor/vcard/init.php on 12)
+#2 - error - [Notice] Constant ANGIE_PATH already defined (in /Build/Workspaces/QA/activeCollab/instance/config/config.test.php on 7)
+#3 - error - [Notice] Constant DB_CHARSET already defined (in /Build/Workspaces/QA/activeCollab/instance/config/config.test.php on 15)
+#4 - info - SET NAMES 'utf8'
+#5 - info - SET SESSION character_set_database = 'utf8'
+#6 - info - SHOW TABLES LIKE 'ac_config_options'
+#7 - info - SHOW TABLES LIKE 'ac_config_options'
+#8 - info - DROP TABLE `ac_config_options`
+#9 - info - SHOW TABLES LIKE 'ac_config_option_values'
+#10 - info - SHOW TABLES LIKE 'ac_config_option_values'
+#11 - info - DROP TABLE `ac_config_option_values`
+#12 - info - SHOW TABLES LIKE 'ac_modules'
+#13 - info - SHOW TABLES LIKE 'ac_modules'
+#14 - info - DROP TABLE `ac_modules`
+#15 - info - SHOW TABLES LIKE 'ac_executed_model_migrations'
+#16 - info - SHOW TABLES LIKE 'ac_executed_model_migrations'
+#17 - info - DROP TABLE `ac_executed_model_migrations`
+#18 - info - SHOW TABLES LIKE 'ac_update_history'
+#19 - info - SHOW TABLES LIKE 'ac_update_history'
+#20 - info - DROP TABLE `ac_update_history`
+#21 - info - SHOW TABLES LIKE 'ac_access_logs'
+#22 - info - SHOW TABLES LIKE 'ac_access_logs'
+#23 - info - DROP TABLE `ac_access_logs`
+#24 - info - SHOW TABLES LIKE 'ac_access_logs_archive'
+#25 - info - SHOW TABLES LIKE 'ac_access_logs_archive'
+#26 - info - DROP TABLE `ac_access_logs_archive`
+#27 - info - SHOW TABLES LIKE 'ac_object_contexts'
+#28 - info - SHOW TABLES LIKE 'ac_object_contexts'
+#29 - info - DROP TABLE `ac_object_contexts`
+#30 - info - SHOW TABLES LIKE 'ac_routing_cache'
+#31 - info - SHOW TABLES LIKE 'ac_routing_cache'
+#32 - info - DROP TABLE `ac_routing_cache`
+#33 - info - SHOW TABLES LIKE 'ac_currencies'
+#34 - info - SHOW TABLES LIKE 'ac_currencies'
+#35 - info - DROP TABLE `ac_currencies`
+#36 - info - SHOW TABLES LIKE 'ac_day_offs'
+#37 - info - SHOW TABLES LIKE 'ac_day_offs'
+#38 - info - DROP TABLE `ac_day_offs`
+#39 - info - SHOW TABLES LIKE 'ac_languages'
+#40 - info - SHOW TABLES LIKE 'ac_languages'
+#41 - info - DROP TABLE `ac_languages`
+#42 - info - SHOW TABLES LIKE 'ac_language_phrases'
+#43 - info - SHOW TABLES LIKE 'ac_language_phrases'
+#44 - info - DROP TABLE `ac_language_phrases`
+#45 - info - SHOW TABLES LIKE 'ac_language_phrase_translations'
+#46 - info - SHOW TABLES LIKE 'ac_language_phrase_translations'
+#47 - info - DROP TABLE `ac_language_phrase_translations`
+#48 - info - SHOW TABLES LIKE 'ac_api_client_subscriptions'
+#49 - info - SHOW TABLES LIKE 'ac_api_client_subscriptions'
+#50 - info - DROP TABLE `ac_api_client_subscriptions`
+#51 - info - SHOW TABLES LIKE 'ac_users'
+#52 - info - SHOW TABLES LIKE 'ac_users'
+#53 - info - DROP TABLE `ac_users`
+#54 - info - SHOW TABLES LIKE 'ac_user_addresses'
+#55 - info - SHOW TABLES LIKE 'ac_user_addresses'
+#56 - info - DROP TABLE `ac_user_addresses`
+#57 - info - SHOW TABLES LIKE 'ac_user_sessions'
+#58 - info - SHOW TABLES LIKE 'ac_user_sessions'
+#59 - info - DROP TABLE `ac_user_sessions`
+#60 - info - SHOW TABLES LIKE 'ac_security_logs'
+#61 - info - SHOW TABLES LIKE 'ac_security_logs'
+#62 - info - DROP TABLE `ac_security_logs`
+#63 - info - SHOW TABLES LIKE 'ac_api_token_logs'
+#64 - info - SHOW TABLES LIKE 'ac_api_token_logs'
+#65 - info - DROP TABLE `ac_api_token_logs`
+#66 - info - SHOW TABLES LIKE 'ac_activity_logs'
+#67 - info - SHOW TABLES LIKE 'ac_activity_logs'
+#68 - info - DROP TABLE `ac_activity_logs`
+#69 - info - SHOW TABLES LIKE 'ac_data_filters'
+#70 - info - SHOW TABLES LIKE 'ac_data_filters'
+#71 - info - DROP TABLE `ac_data_filters`
+#72 - info - SHOW TABLES LIKE 'ac_modification_logs'
+#73 - info - SHOW TABLES LIKE 'ac_modification_logs'
+#74 - info - DROP TABLE `ac_modification_logs`
+#75 - info - SHOW TABLES LIKE 'ac_modification_log_values'
+#76 - info - SHOW TABLES LIKE 'ac_modification_log_values'
+#77 - info - DROP TABLE `ac_modification_log_values`
+#78 - info - SHOW TABLES LIKE 'ac_mailing_activity_logs'
+#79 - info - SHOW TABLES LIKE 'ac_mailing_activity_logs'
+#80 - info - DROP TABLE `ac_mailing_activity_logs`
+#81 - info - SHOW TABLES LIKE 'ac_outgoing_messages'
+#82 - info - SHOW TABLES LIKE 'ac_outgoing_messages'
+#83 - info - DROP TABLE `ac_outgoing_messages`
+#84 - info - SHOW TABLES LIKE 'ac_incoming_mail_attachments'
+#85 - info - SHOW TABLES LIKE 'ac_incoming_mail_attachments'
+#86 - info - DROP TABLE `ac_incoming_mail_attachments`
+#87 - info - SHOW TABLES LIKE 'ac_incoming_mail_filters'
+#88 - info - SHOW TABLES LIKE 'ac_incoming_mail_filters'
+#89 - info - DROP TABLE `ac_incoming_mail_filters`
+#90 - info - SHOW TABLES LIKE 'ac_incoming_mailboxes'
+#91 - info - SHOW TABLES LIKE 'ac_incoming_mailboxes'
+#92 - info - DROP TABLE `ac_incoming_mailboxes`
+#93 - info - SHOW TABLES LIKE 'ac_incoming_mails'
+#94 - info - SHOW TABLES LIKE 'ac_incoming_mails'
+#95 - info - DROP TABLE `ac_incoming_mails`
+#96 - info - SHOW TABLES LIKE 'ac_homescreen_tabs'
+#97 - info - SHOW TABLES LIKE 'ac_homescreen_tabs'
+#98 - info - DROP TABLE `ac_homescreen_tabs`
+#99 - info - SHOW TABLES LIKE 'ac_homescreen_widgets'
+#100 - info - SHOW TABLES LIKE 'ac_homescreen_widgets'
+#101 - info - DROP TABLE `ac_homescreen_widgets`
+#102 - info - SHOW TABLES LIKE 'ac_announcements'
+#103 - info - SHOW TABLES LIKE 'ac_announcements'
+#104 - info - DROP TABLE `ac_announcements`
+#105 - info - SHOW TABLES LIKE 'ac_announcement_target_ids'
+#106 - info - SHOW TABLES LIKE 'ac_announcement_target_ids'
+#107 - info - DROP TABLE `ac_announcement_target_ids`
+#108 - info - SHOW TABLES LIKE 'ac_announcement_dismissals'
+#109 - info - SHOW TABLES LIKE 'ac_announcement_dismissals'
+#110 - info - DROP TABLE `ac_announcement_dismissals`
+#111 - info - SHOW TABLES LIKE 'ac_attachments'
+#112 - info - SHOW TABLES LIKE 'ac_attachments'
+#113 - info - DROP TABLE `ac_attachments`
+#114 - info - SHOW TABLES LIKE 'ac_notifications'
+#115 - info - SHOW TABLES LIKE 'ac_notifications'
+#116 - info - DROP TABLE `ac_notifications`
+#117 - info - SHOW TABLES LIKE 'ac_notification_recipients'
+#118 - info - SHOW TABLES LIKE 'ac_notification_recipients'
+#119 - info - DROP TABLE `ac_notification_recipients`
+#120 - info - SHOW TABLES LIKE 'ac_subscriptions'
+#121 - info - SHOW TABLES LIKE 'ac_subscriptions'
+#122 - info - DROP TABLE `ac_subscriptions`
+#123 - info - SHOW TABLES LIKE 'ac_comments'
+#124 - info - SHOW TABLES LIKE 'ac_comments'
+#125 - info - DROP TABLE `ac_comments`
+#126 - info - SHOW TABLES LIKE 'ac_categories'
+#127 - info - SHOW TABLES LIKE 'ac_categories'
+#128 - info - DROP TABLE `ac_categories`
+#129 - info - SHOW TABLES LIKE 'ac_labels'
+#130 - info - SHOW TABLES LIKE 'ac_labels'
+#131 - info - DROP TABLE `ac_labels`
+#132 - info - SHOW TABLES LIKE 'ac_assignments'
+#133 - info - SHOW TABLES LIKE 'ac_assignments'
+#134 - info - DROP TABLE `ac_assignments`
+#135 - info - SHOW TABLES LIKE 'ac_subtasks'
+#136 - info - SHOW TABLES LIKE 'ac_subtasks'
+#137 - info - DROP TABLE `ac_subtasks`
+#138 - info - SHOW TABLES LIKE 'ac_favorites'
+#139 - info - SHOW TABLES LIKE 'ac_favorites'
+#140 - info - DROP TABLE `ac_favorites`
+#141 - info - SHOW TABLES LIKE 'ac_code_snippets'
+#142 - info - SHOW TABLES LIKE 'ac_code_snippets'
+#143 - info - DROP TABLE `ac_code_snippets`
+#144 - info - SHOW TABLES LIKE 'ac_payment_gateways'
+#145 - info - SHOW TABLES LIKE 'ac_payment_gateways'
+#146 - info - DROP TABLE `ac_payment_gateways`
+#147 - info - SHOW TABLES LIKE 'ac_payments'
+#148 - info - SHOW TABLES LIKE 'ac_payments'
+#149 - info - DROP TABLE `ac_payments`
+#150 - info - SHOW TABLES LIKE 'ac_reminders'
+#151 - info - SHOW TABLES LIKE 'ac_reminders'
+#152 - info - DROP TABLE `ac_reminders`
+#153 - info - SHOW TABLES LIKE 'ac_reminder_users'
+#154 - info - SHOW TABLES LIKE 'ac_reminder_users'
+#155 - info - DROP TABLE `ac_reminder_users`
+#156 - info - SHOW TABLES LIKE 'ac_custom_fields'
+#157 - info - SHOW TABLES LIKE 'ac_custom_fields'
+#158 - info - DROP TABLE `ac_custom_fields`
+#159 - info - SHOW TABLES LIKE 'ac_calendars'
+#160 - info - SHOW TABLES LIKE 'ac_calendars'
+#161 - info - DROP TABLE `ac_calendars`
+#162 - info - SHOW TABLES LIKE 'ac_calendar_events'
+#163 - info - SHOW TABLES LIKE 'ac_calendar_events'
+#164 - info - DROP TABLE `ac_calendar_events`
+#165 - info - SHOW TABLES LIKE 'ac_calendar_users'
+#166 - info - SHOW TABLES LIKE 'ac_calendar_users'
+#167 - info - DROP TABLE `ac_calendar_users`
+#168 - info - SHOW TABLES LIKE 'ac_data_sources'
+#169 - info - SHOW TABLES LIKE 'ac_data_sources'
+#170 - info - DROP TABLE `ac_data_sources`
+#171 - info - SHOW TABLES LIKE 'ac_data_source_mappings'
+#172 - info - SHOW TABLES LIKE 'ac_data_source_mappings'
+#173 - info - DROP TABLE `ac_data_source_mappings`
+#174 - info - SHOW TABLES LIKE 'ac_companies'
+#175 - info - SHOW TABLES LIKE 'ac_companies'
+#176 - info - DROP TABLE `ac_companies`
+#177 - info - SHOW TABLES LIKE 'ac_projects'
+#178 - info - SHOW TABLES LIKE 'ac_projects'
+#179 - info - DROP TABLE `ac_projects`
+#180 - info - SHOW TABLES LIKE 'ac_project_roles'
+#181 - info - SHOW TABLES LIKE 'ac_project_roles'
+#182 - info - DROP TABLE `ac_project_roles`
+#183 - info - SHOW TABLES LIKE 'ac_project_users'
+#184 - info - SHOW TABLES LIKE 'ac_project_users'
+#185 - info - DROP TABLE `ac_project_users`
+#186 - info - SHOW TABLES LIKE 'ac_project_requests'
+#187 - info - SHOW TABLES LIKE 'ac_project_requests'
+#188 - info - DROP TABLE `ac_project_requests`
+#189 - info - SHOW TABLES LIKE 'ac_project_objects'
+#190 - info - SHOW TABLES LIKE 'ac_project_objects'
+#191 - info - DROP TABLE `ac_project_objects`
+#192 - info - SHOW TABLES LIKE 'ac_project_templates'
+#193 - info - SHOW TABLES LIKE 'ac_project_templates'
+#194 - info - DROP TABLE `ac_project_templates`
+#195 - info - SHOW TABLES LIKE 'ac_project_object_templates'
+#196 - info - SHOW TABLES LIKE 'ac_project_object_templates'
+#197 - info - DROP TABLE `ac_project_object_templates`
+#198 - info - SHOW TABLES LIKE 'ac_shared_object_profiles'
+#199 - info - SHOW TABLES LIKE 'ac_shared_object_profiles'
+#200 - info - DROP TABLE `ac_shared_object_profiles`
+#201 - info - SHOW TABLES LIKE 'ac_file_versions'
+#202 - info - SHOW TABLES LIKE 'ac_file_versions'
+#203 - info - DROP TABLE `ac_file_versions`
+#204 - info - SHOW TABLES LIKE 'ac_text_document_versions'
+#205 - info - SHOW TABLES LIKE 'ac_text_document_versions'
+#206 - info - DROP TABLE `ac_text_document_versions`
+#207 - info - SHOW TABLES LIKE 'ac_public_task_forms'
+#208 - info - SHOW TABLES LIKE 'ac_public_task_forms'
+#209 - info - DROP TABLE `ac_public_task_forms`
+#210 - info - SHOW TABLES LIKE 'ac_related_tasks'
+#211 - info - SHOW TABLES LIKE 'ac_related_tasks'
+#212 - info - DROP TABLE `ac_related_tasks`
+#213 - info - SHOW TABLES LIKE 'ac_task_segments'
+#214 - info - SHOW TABLES LIKE 'ac_task_segments'
+#215 - info - DROP TABLE `ac_task_segments`
+#216 - info - SHOW TABLES LIKE 'ac_status_updates'
+#217 - info - SHOW TABLES LIKE 'ac_status_updates'
+#218 - info - DROP TABLE `ac_status_updates`
+#219 - info - SHOW TABLES LIKE 'ac_documents'
+#220 - info - SHOW TABLES LIKE 'ac_documents'
+#221 - info - DROP TABLE `ac_documents`
+#222 - info - SHOW TABLES LIKE 'ac_time_records'
+#223 - info - SHOW TABLES LIKE 'ac_time_records'
+#224 - info - DROP TABLE `ac_time_records`
+#225 - info - SHOW TABLES LIKE 'ac_job_types'
+#226 - info - SHOW TABLES LIKE 'ac_job_types'
+#227 - info - DROP TABLE `ac_job_types`
+#228 - info - SHOW TABLES LIKE 'ac_project_hourly_rates'
+#229 - info - SHOW TABLES LIKE 'ac_project_hourly_rates'
+#230 - info - DROP TABLE `ac_project_hourly_rates`
+#231 - info - SHOW TABLES LIKE 'ac_expenses'
+#232 - info - SHOW TABLES LIKE 'ac_expenses'
+#233 - info - DROP TABLE `ac_expenses`
+#234 - info - SHOW TABLES LIKE 'ac_expense_categories'
+#235 - info - SHOW TABLES LIKE 'ac_expense_categories'
+#236 - info - DROP TABLE `ac_expense_categories`
+#237 - info - SHOW TABLES LIKE 'ac_estimates'
+#238 - info - SHOW TABLES LIKE 'ac_estimates'
+#239 - info - DROP TABLE `ac_estimates`
+#240 - info - SHOW TABLES LIKE 'ac_invoice_objects'
+#241 - info - SHOW TABLES LIKE 'ac_invoice_objects'
+#242 - info - DROP TABLE `ac_invoice_objects`
+#243 - info - SHOW TABLES LIKE 'ac_invoice_object_items'
+#244 - info - SHOW TABLES LIKE 'ac_invoice_object_items'
+#245 - info - DROP TABLE `ac_invoice_object_items`
+#246 - info - SHOW TABLES LIKE 'ac_invoice_item_templates'
+#247 - info - SHOW TABLES LIKE 'ac_invoice_item_templates'
+#248 - info - DROP TABLE `ac_invoice_item_templates`
+#249 - info - SHOW TABLES LIKE 'ac_invoice_note_templates'
+#250 - info - SHOW TABLES LIKE 'ac_invoice_note_templates'
+#251 - info - DROP TABLE `ac_invoice_note_templates`
+#252 - info - SHOW TABLES LIKE 'ac_invoice_related_records'
+#253 - info - SHOW TABLES LIKE 'ac_invoice_related_records'
+#254 - info - DROP TABLE `ac_invoice_related_records`
+#255 - info - SHOW TABLES LIKE 'ac_tax_rates'
+#256 - info - SHOW TABLES LIKE 'ac_tax_rates'
+#257 - info - DROP TABLE `ac_tax_rates`
+#258 - info - SHOW TABLES LIKE 'ac_notebook_pages'
+#259 - info - SHOW TABLES LIKE 'ac_notebook_pages'
+#260 - info - DROP TABLE `ac_notebook_pages`
+#261 - info - SHOW TABLES LIKE 'ac_notebook_page_versions'
+#262 - info - SHOW TABLES LIKE 'ac_notebook_page_versions'
+#263 - info - DROP TABLE `ac_notebook_page_versions`
+#264 - info - CREATE TABLE `ac_config_options` (
+  `name` varchar(100)  DEFAULT NULL,
+  `module` varchar(30)  DEFAULT NULL,
+  `value` text ,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#265 - info - CREATE TABLE `ac_config_option_values` (
+  `name` varchar(50)  DEFAULT NULL,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `value` text ,
+  INDEX `parent` (`parent_type`, `parent_id`),
+  PRIMARY KEY (`name`, `parent_type`, `parent_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#266 - info - CREATE TABLE `ac_modules` (
+  `name` varchar(50)  DEFAULT NULL,
+  `is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `position` int(6) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#267 - info - CREATE TABLE `ac_executed_model_migrations` (
+  `id` int unsigned NOT NULL auto_increment,
+  `migration` varchar(255) NOT NULL DEFAULT '',
+  `changeset_timestamp` date  DEFAULT NULL,
+  `changeset_name` varchar(255)  DEFAULT NULL,
+  `executed_on` datetime  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE `migration` (`migration`),
+  INDEX `executed_on` (`executed_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#268 - info - CREATE TABLE `ac_update_history` (
+  `id` smallint unsigned NOT NULL auto_increment,
+  `version` varchar(30) NOT NULL DEFAULT '',
+  `created_on` datetime  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE `version` (`version`),
+  INDEX `created_on` (`created_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#269 - info - CREATE TABLE `ac_access_logs` (
+  `id` bigint unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `accessed_by_id` int(10) unsigned NULL DEFAULT NULL,
+  `accessed_by_name` varchar(100)  DEFAULT NULL,
+  `accessed_by_email` varchar(150)  DEFAULT NULL,
+  `accessed_on` datetime  DEFAULT NULL,
+  `ip_address` varchar(50)  DEFAULT NULL,
+  `is_download` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `accessed_by_id` (`accessed_by_id`),
+  INDEX `accessed_on` (`accessed_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#270 - info - CREATE TABLE `ac_access_logs_archive` (
+  `id` bigint unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `accessed_by_id` int(10) unsigned NULL DEFAULT NULL,
+  `accessed_by_name` varchar(100)  DEFAULT NULL,
+  `accessed_by_email` varchar(150)  DEFAULT NULL,
+  `accessed_on` datetime  DEFAULT NULL,
+  `ip_address` varchar(50)  DEFAULT NULL,
+  `is_download` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `accessed_by_id` (`accessed_by_id`),
+  INDEX `accessed_on` (`accessed_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#271 - info - CREATE TABLE `ac_object_contexts` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `context` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`),
+  UNIQUE `context` (`context`),
+  UNIQUE `parent` (`parent_type`, `parent_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#272 - info - CREATE TABLE `ac_routing_cache` (
+  `id` int unsigned NOT NULL auto_increment,
+  `path_info` varchar(255)  DEFAULT NULL,
+  `name` varchar(255)  DEFAULT NULL,
+  `content` text ,
+  `last_accessed_on` datetime  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE `path_info` (`path_info`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#273 - info - CREATE TABLE `ac_currencies` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(50)  DEFAULT NULL,
+  `code` varchar(3)  DEFAULT NULL,
+  `decimal_spaces` int(1) unsigned NOT NULL DEFAULT '2',
+  `decimal_rounding` decimal(4, 3) unsigned NOT NULL DEFAULT '0',
+  `is_default` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE `name` (`name`),
+  UNIQUE `code` (`code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#274 - info - CREATE TABLE `ac_day_offs` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(100)  DEFAULT NULL,
+  `event_date` date  DEFAULT NULL,
+  `repeat_yearly` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE `day_off_name` (`name`, `event_date`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#275 - info - CREATE TABLE `ac_languages` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(50)  DEFAULT NULL,
+  `locale` varchar(30) NOT NULL DEFAULT '',
+  `decimal_separator` varchar(1) NOT NULL DEFAULT '.',
+  `thousands_separator` varchar(1) NOT NULL DEFAULT ',',
+  `last_updated_on` datetime  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE `name` (`name`),
+  UNIQUE `locale` (`locale`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#276 - info - CREATE TABLE `ac_language_phrases` (
+  `hash` varchar(32)  DEFAULT NULL,
+  `phrase` text ,
+  `module` varchar(50) NOT NULL DEFAULT '',
+  `is_serverside` int(2) unsigned NULL DEFAULT NULL,
+  `is_clientside` int(2) unsigned NULL DEFAULT NULL,
+  UNIQUE `module_phrase` (`hash`, `module`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#277 - info - CREATE TABLE `ac_language_phrase_translations` (
+  `language_id` int(11) unsigned NOT NULL DEFAULT 0,
+  `phrase_hash` varchar(32)  DEFAULT NULL,
+  `translation` text ,
+  UNIQUE `language_phrase` (`phrase_hash`, `language_id`),
+  INDEX `language_id` (`language_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#278 - info - CREATE TABLE `ac_api_client_subscriptions` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'ApiClientSubscription',
+  `user_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `token` varchar(40)  DEFAULT NULL,
+  `client_name` varchar(100)  DEFAULT NULL,
+  `client_vendor` varchar(100)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `last_used_on` datetime  DEFAULT NULL,
+  `is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `is_read_only` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  UNIQUE `token` (`token`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#279 - info - CREATE TABLE `ac_users` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'User',
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `first_name` varchar(50)  DEFAULT NULL,
+  `last_name` varchar(50)  DEFAULT NULL,
+  `email` varchar(150) NOT NULL DEFAULT '',
+  `password` varchar(255) NOT NULL DEFAULT '',
+  `password_hashed_with` enum('pbkdf2', 'sha1') NOT NULL DEFAULT 'pbkdf2',
+  `password_expires_on` date  DEFAULT NULL,
+  `password_reset_key` varchar(20)  DEFAULT NULL,
+  `password_reset_on` datetime  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  `invited_on` datetime  DEFAULT NULL,
+  `last_login_on` datetime  DEFAULT NULL,
+  `last_visit_on` datetime  DEFAULT NULL,
+  `last_activity_on` datetime  DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  `company_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `auto_assign` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `auto_assign_role_id` int(3) unsigned NULL DEFAULT NULL,
+  `auto_assign_permissions` text ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `email` (`email`),
+  INDEX `last_activity_on` (`last_activity_on`),
+  INDEX `company_id` (`company_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#280 - info - CREATE TABLE `ac_user_addresses` (
+  `user_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `email` varchar(150) NOT NULL DEFAULT '',
+  PRIMARY KEY (`user_id`, `email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#281 - info - CREATE TABLE `ac_user_sessions` (
+  `id` int unsigned NOT NULL auto_increment,
+  `user_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `user_ip` varchar(45)  DEFAULT NULL,
+  `user_agent` text ,
+  `visits` int(10) unsigned NOT NULL DEFAULT 0,
+  `remember` int(3) unsigned NOT NULL DEFAULT 0,
+  `interface` enum('default', 'phone', 'tablet') NOT NULL DEFAULT 'default',
+  `created_on` datetime  DEFAULT NULL,
+  `last_activity_on` datetime  DEFAULT NULL,
+  `expires_on` datetime  DEFAULT NULL,
+  `session_key` varchar(40)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE `session_key` (`session_key`),
+  INDEX `expires_on` (`expires_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#282 - info - CREATE TABLE `ac_security_logs` (
+  `id` bigint unsigned NOT NULL auto_increment,
+  `user_id` int(10) unsigned NULL DEFAULT NULL,
+  `user_name` varchar(100)  DEFAULT NULL,
+  `user_email` varchar(150)  DEFAULT NULL,
+  `login_as_id` int(10) unsigned NULL DEFAULT NULL,
+  `login_as_name` varchar(100)  DEFAULT NULL,
+  `login_as_email` varchar(150)  DEFAULT NULL,
+  `logout_by_id` int(10) unsigned NULL DEFAULT NULL,
+  `logout_by_name` varchar(100)  DEFAULT NULL,
+  `logout_by_email` varchar(150)  DEFAULT NULL,
+  `event` enum('login', 'logout', 'expired', 'failed')  DEFAULT NULL,
+  `event_on` datetime  DEFAULT NULL,
+  `user_ip` varchar(45)  DEFAULT NULL,
+  `user_agent` text ,
+  `is_api` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  INDEX `user_id` (`user_id`),
+  INDEX `login_as_id` (`login_as_id`),
+  INDEX `logout_by_id` (`logout_by_id`),
+  INDEX `event_on` (`event_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#283 - info - CREATE TABLE `ac_api_token_logs` (
+  `id` int unsigned NOT NULL auto_increment,
+  `counts_on` datetime  DEFAULT NULL,
+  `total` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `counts_on` (`counts_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#284 - info - CREATE TABLE `ac_activity_logs` (
+  `id` int unsigned NOT NULL auto_increment,
+  `subject_type` varchar(50) NOT NULL DEFAULT '',
+  `subject_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `subject_context` varchar(255) NOT NULL DEFAULT '',
+  `action` varchar(100) NOT NULL DEFAULT '',
+  `target_type` varchar(50)  DEFAULT NULL,
+  `target_id` int(5) unsigned NULL DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `comment` text ,
+  PRIMARY KEY (`id`),
+  INDEX `created_on` (`created_on`),
+  INDEX `subject` (`subject_type`, `subject_id`),
+  INDEX `subject_context` (`subject_context`),
+  INDEX `action` (`action`),
+  INDEX `target` (`target_type`, `target_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#285 - info - CREATE TABLE `ac_data_filters` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(150) NOT NULL DEFAULT 'DataFilter',
+  `name` varchar(50)  DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int(10) unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `is_private` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `created_by_id` (`created_by_id`),
+  INDEX `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#286 - info - CREATE TABLE `ac_modification_logs` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `is_first` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `created_on` (`created_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#287 - info - CREATE TABLE `ac_modification_log_values` (
+  `modification_id` int(20) unsigned NOT NULL DEFAULT 0,
+  `field` varchar(50) NOT NULL DEFAULT '',
+  `value` longtext ,
+  PRIMARY KEY (`modification_id`, `field`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#288 - info - CREATE TABLE `ac_mailing_activity_logs` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'MailingActivityLog',
+  `direction` enum('in', 'out') NOT NULL DEFAULT 'out',
+  `from_id` int(10) unsigned NULL DEFAULT NULL,
+  `from_name` varchar(100)  DEFAULT NULL,
+  `from_email` varchar(150)  DEFAULT NULL,
+  `to_id` int(10) unsigned NULL DEFAULT NULL,
+  `to_name` varchar(100)  DEFAULT NULL,
+  `to_email` varchar(150)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `created_on` (`created_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#289 - info - CREATE TABLE `ac_outgoing_messages` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `decorator` varchar(255) NOT NULL DEFAULT 'OutgoingMessageDecorator',
+  `sender_id` int(10) unsigned NULL DEFAULT NULL,
+  `sender_name` varchar(100)  DEFAULT NULL,
+  `sender_email` varchar(150)  DEFAULT NULL,
+  `recipient_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `recipient_name` varchar(100)  DEFAULT NULL,
+  `recipient_email` varchar(150)  DEFAULT NULL,
+  `subject` varchar(255)  DEFAULT NULL,
+  `body` longtext ,
+  `context_id` varchar(50)  DEFAULT NULL,
+  `code` varchar(25)  DEFAULT NULL,
+  `mailing_method` varchar(15) NOT NULL DEFAULT 'in_background',
+  `created_on` datetime  DEFAULT NULL,
+  `send_retries` int(5) unsigned NOT NULL DEFAULT 0,
+  `last_send_error` varchar(255)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `recipient_id` (`recipient_id`),
+  INDEX `created_on` (`created_on`),
+  INDEX `recipient_email` (`recipient_email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#290 - info - CREATE TABLE `ac_incoming_mail_attachments` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'IncomingMailAttachment',
+  `mail_id` int(10) unsigned NULL DEFAULT NULL,
+  `temporary_filename` varchar(255)  DEFAULT NULL,
+  `original_filename` varchar(255)  DEFAULT NULL,
+  `content_type` varchar(255)  DEFAULT NULL,
+  `file_size` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#291 - info - CREATE TABLE `ac_incoming_mail_filters` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'IncomingMailFilter',
+  `name` varchar(100)  DEFAULT NULL,
+  `description` text ,
+  `subject` text ,
+  `body` text ,
+  `priority` varchar(200)  DEFAULT NULL,
+  `attachments` varchar(200)  DEFAULT NULL,
+  `sender` longtext ,
+  `to_email` text ,
+  `mailbox_id` text ,
+  `action_name` varchar(100)  DEFAULT NULL,
+  `action_parameters` longtext ,
+  `position` int(10) NOT NULL DEFAULT 0,
+  `is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `is_default` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#292 - info - CREATE TABLE `ac_incoming_mailboxes` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'IncomingMailbox',
+  `name` varchar(100)  DEFAULT NULL,
+  `email` varchar(150)  DEFAULT NULL,
+  `mailbox` varchar(100)  DEFAULT NULL,
+  `username` varchar(50)  DEFAULT NULL,
+  `password` varchar(50)  DEFAULT NULL,
+  `host` varchar(255)  DEFAULT NULL,
+  `server_type` enum('POP3', 'IMAP') NOT NULL DEFAULT 'POP3',
+  `port` int(10) unsigned NULL DEFAULT NULL,
+  `security` enum('NONE', 'TLS', 'SSL') NOT NULL DEFAULT 'NONE',
+  `last_status` int(3) unsigned NOT NULL DEFAULT 0,
+  `is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `failure_attempts` tinyint(3) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#293 - info - CREATE TABLE `ac_incoming_mails` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'IncomingMail',
+  `incoming_mailbox_id` int(10) unsigned NULL DEFAULT NULL,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `is_replay_to_notification` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `subject` varchar(255)  DEFAULT NULL,
+  `body` text ,
+  `to_email` text ,
+  `cc_to` text ,
+  `bcc_to` text ,
+  `reply_to` text ,
+  `priority` varchar(200)  DEFAULT NULL,
+  `additional_data` longtext ,
+  `headers` longtext ,
+  `status` varchar(255)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `incoming_mailbox_id` (`incoming_mailbox_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#294 - info - CREATE TABLE `ac_homescreen_tabs` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'HomescreenTab',
+  `user_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `name` varchar(50)  DEFAULT NULL,
+  `position` int(5) unsigned NOT NULL DEFAULT 0,
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `user_id` (`user_id`),
+  INDEX `position` (`position`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#295 - info - CREATE TABLE `ac_homescreen_widgets` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'HomescreenWidget',
+  `homescreen_tab_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `column_id` int(3) unsigned NOT NULL DEFAULT '1',
+  `position` int(5) unsigned NOT NULL DEFAULT 0,
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `homescreen_tab_id` (`homescreen_tab_id`),
+  INDEX `position` (`position`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#296 - info - CREATE TABLE `ac_announcements` (
+  `id` int unsigned NOT NULL auto_increment,
+  `subject` varchar(255)  DEFAULT NULL,
+  `body` longtext ,
+  `body_type` tinyint(3) NOT NULL DEFAULT 0,
+  `icon` enum('announcement', 'bug', 'comment', 'event', 'idea', 'info', 'joke', 'news', 'question', 'star', 'warning', 'welcome') NOT NULL DEFAULT 'announcement',
+  `target_type` varchar(50)  DEFAULT NULL,
+  `expiration_type` varchar(50)  DEFAULT NULL,
+  `expires_on` date  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `position` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `subject` (`subject`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#297 - info - CREATE TABLE `ac_announcement_target_ids` (
+  `id` int unsigned NOT NULL auto_increment,
+  `announcement_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `target_id` varchar(50) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#298 - info - CREATE TABLE `ac_announcement_dismissals` (
+  `id` int unsigned NOT NULL auto_increment,
+  `announcement_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `user_id` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#299 - info - CREATE TABLE `ac_attachments` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'Attachment',
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `name` varchar(150)  DEFAULT NULL,
+  `mime_type` varchar(255) NOT NULL DEFAULT 'application/octet-stream',
+  `size` int(10) unsigned NOT NULL DEFAULT 0,
+  `location` varchar(50)  DEFAULT NULL,
+  `md5` varchar(32)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `created_on` (`created_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#300 - info - CREATE TABLE `ac_notifications` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'Notification',
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `sender_id` int(10) unsigned NULL DEFAULT NULL,
+  `sender_name` varchar(100)  DEFAULT NULL,
+  `sender_email` varchar(150)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `sender_id` (`sender_id`),
+  INDEX `created_on` (`created_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#301 - info - CREATE TABLE `ac_notification_recipients` (
+  `id` int unsigned NOT NULL auto_increment,
+  `notification_id` int(5) unsigned NULL DEFAULT NULL,
+  `recipient_id` int(10) unsigned NULL DEFAULT NULL,
+  `recipient_name` varchar(100)  DEFAULT NULL,
+  `recipient_email` varchar(150)  DEFAULT NULL,
+  `seen_on` datetime  DEFAULT NULL,
+  `read_on` datetime  DEFAULT NULL,
+  `is_mentioned` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  INDEX `recipient_id` (`recipient_id`),
+  UNIQUE `notification_recipient` (`notification_id`, `recipient_email`),
+  INDEX `seen_on` (`seen_on`),
+  INDEX `read_on` (`read_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#302 - info - CREATE TABLE `ac_subscriptions` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `user_id` int(10) unsigned NULL DEFAULT NULL,
+  `user_name` varchar(100)  DEFAULT NULL,
+  `user_email` varchar(150)  DEFAULT NULL,
+  `subscribed_on` datetime  DEFAULT NULL,
+  `code` varchar(10)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `user_id` (`user_id`),
+  UNIQUE `user_subscribed` (`user_email`, `parent_type`, `parent_id`),
+  INDEX `subscribed_on` (`subscribed_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#303 - info - CREATE TABLE `ac_comments` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'Comment',
+  `source` varchar(50)  DEFAULT NULL,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `body` longtext ,
+  `ip_address` varchar(45)  DEFAULT NULL,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `created_on` (`created_on`),
+  INDEX `created_by_id` (`created_by_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#304 - info - CREATE TABLE `ac_categories` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'Category',
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `name` varchar(100)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  UNIQUE `name` (`parent_type`, `parent_id`, `type`, `name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#305 - info - CREATE TABLE `ac_labels` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'Label',
+  `name` varchar(10)  DEFAULT NULL,
+  `is_default` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  UNIQUE `name` (`name`, `type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#306 - info - CREATE TABLE `ac_assignments` (
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `user_id` int(5) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`parent_type`, `parent_id`, `user_id`),
+  INDEX `user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#307 - info - CREATE TABLE `ac_subtasks` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'Subtask',
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `label_id` int(5) unsigned NULL DEFAULT NULL,
+  `assignee_id` int(10) unsigned NULL DEFAULT NULL,
+  `delegated_by_id` int(10) unsigned NULL DEFAULT NULL,
+  `priority` int(4) NULL DEFAULT NULL,
+  `body` longtext ,
+  `due_on` date  DEFAULT NULL,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  `completed_on` datetime  DEFAULT NULL,
+  `completed_by_id` int unsigned NULL DEFAULT NULL,
+  `completed_by_name` varchar(100)  DEFAULT NULL,
+  `completed_by_email` varchar(150)  DEFAULT NULL,
+  `position` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `created_on` (`created_on`),
+  INDEX `completed_on` (`completed_on`),
+  INDEX `position` (`position`),
+  INDEX `due_on` (`due_on`),
+  INDEX `assignee_id` (`assignee_id`),
+  INDEX `delegated_by_id` (`delegated_by_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#308 - info - CREATE TABLE `ac_favorites` (
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `user_id` int(10) unsigned NULL DEFAULT NULL,
+  UNIQUE `favorite_object` (`parent_type`, `parent_id`, `user_id`),
+  INDEX `user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#309 - info - CREATE TABLE `ac_code_snippets` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `syntax` varchar(50)  DEFAULT NULL,
+  `body` text ,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `created_on` (`created_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#310 - info - CREATE TABLE `ac_payment_gateways` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'ApplicationObject',
+  `raw_additional_properties` longtext ,
+  `is_default` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#311 - info - CREATE TABLE `ac_payments` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'ApplicationObject',
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `amount` decimal(13, 3) NOT NULL DEFAULT '0',
+  `currency_id` int(5) NULL DEFAULT NULL,
+  `gateway_type` varchar(50)  DEFAULT NULL,
+  `gateway_id` int(10) unsigned NULL DEFAULT NULL,
+  `status` enum('Paid', 'Pending', 'Deleted', 'Canceled')  DEFAULT NULL,
+  `reason` enum('Fraud', 'Refund', 'Other')  DEFAULT NULL,
+  `reason_text` text ,
+  `created_by_id` int(10) unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `paid_on` date  DEFAULT NULL,
+  `comment` text ,
+  `method` varchar(100)  DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `created_by_id` (`created_by_id`),
+  INDEX `currency_id` (`currency_id`),
+  INDEX `status` (`status`),
+  INDEX `created_on` (`created_on`),
+  INDEX `paid_on` (`paid_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#312 - info - CREATE TABLE `ac_reminders` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `send_to` varchar(15) NOT NULL DEFAULT 'self',
+  `send_on` datetime  DEFAULT NULL,
+  `sent_on` datetime  DEFAULT NULL,
+  `comment` text ,
+  `selected_user_id` int(10) unsigned NULL DEFAULT NULL,
+  `created_by_id` int(10) unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `dismissed_on` datetime  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `created_by_id` (`created_by_id`),
+  INDEX `created_on` (`created_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#313 - info - CREATE TABLE `ac_reminder_users` (
+  `reminder_id` int(10) unsigned NULL DEFAULT NULL,
+  `user_id` int(10) unsigned NULL DEFAULT NULL,
+  `user_name` varchar(100)  DEFAULT NULL,
+  `user_email` varchar(150)  DEFAULT NULL,
+  `dismissed_on` datetime  DEFAULT NULL,
+  INDEX `user_id` (`user_id`),
+  PRIMARY KEY (`reminder_id`, `user_email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#314 - info - CREATE TABLE `ac_custom_fields` (
+  `field_name` varchar(30)  DEFAULT NULL,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `label` varchar(50)  DEFAULT NULL,
+  `is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`field_name`, `parent_type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#315 - info - CREATE TABLE `ac_calendars` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'UserCalendar',
+  `name` varchar(255)  DEFAULT NULL,
+  `color` varchar(7)  DEFAULT NULL,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `share_type` varchar(255)  DEFAULT NULL,
+  `share_can_add_events` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `raw_additional_properties` longtext ,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `position` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `created_on` (`created_on`),
+  INDEX `position` (`position`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#316 - info - CREATE TABLE `ac_calendar_events` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'CalendarEvent',
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `name` varchar(255)  DEFAULT NULL,
+  `starts_on` date  DEFAULT NULL,
+  `starts_on_time` time  DEFAULT NULL,
+  `ends_on` date  DEFAULT NULL,
+  `repeat_event` varchar(150) NOT NULL DEFAULT 'dont',
+  `repeat_event_option` varchar(150)  DEFAULT NULL,
+  `repeat_until` date  DEFAULT NULL,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `position` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `created_on` (`created_on`),
+  INDEX `starts_on` (`starts_on`),
+  INDEX `starts_on_time` (`starts_on`, `starts_on_time`),
+  INDEX `ends_on` (`ends_on`),
+  INDEX `position` (`position`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#317 - info - CREATE TABLE `ac_calendar_users` (
+  `user_id` int(10) NOT NULL DEFAULT 0,
+  `calendar_id` int(10) NOT NULL DEFAULT 0,
+  INDEX `calendar_id` (`calendar_id`),
+  INDEX `user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#318 - info - CREATE TABLE `ac_data_sources` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'ApplicationObject',
+  `name` varchar(50)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `is_private` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `created_by_id` (`created_by_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#319 - info - CREATE TABLE `ac_data_source_mappings` (
+  `id` int unsigned NOT NULL auto_increment,
+  `project_id` int(11) NULL DEFAULT NULL,
+  `source_type` varchar(50) NOT NULL DEFAULT '',
+  `source_id` int(11) NULL DEFAULT NULL,
+  `parent_id` int(11) NULL DEFAULT NULL,
+  `parent_type` varchar(50) NOT NULL DEFAULT '',
+  `external_id` int(11) NULL DEFAULT NULL,
+  `external_type` varchar(50) NOT NULL DEFAULT '',
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#320 - info - CREATE TABLE `ac_companies` (
+  `id` int unsigned NOT NULL auto_increment,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `name` varchar(100)  DEFAULT NULL,
+  `note` varchar(255)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  `is_owner` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  INDEX `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#321 - info - CREATE TABLE `ac_projects` (
+  `id` int unsigned NOT NULL auto_increment,
+  `slug` varchar(50)  DEFAULT NULL,
+  `template_id` int(10) unsigned NULL DEFAULT NULL,
+  `based_on_type` varchar(50)  DEFAULT NULL,
+  `based_on_id` int(10) unsigned NULL DEFAULT NULL,
+  `company_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `category_id` int(10) unsigned NULL DEFAULT NULL,
+  `label_id` int(5) unsigned NULL DEFAULT NULL,
+  `currency_id` int(5) unsigned NULL DEFAULT NULL,
+  `budget` decimal(13, 3) unsigned  DEFAULT NULL,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `name` varchar(150)  DEFAULT NULL,
+  `leader_id` int(10) unsigned NULL DEFAULT NULL,
+  `leader_name` varchar(100)  DEFAULT NULL,
+  `leader_email` varchar(150)  DEFAULT NULL,
+  `overview` text ,
+  `completed_on` datetime  DEFAULT NULL,
+  `completed_by_id` int unsigned NULL DEFAULT NULL,
+  `completed_by_name` varchar(100)  DEFAULT NULL,
+  `completed_by_email` varchar(150)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  `custom_field_1` varchar(255)  DEFAULT NULL,
+  `custom_field_2` varchar(255)  DEFAULT NULL,
+  `custom_field_3` varchar(255)  DEFAULT NULL,
+  `mail_to_project_code` varchar(10)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `leader_id` (`leader_id`),
+  INDEX `completed_on` (`completed_on`),
+  INDEX `created_on` (`created_on`),
+  UNIQUE `slug` (`slug`),
+  UNIQUE `mail_to_project_code` (`mail_to_project_code`),
+  INDEX `company_id` (`company_id`),
+  INDEX `category_id` (`category_id`),
+  INDEX `label_id` (`label_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#322 - info - CREATE TABLE `ac_project_roles` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(50)  DEFAULT NULL,
+  `permissions` text ,
+  `is_default` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#323 - info - CREATE TABLE `ac_project_users` (
+  `user_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `project_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `permissions` text ,
+  `role_id` int(3) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`user_id`, `project_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#324 - info - CREATE TABLE `ac_project_requests` (
+  `id` int unsigned NOT NULL auto_increment,
+  `public_id` varchar(32) NOT NULL DEFAULT '',
+  `name` varchar(150)  DEFAULT NULL,
+  `body` text ,
+  `status` int(4) NOT NULL DEFAULT 0,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `created_by_company_id` int(10) NULL DEFAULT NULL,
+  `created_by_company_name` varchar(100) NOT NULL DEFAULT '',
+  `created_by_company_address` varchar(150) NOT NULL DEFAULT '',
+  `custom_field_1` text ,
+  `custom_field_2` text ,
+  `custom_field_3` text ,
+  `custom_field_4` text ,
+  `custom_field_5` text ,
+  `is_locked` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `taken_by_id` int(10) unsigned NULL DEFAULT NULL,
+  `taken_by_name` varchar(100)  DEFAULT NULL,
+  `taken_by_email` varchar(150)  DEFAULT NULL,
+  `closed_on` datetime  DEFAULT NULL,
+  `closed_by_id` int unsigned NULL DEFAULT NULL,
+  `closed_by_name` varchar(100)  DEFAULT NULL,
+  `closed_by_email` varchar(150)  DEFAULT NULL,
+  `last_comment_on` datetime  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `taken_by_id` (`taken_by_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#325 - info - CREATE TABLE `ac_project_objects` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'ProjectObject',
+  `source` varchar(50)  DEFAULT NULL,
+  `module` varchar(30) NOT NULL DEFAULT 'system',
+  `project_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `milestone_id` int(10) unsigned NULL DEFAULT NULL,
+  `category_id` int(10) unsigned NULL DEFAULT NULL,
+  `label_id` int(5) unsigned NULL DEFAULT NULL,
+  `assignee_id` int(10) unsigned NULL DEFAULT NULL,
+  `delegated_by_id` int(10) unsigned NULL DEFAULT NULL,
+  `name` varchar(150)  DEFAULT NULL,
+  `body` longtext ,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `visibility` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_visibility` tinyint(3) unsigned NULL DEFAULT NULL,
+  `priority` int(4) NULL DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  `due_on` date  DEFAULT NULL,
+  `completed_on` datetime  DEFAULT NULL,
+  `completed_by_id` int unsigned NULL DEFAULT NULL,
+  `completed_by_name` varchar(100)  DEFAULT NULL,
+  `completed_by_email` varchar(150)  DEFAULT NULL,
+  `is_locked` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `varchar_field_1` varchar(255)  DEFAULT NULL,
+  `varchar_field_2` varchar(255)  DEFAULT NULL,
+  `varchar_field_3` varchar(255)  DEFAULT NULL,
+  `integer_field_1` int(11) NULL DEFAULT NULL,
+  `integer_field_2` int(11) NULL DEFAULT NULL,
+  `integer_field_3` int(11) NULL DEFAULT NULL,
+  `float_field_1` decimal(12, 2)  DEFAULT NULL,
+  `float_field_2` decimal(12, 2)  DEFAULT NULL,
+  `float_field_3` decimal(12, 2)  DEFAULT NULL,
+  `text_field_1` text ,
+  `text_field_2` text ,
+  `text_field_3` text ,
+  `date_field_1` date  DEFAULT NULL,
+  `date_field_2` date  DEFAULT NULL,
+  `date_field_3` date  DEFAULT NULL,
+  `datetime_field_1` datetime  DEFAULT NULL,
+  `datetime_field_2` datetime  DEFAULT NULL,
+  `datetime_field_3` datetime  DEFAULT NULL,
+  `boolean_field_1` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `boolean_field_2` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `boolean_field_3` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `custom_field_1` varchar(255)  DEFAULT NULL,
+  `custom_field_2` varchar(255)  DEFAULT NULL,
+  `custom_field_3` varchar(255)  DEFAULT NULL,
+  `position` int(10) unsigned NULL DEFAULT NULL,
+  `version` int(11) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `module` (`module`),
+  INDEX `project_id` (`project_id`),
+  INDEX `milestone_id` (`milestone_id`),
+  INDEX `category_id` (`category_id`),
+  INDEX `assignee_id` (`assignee_id`),
+  INDEX `delegated_by_id` (`delegated_by_id`),
+  INDEX `due_on` (`due_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#326 - info - CREATE TABLE `ac_project_templates` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(150)  DEFAULT NULL,
+  `category_id` int(10) unsigned NULL DEFAULT NULL,
+  `company_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  `custom_field_1` varchar(255)  DEFAULT NULL,
+  `custom_field_2` varchar(255)  DEFAULT NULL,
+  `custom_field_3` varchar(255)  DEFAULT NULL,
+  `position` int(10) unsigned NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `created_on` (`created_on`),
+  INDEX `category_id` (`category_id`),
+  INDEX `company_id` (`company_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#327 - info - CREATE TABLE `ac_project_object_templates` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'ProjectObjectTemplate',
+  `subtype` varchar(50)  DEFAULT NULL,
+  `template_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `parent_id` int(10) unsigned NULL DEFAULT NULL,
+  `value` longtext ,
+  `position` int(10) unsigned NULL DEFAULT NULL,
+  `file_size` int(11) unsigned NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `template_id` (`template_id`),
+  INDEX `parent_id` (`parent_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#328 - info - CREATE TABLE `ac_shared_object_profiles` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `sharing_context` varchar(50) NOT NULL DEFAULT '',
+  `sharing_code` varchar(100) NOT NULL DEFAULT '',
+  `expires_on` date  DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `is_discoverable` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE `sharing` (`sharing_context`, `sharing_code`),
+  UNIQUE `parent` (`parent_type`, `parent_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#329 - info - CREATE TABLE `ac_file_versions` (
+  `id` int unsigned NOT NULL auto_increment,
+  `file_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `version_num` int(5) unsigned NOT NULL DEFAULT 0,
+  `name` varchar(255)  DEFAULT NULL,
+  `mime_type` varchar(255) NOT NULL DEFAULT 'application/octet-stream',
+  `size` int(10) unsigned NOT NULL DEFAULT 0,
+  `location` varchar(50)  DEFAULT NULL,
+  `md5` varchar(32)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `created_on` (`created_on`),
+  INDEX `file_version` (`file_id`, `version_num`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#330 - info - CREATE TABLE `ac_text_document_versions` (
+  `id` int unsigned NOT NULL auto_increment,
+  `text_document_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `version_num` int(5) unsigned NOT NULL DEFAULT 0,
+  `name` varchar(255)  DEFAULT NULL,
+  `body` longtext ,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `text_document_version` (`text_document_id`, `version_num`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#331 - info - CREATE TABLE `ac_public_task_forms` (
+  `id` int unsigned NOT NULL auto_increment,
+  `project_id` int(11) unsigned NOT NULL DEFAULT 0,
+  `slug` varchar(50) NOT NULL DEFAULT '',
+  `name` varchar(100)  DEFAULT NULL,
+  `body` text ,
+  `is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  UNIQUE `slug` (`slug`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#332 - info - CREATE TABLE `ac_related_tasks` (
+  `parent_task_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `related_task_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `note` varchar(255)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  INDEX `created_on` (`created_on`),
+  PRIMARY KEY (`parent_task_id`, `related_task_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#333 - info - CREATE TABLE `ac_task_segments` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(50)  DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#334 - info - CREATE TABLE `ac_status_updates` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_id` int(10) unsigned NULL DEFAULT NULL,
+  `message` varchar(255) NOT NULL DEFAULT '',
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `last_update_on` datetime  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `created_on` (`created_on`),
+  INDEX `last_update_on` (`last_update_on`),
+  INDEX `parent_id` (`parent_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#335 - info - CREATE TABLE `ac_documents` (
+  `id` int unsigned NOT NULL auto_increment,
+  `category_id` int(11) unsigned NULL DEFAULT NULL,
+  `type` enum('text', 'file') NOT NULL DEFAULT 'text',
+  `name` varchar(150)  DEFAULT NULL,
+  `body` text ,
+  `size` int(11) NULL DEFAULT NULL,
+  `mime_type` varchar(255)  DEFAULT NULL,
+  `location` varchar(50)  DEFAULT NULL,
+  `md5` varchar(32)  DEFAULT NULL,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `visibility` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_visibility` tinyint(3) unsigned NULL DEFAULT NULL,
+  `is_pinned` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#336 - info - CREATE TABLE `ac_time_records` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `job_type_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `record_date` date  DEFAULT NULL,
+  `value` decimal(12, 2)  DEFAULT NULL,
+  `user_id` int(10) unsigned NULL DEFAULT NULL,
+  `user_name` varchar(100)  DEFAULT NULL,
+  `user_email` varchar(150)  DEFAULT NULL,
+  `summary` text ,
+  `billable_status` int(3) unsigned NOT NULL DEFAULT 0,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `user_id` (`user_id`),
+  INDEX `job_type_id` (`job_type_id`),
+  INDEX `record_date` (`record_date`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#337 - info - CREATE TABLE `ac_job_types` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(100)  DEFAULT NULL,
+  `default_hourly_rate` decimal(13, 3) NOT NULL DEFAULT '0',
+  `is_default` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `is_active` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#338 - info - CREATE TABLE `ac_project_hourly_rates` (
+  `project_id` int(10) unsigned NULL DEFAULT NULL,
+  `job_type_id` int(5) unsigned NULL DEFAULT NULL,
+  `hourly_rate` decimal(13, 3) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`project_id`, `job_type_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#339 - info - CREATE TABLE `ac_expenses` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `category_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `record_date` date  DEFAULT NULL,
+  `value` decimal(13, 3) unsigned NOT NULL DEFAULT '0',
+  `user_id` int(10) unsigned NULL DEFAULT NULL,
+  `user_name` varchar(100)  DEFAULT NULL,
+  `user_email` varchar(150)  DEFAULT NULL,
+  `summary` text ,
+  `billable_status` int(3) unsigned NOT NULL DEFAULT 0,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `user_id` (`user_id`),
+  INDEX `category_id` (`category_id`),
+  INDEX `record_date` (`record_date`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#340 - info - CREATE TABLE `ac_expense_categories` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(100)  DEFAULT NULL,
+  `is_default` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#341 - info - CREATE TABLE `ac_estimates` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `job_type_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `value` decimal(12, 2) unsigned  DEFAULT NULL,
+  `comment` text ,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `created_on` (`created_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#342 - info - CREATE TABLE `ac_invoice_objects` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'InvoiceObject',
+  `company_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `company_name` varchar(150)  DEFAULT NULL,
+  `company_address` text ,
+  `currency_id` int(4) NOT NULL DEFAULT 0,
+  `language_id` int(3) NOT NULL DEFAULT 0,
+  `project_id` int(5) unsigned NULL DEFAULT NULL,
+  `name` varchar(255)  DEFAULT NULL,
+  `subtotal` decimal(13, 3) NOT NULL DEFAULT '0',
+  `tax` decimal(13, 3) NOT NULL DEFAULT '0',
+  `total` decimal(13, 3) NOT NULL DEFAULT '0',
+  `balance_due` decimal(13, 3) NOT NULL DEFAULT '0',
+  `paid_amount` decimal(13, 3) NOT NULL DEFAULT '0',
+  `note` text ,
+  `private_note` varchar(255)  DEFAULT NULL,
+  `status` int(4) NOT NULL DEFAULT 0,
+  `based_on_type` varchar(50)  DEFAULT NULL,
+  `based_on_id` int(10) unsigned NULL DEFAULT NULL,
+  `allow_payments` tinyint(3) NULL DEFAULT NULL,
+  `second_tax_is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `second_tax_is_compound` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `visibility` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_visibility` tinyint(3) unsigned NULL DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `recipient_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `recipient_name` varchar(100)  DEFAULT NULL,
+  `recipient_email` varchar(150)  DEFAULT NULL,
+  `sent_on` datetime  DEFAULT NULL,
+  `sent_by_id` int unsigned NULL DEFAULT NULL,
+  `sent_by_name` varchar(100)  DEFAULT NULL,
+  `sent_by_email` varchar(150)  DEFAULT NULL,
+  `reminder_sent_on` datetime  DEFAULT NULL,
+  `closed_on` datetime  DEFAULT NULL,
+  `closed_by_id` int unsigned NULL DEFAULT NULL,
+  `closed_by_name` varchar(100)  DEFAULT NULL,
+  `closed_by_email` varchar(150)  DEFAULT NULL,
+  `varchar_field_1` varchar(255)  DEFAULT NULL,
+  `varchar_field_2` varchar(255)  DEFAULT NULL,
+  `varchar_field_3` varchar(255)  DEFAULT NULL,
+  `varchar_field_4` varchar(255)  DEFAULT NULL,
+  `integer_field_1` int(11) NULL DEFAULT NULL,
+  `integer_field_2` int(11) NULL DEFAULT NULL,
+  `integer_field_3` int(11) NULL DEFAULT NULL,
+  `date_field_1` date  DEFAULT NULL,
+  `date_field_2` date  DEFAULT NULL,
+  `date_field_3` date  DEFAULT NULL,
+  `datetime_field_1` datetime  DEFAULT NULL,
+  `hash` varchar(50)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `created_on` (`created_on`),
+  INDEX `sent_on` (`sent_on`),
+  INDEX `closed_on` (`closed_on`),
+  INDEX `company_id` (`company_id`),
+  INDEX `project_id` (`project_id`),
+  INDEX `total` (`total`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#343 - info - CREATE TABLE `ac_invoice_object_items` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'InvoiceObjectItem',
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `first_tax_rate_id` int(3) unsigned NOT NULL DEFAULT 0,
+  `second_tax_rate_id` int(3) unsigned NOT NULL DEFAULT 0,
+  `description` text ,
+  `quantity` decimal(13, 3) unsigned NOT NULL DEFAULT '1',
+  `unit_cost` decimal(13, 3) NOT NULL DEFAULT '0',
+  `subtotal` decimal(13, 3) NOT NULL DEFAULT '0',
+  `first_tax` decimal(13, 3) NOT NULL DEFAULT '0',
+  `second_tax` decimal(13, 3) NOT NULL DEFAULT '0',
+  `total` decimal(13, 3) NOT NULL DEFAULT '0',
+  `second_tax_is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `second_tax_is_compound` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `position` int(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `parent_id` (`parent_id`, `parent_type`, `position`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#344 - info - CREATE TABLE `ac_invoice_item_templates` (
+  `id` int unsigned NOT NULL auto_increment,
+  `first_tax_rate_id` int(3) unsigned NOT NULL DEFAULT 0,
+  `second_tax_rate_id` int(3) unsigned NOT NULL DEFAULT 0,
+  `description` text ,
+  `quantity` decimal(13, 3) unsigned NOT NULL DEFAULT '1',
+  `unit_cost` decimal(13, 3) NOT NULL DEFAULT '0',
+  `position` int(11) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#345 - info - CREATE TABLE `ac_invoice_note_templates` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(150)  DEFAULT NULL,
+  `content` text ,
+  `position` int(10) unsigned NOT NULL DEFAULT 0,
+  `is_default` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#346 - info - CREATE TABLE `ac_invoice_related_records` (
+  `invoice_id` int(5) unsigned NULL DEFAULT NULL,
+  `item_id` int(10) unsigned NULL DEFAULT NULL,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  INDEX `parent` (`parent_type`, `parent_id`),
+  PRIMARY KEY (`invoice_id`, `item_id`, `parent_type`, `parent_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#347 - info - CREATE TABLE `ac_tax_rates` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(50)  DEFAULT NULL,
+  `percentage` decimal(6, 3)  DEFAULT NULL,
+  `is_default` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#348 - info - CREATE TABLE `ac_notebook_pages` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `name` varchar(255)  DEFAULT NULL,
+  `body` longtext ,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `is_locked` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  `last_version_on` datetime  DEFAULT NULL,
+  `last_version_by_id` int unsigned NULL DEFAULT NULL,
+  `last_version_by_name` varchar(100)  DEFAULT NULL,
+  `last_version_by_email` varchar(150)  DEFAULT NULL,
+  `position` int(10) unsigned NULL DEFAULT NULL,
+  `version` int(5) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#349 - info - CREATE TABLE `ac_notebook_page_versions` (
+  `id` int unsigned NOT NULL auto_increment,
+  `notebook_page_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `version` int(5) unsigned NOT NULL DEFAULT 0,
+  `name` varchar(255)  DEFAULT NULL,
+  `body` longtext ,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE `notebook_page_version` (`notebook_page_id`, `version`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#350 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('maintenance_message', 'environment', NULL)
+#351 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('first_run_on', 'environment', NULL)
+#352 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('help_improve_application', 'environment', 'b:1;')
+#353 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('identity_name', 'environment', 's:11:\"Application\";')
+#354 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('on_logout_url', 'environment', NULL)
+#355 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('last_frequently_activity', 'environment', NULL)
+#356 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('last_hourly_activity', 'environment', NULL)
+#357 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('last_daily_activity', 'environment', NULL)
+#358 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('control_tower_check_scheduled_tasks', 'environment', 'b:1;')
+#359 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('control_tower_check_disk_usage', 'environment', 'b:1;')
+#360 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('control_tower_check_performance', 'environment', 'b:1;')
+#361 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('disk_space_limit', 'environment', 'i:0;')
+#362 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('disk_space_email_notifications', 'environment', 'b:1;')
+#363 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('disk_space_low_space_threshold', 'environment', 'i:95;')
+#364 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('disk_space_old_versions_size', 'environment', NULL)
+#365 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('current_scheme', 'environment', 's:7:\"default\";')
+#366 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('custom_schemes', 'environment', NULL)
+#367 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('whitelisted_tags', 'environment', 'a:1:{s:11:\"environment\";a:3:{s:1:\"a\";a:5:{i:0;s:4:\"href\";i:1;s:5:\"title\";i:2;s:5:\"class\";i:3;s:9:\"object-id\";i:4;s:12:\"object-class\";}s:3:\"div\";a:4:{i:0;s:5:\"class\";i:1;s:16:\"placeholder-type\";i:2;s:21:\"placeholder-object-id\";i:3;s:17:\"placeholder-extra\";}s:3:\"img\";a:4:{i:0;s:3:\"src\";i:1;s:3:\"alt\";i:2;s:5:\"title\";i:3;s:5:\"class\";}}}')
+#368 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('require_index_rebuild', 'environment', 'b:0;')
+#369 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('firewall_enabled', 'environment', 'b:0;')
+#370 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('firewall_settings', 'environment', NULL)
+#371 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('firewall_white_list', 'environment', NULL)
+#372 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('firewall_black_list', 'environment', NULL)
+#373 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('firewall_temp_list', 'environment', NULL)
+#374 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('network_proxy_enabled', 'environment', 'b:0;')
+#375 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('network_proxy_protocol', 'environment', 's:4:\"http\";')
+#376 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('network_proxy_address', 'environment', 's:0:\"\";')
+#377 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('network_proxy_port', 'environment', 's:0:\"\";')
+#378 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('language', 'globalization', 'i:1;')
+#379 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('time_dst', 'globalization', 'b:0;')
+#380 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('time_first_week_day', 'globalization', 'i:0;')
+#381 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('time_timezone', 'globalization', 'i:0;')
+#382 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('time_workdays', 'globalization', 'a:5:{i:0;i:1;i:1;i:2;i:2;i:3;i:3;i:4;i:4;i:5;}')
+#383 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('format_date', 'globalization', 's:9:\"%b %e. %Y\";')
+#384 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('format_time', 'globalization', 's:8:\"%I:%M %p\";')
+#385 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('effective_work_hours', 'globalization', 'i:40;')
+#386 - info - BEGIN WORK
+#387 - info - Transaction level increased to 1. Message: Loading table data for 'globalization' @ AngieFrameworkModel
+#388 - info - INSERT INTO ac_currencies (name, code) VALUES ('Euro', 'EUR')
+#389 - info - INSERT INTO ac_currencies (name, code, is_default) VALUES ('US Dollar', 'USD', '1')
+#390 - info - INSERT INTO ac_currencies (name, code) VALUES ('British Pound', 'GBP')
+#391 - info - INSERT INTO ac_currencies (name, code) VALUES ('Japanese Yen', 'JPY')
+#392 - info - COMMIT
+#393 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('maintenance_enabled', 'authentication', 'b:0;')
+#394 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing', 'email', 's:6:\"native\";')
+#395 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_smtp_authenticate', 'email', 'b:0;')
+#396 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_smtp_host', 'email', NULL)
+#397 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_smtp_username', 'email', NULL)
+#398 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_smtp_password', 'email', NULL)
+#399 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_smtp_port', 'email', 'i:25;')
+#400 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_smtp_security', 'email', 'i:25;')
+#401 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_method', 'email', 's:9:\"instantly\";')
+#402 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_method_override', 'email', 'b:1;')
+#403 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_native_options', 'email', 's:9:\"-oi -f %s\";')
+#404 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_mark_as_bulk', 'email', 'b:1;')
+#405 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('notifications_from_force', 'email', 'b:1;')
+#406 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('notifications_from_name', 'email', 's:0:\"\";')
+#407 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('notifications_from_email', 'email', 's:0:\"\";')
+#408 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('conflict_notifications_delivery', 'email', 'i:2;')
+#409 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('control_tower_check_reply_to_comment', 'email', 'b:1;')
+#410 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('control_tower_check_email_queue', 'email', 'b:1;')
+#411 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('control_tower_check_email_conflicts', 'email', 'b:1;')
+#412 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('disable_mailbox_on_successive_connection_failures', 'email', 'b:1;')
+#413 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('disable_mailbox_successive_connection_attempts', 'email', 'i:3;')
+#414 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('disable_mailbox_notify_administrator', 'email', 'b:1;')
+#415 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('default_homescreen_tab_id', 'homescreens', NULL)
+#416 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('notifications_show_indicators', 'notifications', 'i:2;')
+#417 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('email_notifications_enabled', 'notifications', 'b:1;')
+#418 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('popup_show_only_unread', 'notifications', 'b:0;')
+#419 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('who_can_override_channel_settings', 'notifications', 'a:1:{s:5:\"email\";a:1:{i:0;s:6:\"Member\";}}')
+#420 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'NEW', 'a:2:{s:8:\"fg_color\";s:7:\"#000000\";s:8:\"bg_color\";s:7:\"#FFFF00\";}')
+#421 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'CONFIRMED', 'a:2:{s:8:\"fg_color\";s:7:\"#FFFFFF\";s:8:\"bg_color\";s:7:\"#F26522\";}')
+#422 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'WORKS4ME', 'a:2:{s:8:\"fg_color\";s:7:\"#FFFFFF\";s:8:\"bg_color\";s:7:\"#00A651\";}')
+#423 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'DUPLICATE', 'a:2:{s:8:\"fg_color\";s:7:\"#FFFFFF\";s:8:\"bg_color\";s:7:\"#00A651\";}')
+#424 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'WONTFIX', 'a:2:{s:8:\"fg_color\";s:7:\"#FFFFFF\";s:8:\"bg_color\";s:7:\"#00A651\";}')
+#425 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'ASSIGNED', 'a:2:{s:8:\"fg_color\";s:7:\"#FFFFFF\";s:8:\"bg_color\";s:7:\"#FF0000\";}')
+#426 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'BLOCKED', 'a:2:{s:8:\"fg_color\";s:7:\"#000000\";s:8:\"bg_color\";s:7:\"#ACACAC\";}')
+#427 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'INPROGRESS', 'a:2:{s:8:\"fg_color\";s:7:\"#000000\";s:8:\"bg_color\";s:7:\"#FFFF00\";}')
+#428 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'FIXED', 'a:2:{s:8:\"fg_color\";s:7:\"#FFFFFF\";s:8:\"bg_color\";s:7:\"#0000FF\";}')
+#429 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'REOPENED', 'a:2:{s:8:\"fg_color\";s:7:\"#FFFFFF\";s:8:\"bg_color\";s:7:\"#FF0000\";}')
+#430 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'VERIFIED', 'a:2:{s:8:\"fg_color\";s:7:\"#FFFFFF\";s:8:\"bg_color\";s:7:\"#00A651\";}')
+#431 - info - SELECT value FROM ac_config_options WHERE name = 'whitelisted_tags'
+#432 - info - SELECT COUNT(name) FROM ac_config_options WHERE name = 'whitelisted_tags'
+#433 - info - UPDATE ac_config_options SET value = 'a:2:{s:11:\"environment\";a:3:{s:1:\"a\";a:5:{i:0;s:4:\"href\";i:1;s:5:\"title\";i:2;s:5:\"class\";i:3;s:9:\"object-id\";i:4;s:12:\"object-class\";}s:3:\"div\";a:4:{i:0;s:5:\"class\";i:1;s:16:\"placeholder-type\";i:2;s:21:\"placeholder-object-id\";i:3;s:17:\"placeholder-extra\";}s:3:\"img\";a:4:{i:0;s:3:\"src\";i:1;s:3:\"alt\";i:2;s:5:\"title\";i:3;s:5:\"class\";}}s:13:\"visual_editor\";a:12:{s:1:\"p\";a:2:{i:0;s:5:\"class\";i:1;s:5:\"style\";}s:3:\"img\";a:3:{i:0;s:10:\"image-type\";i:1;s:9:\"object-id\";i:2;s:5:\"class\";}s:6:\"strike\";a:2:{i:0;s:5:\"class\";i:1;s:5:\"style\";}s:4:\"span\";a:4:{i:0;s:5:\"class\";i:1;s:27:\"data-redactor-inlinemethods\";i:2;s:13:\"data-redactor\";i:3;s:9:\"object-id\";}s:1:\"a\";a:2:{i:0;s:5:\"class\";i:1;s:4:\"href\";}s:10:\"blockquote\";N;s:2:\"br\";N;s:1:\"b\";N;s:6:\"strong\";N;s:1:\"i\";N;s:2:\"em\";N;s:1:\"u\";N;}}' WHERE name = 'whitelisted_tags'
+#434 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('allow_payments', 'payments', 'b:0;')
+#435 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('allow_payments_for_invoice', 'payments', 'b:0;')
+#436 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('payment_methods_common', 'payments', 'a:5:{i:0;s:12:\"Bank Deposit\";i:1;s:5:\"Check\";i:2;s:4:\"Cash\";i:3;s:6:\"Credit\";i:4;s:5:\"Debit\";}')
+#437 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('payment_methods_credit_card', 'payments', 'a:6:{i:0;s:11:\"Credit Card\";i:1;s:18:\"Credit Card (Visa)\";i:2;s:24:\"Credit Card (Mastercard)\";i:3;s:22:\"Credit Card (Discover)\";i:4;s:30:\"Credit Card (American Express)\";i:5;s:20:\"Credit Card (Diners)\";}')
+#438 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('payment_methods_online', 'payments', 'a:3:{i:0;s:14:\"Online Payment\";i:1;s:23:\"Online Payment (PayPal)\";i:2;s:26:\"Online Payment (Authorize)\";}')
+#439 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('search_provider', 'search', 's:19:\"MySqlSearchProvider\";')
+#440 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('search_initialized_on', 'search', NULL)
+#441 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('elastic_search_hosts', 'search', 's:14:\"localhost:9200\";')
+#442 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('calendar_config', 'calendars', NULL)
+#443 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('calendar_sidebar_hidden', 'calendars', NULL)
+#444 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('default_project_calendar_filter', 'calendars', 'a:1:{s:4:\"type\";s:25:\"everything_in_my_projects\";}')
+#445 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_tabs', 'system', 'a:5:{i:0;s:7:\"outline\";i:1;s:10:\"milestones\";i:2;s:5:\"tasks\";i:3;s:11:\"discussions\";i:4;s:5:\"files\";}')
+#446 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('clients_can_delegate_to_employees', 'system', 'b:1;')
+#447 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('license_details_updated_on', 'system', 'i:1395066418;')
+#448 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('latest_version', 'system', 's:7:\"current\";')
+#449 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('latest_available_version', 'system', 's:7:\"current\";')
+#450 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('license_copyright_removed', 'system', 'b:0;')
+#451 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('license_expires', 'system', 'i:1352592000;')
+#452 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('remove_branding_url', 'system', NULL)
+#453 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('renew_support_url', 'system', NULL)
+#454 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('update_instructions_url', 'system', NULL)
+#455 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('update_archive_url', 'system', NULL)
+#456 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('office_address', 'system', NULL)
+#457 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('office_fax', 'system', NULL)
+#458 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('office_homepage', 'system', NULL)
+#459 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('office_phone', 'system', NULL)
+#460 - info - SELECT COUNT(name) FROM ac_config_options WHERE name = 'identity_name'
+#461 - info - UPDATE ac_config_options SET value = 's:8:\"Projects\";' WHERE name = 'identity_name'
+#462 - info - SELECT COUNT(name) FROM ac_config_options WHERE name = 'identity_client_welcome_message'
+#463 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('identity_client_welcome_message', 'system', 's:193:\"Welcome to our project collaboration environment! You will find all your projects by clicking the \'Projects\' icon in the main menu. To return to this page, click on the \'Home Screen\' menu item.\";')
+#464 - info - SELECT COUNT(name) FROM ac_config_options WHERE name = 'identity_logo_on_white'
+#465 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('identity_logo_on_white', 'system', 'b:0;')
+#466 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('title', 'system', NULL)
+#467 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('phone_mobile', 'system', NULL)
+#468 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('phone_work', 'system', NULL)
+#469 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('im_type', 'system', NULL)
+#470 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('im_value', 'system', NULL)
+#471 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('welcome_message', 'system', NULL)
+#472 - info - SELECT COUNT(name) FROM ac_config_options WHERE name = 'who_can_override_channel_settings'
+#473 - info - UPDATE ac_config_options SET value = 'a:1:{s:5:\"email\";a:2:{i:0;s:6:\"Member\";i:1;s:7:\"Manager\";}}' WHERE name = 'who_can_override_channel_settings'
+#474 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('default_project_object_visibility', 'system', 'i:1;')
+#475 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('first_milestone_starts_on', 'system', NULL)
+#476 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('job_type_id', 'system', NULL)
+#477 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_requests_enabled', 'system', 'b:0;')
+#478 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_requests_page_title', 'system', 's:17:\"Request a Project\";')
+#479 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_requests_page_description', 'system', 's:38:\"Please tell us more about your project\";')
+#480 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_requests_custom_fields', 'system', 'a:5:{s:14:\"custom_field_1\";a:2:{s:7:\"enabled\";b:1;s:4:\"name\";s:6:\"Budget\";}s:14:\"custom_field_2\";a:2:{s:7:\"enabled\";b:1;s:4:\"name\";s:10:\"Time Frame\";}s:14:\"custom_field_3\";a:2:{s:7:\"enabled\";b:0;s:4:\"name\";s:0:\"\";}s:14:\"custom_field_4\";a:2:{s:7:\"enabled\";b:0;s:4:\"name\";s:0:\"\";}s:14:\"custom_field_5\";a:2:{s:7:\"enabled\";b:0;s:4:\"name\";s:0:\"\";}}')
+#481 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_requests_captcha_enabled', 'system', 'b:0;')
+#482 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_requests_notify_user_ids', 'system', NULL)
+#483 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('control_tower_check_for_new_version', 'system', 'b:1;')
+#484 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('new_modules_available', 'system', 'b:0;')
+#485 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('update_download_progress', 'system', 'i:0;')
+#486 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mail_to_project', 'system', 'i:0;')
+#487 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mail_to_project_default_action', 'system', 'i:0;')
+#488 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_sync_locked', 'system', 'b:0;')
+#489 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_last_synced_on', 'system', NULL)
+#490 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_last_sync_locked_until', 'system', NULL)
+#491 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('my_tasks_labels_filter', 'system', 's:3:\"any\";')
+#492 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('my_tasks_labels_filter_data', 'system', NULL)
+#493 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('multiple_assignees_for_milestones_and_tasks', 'system', 'b:1;')
+#494 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('morning_paper_enabled', 'system', 'b:1;')
+#495 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('first_morning_paper', 'system', 'b:1;')
+#496 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('morning_paper_include_all_projects', 'system', 'b:0;')
+#497 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('morning_paper_last_activity', 'system', 'i:0;')
+#498 - info - INSERT INTO ac_custom_fields (field_name, parent_type) VALUES ('custom_field_1', 'Project')
+#499 - info - INSERT INTO ac_custom_fields (field_name, parent_type) VALUES ('custom_field_2', 'Project')
+#500 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - SHOW TABLES LIKE 'ac_config_options'
+#4 - info - SHOW TABLES LIKE 'ac_config_options'
+#5 - info - DROP TABLE `ac_config_options`
+#6 - info - SHOW TABLES LIKE 'ac_config_option_values'
+#7 - info - SHOW TABLES LIKE 'ac_config_option_values'
+#8 - info - DROP TABLE `ac_config_option_values`
+#9 - info - SHOW TABLES LIKE 'ac_modules'
+#10 - info - SHOW TABLES LIKE 'ac_modules'
+#11 - info - DROP TABLE `ac_modules`
+#12 - info - SHOW TABLES LIKE 'ac_executed_model_migrations'
+#13 - info - SHOW TABLES LIKE 'ac_executed_model_migrations'
+#14 - info - DROP TABLE `ac_executed_model_migrations`
+#15 - info - SHOW TABLES LIKE 'ac_update_history'
+#16 - info - SHOW TABLES LIKE 'ac_update_history'
+#17 - info - DROP TABLE `ac_update_history`
+#18 - info - SHOW TABLES LIKE 'ac_access_logs'
+#19 - info - SHOW TABLES LIKE 'ac_access_logs'
+#20 - info - DROP TABLE `ac_access_logs`
+#21 - info - SHOW TABLES LIKE 'ac_access_logs_archive'
+#22 - info - SHOW TABLES LIKE 'ac_access_logs_archive'
+#23 - info - DROP TABLE `ac_access_logs_archive`
+#24 - info - SHOW TABLES LIKE 'ac_object_contexts'
+#25 - info - SHOW TABLES LIKE 'ac_object_contexts'
+#26 - info - DROP TABLE `ac_object_contexts`
+#27 - info - SHOW TABLES LIKE 'ac_routing_cache'
+#28 - info - SHOW TABLES LIKE 'ac_routing_cache'
+#29 - info - DROP TABLE `ac_routing_cache`
+#30 - info - SHOW TABLES LIKE 'ac_currencies'
+#31 - info - SHOW TABLES LIKE 'ac_currencies'
+#32 - info - DROP TABLE `ac_currencies`
+#33 - info - SHOW TABLES LIKE 'ac_day_offs'
+#34 - info - SHOW TABLES LIKE 'ac_day_offs'
+#35 - info - DROP TABLE `ac_day_offs`
+#36 - info - SHOW TABLES LIKE 'ac_languages'
+#37 - info - SHOW TABLES LIKE 'ac_languages'
+#38 - info - DROP TABLE `ac_languages`
+#39 - info - SHOW TABLES LIKE 'ac_language_phrases'
+#40 - info - SHOW TABLES LIKE 'ac_language_phrases'
+#41 - info - DROP TABLE `ac_language_phrases`
+#42 - info - SHOW TABLES LIKE 'ac_language_phrase_translations'
+#43 - info - SHOW TABLES LIKE 'ac_language_phrase_translations'
+#44 - info - DROP TABLE `ac_language_phrase_translations`
+#45 - info - SHOW TABLES LIKE 'ac_api_client_subscriptions'
+#46 - info - SHOW TABLES LIKE 'ac_api_client_subscriptions'
+#47 - info - DROP TABLE `ac_api_client_subscriptions`
+#48 - info - SHOW TABLES LIKE 'ac_users'
+#49 - info - SHOW TABLES LIKE 'ac_users'
+#50 - info - DROP TABLE `ac_users`
+#51 - info - SHOW TABLES LIKE 'ac_user_addresses'
+#52 - info - SHOW TABLES LIKE 'ac_user_addresses'
+#53 - info - DROP TABLE `ac_user_addresses`
+#54 - info - SHOW TABLES LIKE 'ac_user_sessions'
+#55 - info - SHOW TABLES LIKE 'ac_user_sessions'
+#56 - info - DROP TABLE `ac_user_sessions`
+#57 - info - SHOW TABLES LIKE 'ac_security_logs'
+#58 - info - SHOW TABLES LIKE 'ac_security_logs'
+#59 - info - DROP TABLE `ac_security_logs`
+#60 - info - SHOW TABLES LIKE 'ac_api_token_logs'
+#61 - info - SHOW TABLES LIKE 'ac_api_token_logs'
+#62 - info - DROP TABLE `ac_api_token_logs`
+#63 - info - SHOW TABLES LIKE 'ac_activity_logs'
+#64 - info - SHOW TABLES LIKE 'ac_activity_logs'
+#65 - info - DROP TABLE `ac_activity_logs`
+#66 - info - SHOW TABLES LIKE 'ac_data_filters'
+#67 - info - SHOW TABLES LIKE 'ac_data_filters'
+#68 - info - DROP TABLE `ac_data_filters`
+#69 - info - SHOW TABLES LIKE 'ac_modification_logs'
+#70 - info - SHOW TABLES LIKE 'ac_modification_logs'
+#71 - info - DROP TABLE `ac_modification_logs`
+#72 - info - SHOW TABLES LIKE 'ac_modification_log_values'
+#73 - info - SHOW TABLES LIKE 'ac_modification_log_values'
+#74 - info - DROP TABLE `ac_modification_log_values`
+#75 - info - SHOW TABLES LIKE 'ac_mailing_activity_logs'
+#76 - info - SHOW TABLES LIKE 'ac_mailing_activity_logs'
+#77 - info - DROP TABLE `ac_mailing_activity_logs`
+#78 - info - SHOW TABLES LIKE 'ac_outgoing_messages'
+#79 - info - SHOW TABLES LIKE 'ac_outgoing_messages'
+#80 - info - DROP TABLE `ac_outgoing_messages`
+#81 - info - SHOW TABLES LIKE 'ac_incoming_mail_attachments'
+#82 - info - SHOW TABLES LIKE 'ac_incoming_mail_attachments'
+#83 - info - DROP TABLE `ac_incoming_mail_attachments`
+#84 - info - SHOW TABLES LIKE 'ac_incoming_mail_filters'
+#85 - info - SHOW TABLES LIKE 'ac_incoming_mail_filters'
+#86 - info - DROP TABLE `ac_incoming_mail_filters`
+#87 - info - SHOW TABLES LIKE 'ac_incoming_mailboxes'
+#88 - info - SHOW TABLES LIKE 'ac_incoming_mailboxes'
+#89 - info - DROP TABLE `ac_incoming_mailboxes`
+#90 - info - SHOW TABLES LIKE 'ac_incoming_mails'
+#91 - info - SHOW TABLES LIKE 'ac_incoming_mails'
+#92 - info - DROP TABLE `ac_incoming_mails`
+#93 - info - SHOW TABLES LIKE 'ac_homescreen_tabs'
+#94 - info - SHOW TABLES LIKE 'ac_homescreen_tabs'
+#95 - info - DROP TABLE `ac_homescreen_tabs`
+#96 - info - SHOW TABLES LIKE 'ac_homescreen_widgets'
+#97 - info - SHOW TABLES LIKE 'ac_homescreen_widgets'
+#98 - info - DROP TABLE `ac_homescreen_widgets`
+#99 - info - SHOW TABLES LIKE 'ac_announcements'
+#100 - info - SHOW TABLES LIKE 'ac_announcements'
+#101 - info - DROP TABLE `ac_announcements`
+#102 - info - SHOW TABLES LIKE 'ac_announcement_target_ids'
+#103 - info - SHOW TABLES LIKE 'ac_announcement_target_ids'
+#104 - info - DROP TABLE `ac_announcement_target_ids`
+#105 - info - SHOW TABLES LIKE 'ac_announcement_dismissals'
+#106 - info - SHOW TABLES LIKE 'ac_announcement_dismissals'
+#107 - info - DROP TABLE `ac_announcement_dismissals`
+#108 - info - SHOW TABLES LIKE 'ac_attachments'
+#109 - info - SHOW TABLES LIKE 'ac_attachments'
+#110 - info - DROP TABLE `ac_attachments`
+#111 - info - SHOW TABLES LIKE 'ac_notifications'
+#112 - info - SHOW TABLES LIKE 'ac_notifications'
+#113 - info - DROP TABLE `ac_notifications`
+#114 - info - SHOW TABLES LIKE 'ac_notification_recipients'
+#115 - info - SHOW TABLES LIKE 'ac_notification_recipients'
+#116 - info - DROP TABLE `ac_notification_recipients`
+#117 - info - SHOW TABLES LIKE 'ac_subscriptions'
+#118 - info - SHOW TABLES LIKE 'ac_subscriptions'
+#119 - info - DROP TABLE `ac_subscriptions`
+#120 - info - SHOW TABLES LIKE 'ac_comments'
+#121 - info - SHOW TABLES LIKE 'ac_comments'
+#122 - info - DROP TABLE `ac_comments`
+#123 - info - SHOW TABLES LIKE 'ac_categories'
+#124 - info - SHOW TABLES LIKE 'ac_categories'
+#125 - info - DROP TABLE `ac_categories`
+#126 - info - SHOW TABLES LIKE 'ac_labels'
+#127 - info - SHOW TABLES LIKE 'ac_labels'
+#128 - info - DROP TABLE `ac_labels`
+#129 - info - SHOW TABLES LIKE 'ac_assignments'
+#130 - info - SHOW TABLES LIKE 'ac_assignments'
+#131 - info - DROP TABLE `ac_assignments`
+#132 - info - SHOW TABLES LIKE 'ac_subtasks'
+#133 - info - SHOW TABLES LIKE 'ac_subtasks'
+#134 - info - DROP TABLE `ac_subtasks`
+#135 - info - SHOW TABLES LIKE 'ac_favorites'
+#136 - info - SHOW TABLES LIKE 'ac_favorites'
+#137 - info - DROP TABLE `ac_favorites`
+#138 - info - SHOW TABLES LIKE 'ac_code_snippets'
+#139 - info - SHOW TABLES LIKE 'ac_code_snippets'
+#140 - info - DROP TABLE `ac_code_snippets`
+#141 - info - SHOW TABLES LIKE 'ac_payment_gateways'
+#142 - info - SHOW TABLES LIKE 'ac_payment_gateways'
+#143 - info - DROP TABLE `ac_payment_gateways`
+#144 - info - SHOW TABLES LIKE 'ac_payments'
+#145 - info - SHOW TABLES LIKE 'ac_payments'
+#146 - info - DROP TABLE `ac_payments`
+#147 - info - SHOW TABLES LIKE 'ac_reminders'
+#148 - info - SHOW TABLES LIKE 'ac_reminders'
+#149 - info - DROP TABLE `ac_reminders`
+#150 - info - SHOW TABLES LIKE 'ac_reminder_users'
+#151 - info - SHOW TABLES LIKE 'ac_reminder_users'
+#152 - info - DROP TABLE `ac_reminder_users`
+#153 - info - SHOW TABLES LIKE 'ac_custom_fields'
+#154 - info - SHOW TABLES LIKE 'ac_custom_fields'
+#155 - info - DROP TABLE `ac_custom_fields`
+#156 - info - SHOW TABLES LIKE 'ac_calendars'
+#157 - info - SHOW TABLES LIKE 'ac_calendars'
+#158 - info - DROP TABLE `ac_calendars`
+#159 - info - SHOW TABLES LIKE 'ac_calendar_events'
+#160 - info - SHOW TABLES LIKE 'ac_calendar_events'
+#161 - info - DROP TABLE `ac_calendar_events`
+#162 - info - SHOW TABLES LIKE 'ac_calendar_users'
+#163 - info - SHOW TABLES LIKE 'ac_calendar_users'
+#164 - info - DROP TABLE `ac_calendar_users`
+#165 - info - SHOW TABLES LIKE 'ac_data_sources'
+#166 - info - SHOW TABLES LIKE 'ac_data_sources'
+#167 - info - DROP TABLE `ac_data_sources`
+#168 - info - SHOW TABLES LIKE 'ac_data_source_mappings'
+#169 - info - SHOW TABLES LIKE 'ac_data_source_mappings'
+#170 - info - DROP TABLE `ac_data_source_mappings`
+#171 - info - SHOW TABLES LIKE 'ac_companies'
+#172 - info - SHOW TABLES LIKE 'ac_companies'
+#173 - info - DROP TABLE `ac_companies`
+#174 - info - SHOW TABLES LIKE 'ac_projects'
+#175 - info - SHOW TABLES LIKE 'ac_projects'
+#176 - info - DROP TABLE `ac_projects`
+#177 - info - SHOW TABLES LIKE 'ac_project_roles'
+#178 - info - SHOW TABLES LIKE 'ac_project_roles'
+#179 - info - DROP TABLE `ac_project_roles`
+#180 - info - SHOW TABLES LIKE 'ac_project_users'
+#181 - info - SHOW TABLES LIKE 'ac_project_users'
+#182 - info - DROP TABLE `ac_project_users`
+#183 - info - SHOW TABLES LIKE 'ac_project_requests'
+#184 - info - SHOW TABLES LIKE 'ac_project_requests'
+#185 - info - DROP TABLE `ac_project_requests`
+#186 - info - SHOW TABLES LIKE 'ac_project_objects'
+#187 - info - SHOW TABLES LIKE 'ac_project_objects'
+#188 - info - DROP TABLE `ac_project_objects`
+#189 - info - SHOW TABLES LIKE 'ac_project_templates'
+#190 - info - SHOW TABLES LIKE 'ac_project_templates'
+#191 - info - DROP TABLE `ac_project_templates`
+#192 - info - SHOW TABLES LIKE 'ac_project_object_templates'
+#193 - info - SHOW TABLES LIKE 'ac_project_object_templates'
+#194 - info - DROP TABLE `ac_project_object_templates`
+#195 - info - SHOW TABLES LIKE 'ac_shared_object_profiles'
+#196 - info - SHOW TABLES LIKE 'ac_shared_object_profiles'
+#197 - info - DROP TABLE `ac_shared_object_profiles`
+#198 - info - SHOW TABLES LIKE 'ac_file_versions'
+#199 - info - SHOW TABLES LIKE 'ac_file_versions'
+#200 - info - DROP TABLE `ac_file_versions`
+#201 - info - SHOW TABLES LIKE 'ac_text_document_versions'
+#202 - info - SHOW TABLES LIKE 'ac_text_document_versions'
+#203 - info - DROP TABLE `ac_text_document_versions`
+#204 - info - SHOW TABLES LIKE 'ac_public_task_forms'
+#205 - info - SHOW TABLES LIKE 'ac_public_task_forms'
+#206 - info - DROP TABLE `ac_public_task_forms`
+#207 - info - SHOW TABLES LIKE 'ac_related_tasks'
+#208 - info - SHOW TABLES LIKE 'ac_related_tasks'
+#209 - info - DROP TABLE `ac_related_tasks`
+#210 - info - SHOW TABLES LIKE 'ac_task_segments'
+#211 - info - SHOW TABLES LIKE 'ac_task_segments'
+#212 - info - DROP TABLE `ac_task_segments`
+#213 - info - SHOW TABLES LIKE 'ac_status_updates'
+#214 - info - SHOW TABLES LIKE 'ac_status_updates'
+#215 - info - DROP TABLE `ac_status_updates`
+#216 - info - SHOW TABLES LIKE 'ac_documents'
+#217 - info - SHOW TABLES LIKE 'ac_documents'
+#218 - info - DROP TABLE `ac_documents`
+#219 - info - SHOW TABLES LIKE 'ac_time_records'
+#220 - info - SHOW TABLES LIKE 'ac_time_records'
+#221 - info - DROP TABLE `ac_time_records`
+#222 - info - SHOW TABLES LIKE 'ac_job_types'
+#223 - info - SHOW TABLES LIKE 'ac_job_types'
+#224 - info - DROP TABLE `ac_job_types`
+#225 - info - SHOW TABLES LIKE 'ac_project_hourly_rates'
+#226 - info - SHOW TABLES LIKE 'ac_project_hourly_rates'
+#227 - info - DROP TABLE `ac_project_hourly_rates`
+#228 - info - SHOW TABLES LIKE 'ac_expenses'
+#229 - info - SHOW TABLES LIKE 'ac_expenses'
+#230 - info - DROP TABLE `ac_expenses`
+#231 - info - SHOW TABLES LIKE 'ac_expense_categories'
+#232 - info - SHOW TABLES LIKE 'ac_expense_categories'
+#233 - info - DROP TABLE `ac_expense_categories`
+#234 - info - SHOW TABLES LIKE 'ac_estimates'
+#235 - info - SHOW TABLES LIKE 'ac_estimates'
+#236 - info - DROP TABLE `ac_estimates`
+#237 - info - SHOW TABLES LIKE 'ac_invoice_objects'
+#238 - info - SHOW TABLES LIKE 'ac_invoice_objects'
+#239 - info - DROP TABLE `ac_invoice_objects`
+#240 - info - SHOW TABLES LIKE 'ac_invoice_object_items'
+#241 - info - SHOW TABLES LIKE 'ac_invoice_object_items'
+#242 - info - DROP TABLE `ac_invoice_object_items`
+#243 - info - SHOW TABLES LIKE 'ac_invoice_item_templates'
+#244 - info - SHOW TABLES LIKE 'ac_invoice_item_templates'
+#245 - info - DROP TABLE `ac_invoice_item_templates`
+#246 - info - SHOW TABLES LIKE 'ac_invoice_note_templates'
+#247 - info - SHOW TABLES LIKE 'ac_invoice_note_templates'
+#248 - info - DROP TABLE `ac_invoice_note_templates`
+#249 - info - SHOW TABLES LIKE 'ac_invoice_related_records'
+#250 - info - SHOW TABLES LIKE 'ac_invoice_related_records'
+#251 - info - DROP TABLE `ac_invoice_related_records`
+#252 - info - SHOW TABLES LIKE 'ac_tax_rates'
+#253 - info - SHOW TABLES LIKE 'ac_tax_rates'
+#254 - info - DROP TABLE `ac_tax_rates`
+#255 - info - SHOW TABLES LIKE 'ac_notebook_pages'
+#256 - info - SHOW TABLES LIKE 'ac_notebook_pages'
+#257 - info - DROP TABLE `ac_notebook_pages`
+#258 - info - SHOW TABLES LIKE 'ac_notebook_page_versions'
+#259 - info - SHOW TABLES LIKE 'ac_notebook_page_versions'
+#260 - info - DROP TABLE `ac_notebook_page_versions`
+#261 - info - CREATE TABLE `ac_config_options` (
+  `name` varchar(100)  DEFAULT NULL,
+  `module` varchar(30)  DEFAULT NULL,
+  `value` text ,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#262 - info - CREATE TABLE `ac_config_option_values` (
+  `name` varchar(50)  DEFAULT NULL,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `value` text ,
+  INDEX `parent` (`parent_type`, `parent_id`),
+  PRIMARY KEY (`name`, `parent_type`, `parent_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#263 - info - CREATE TABLE `ac_modules` (
+  `name` varchar(50)  DEFAULT NULL,
+  `is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `position` int(6) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#264 - info - CREATE TABLE `ac_executed_model_migrations` (
+  `id` int unsigned NOT NULL auto_increment,
+  `migration` varchar(255) NOT NULL DEFAULT '',
+  `changeset_timestamp` date  DEFAULT NULL,
+  `changeset_name` varchar(255)  DEFAULT NULL,
+  `executed_on` datetime  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE `migration` (`migration`),
+  INDEX `executed_on` (`executed_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#265 - info - CREATE TABLE `ac_update_history` (
+  `id` smallint unsigned NOT NULL auto_increment,
+  `version` varchar(30) NOT NULL DEFAULT '',
+  `created_on` datetime  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE `version` (`version`),
+  INDEX `created_on` (`created_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#266 - info - CREATE TABLE `ac_access_logs` (
+  `id` bigint unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `accessed_by_id` int(10) unsigned NULL DEFAULT NULL,
+  `accessed_by_name` varchar(100)  DEFAULT NULL,
+  `accessed_by_email` varchar(150)  DEFAULT NULL,
+  `accessed_on` datetime  DEFAULT NULL,
+  `ip_address` varchar(50)  DEFAULT NULL,
+  `is_download` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `accessed_by_id` (`accessed_by_id`),
+  INDEX `accessed_on` (`accessed_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#267 - info - CREATE TABLE `ac_access_logs_archive` (
+  `id` bigint unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `accessed_by_id` int(10) unsigned NULL DEFAULT NULL,
+  `accessed_by_name` varchar(100)  DEFAULT NULL,
+  `accessed_by_email` varchar(150)  DEFAULT NULL,
+  `accessed_on` datetime  DEFAULT NULL,
+  `ip_address` varchar(50)  DEFAULT NULL,
+  `is_download` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `accessed_by_id` (`accessed_by_id`),
+  INDEX `accessed_on` (`accessed_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#268 - info - CREATE TABLE `ac_object_contexts` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `context` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`),
+  UNIQUE `context` (`context`),
+  UNIQUE `parent` (`parent_type`, `parent_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#269 - info - CREATE TABLE `ac_routing_cache` (
+  `id` int unsigned NOT NULL auto_increment,
+  `path_info` varchar(255)  DEFAULT NULL,
+  `name` varchar(255)  DEFAULT NULL,
+  `content` text ,
+  `last_accessed_on` datetime  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE `path_info` (`path_info`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#270 - info - CREATE TABLE `ac_currencies` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(50)  DEFAULT NULL,
+  `code` varchar(3)  DEFAULT NULL,
+  `decimal_spaces` int(1) unsigned NOT NULL DEFAULT '2',
+  `decimal_rounding` decimal(4, 3) unsigned NOT NULL DEFAULT '0',
+  `is_default` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE `name` (`name`),
+  UNIQUE `code` (`code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#271 - info - CREATE TABLE `ac_day_offs` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(100)  DEFAULT NULL,
+  `event_date` date  DEFAULT NULL,
+  `repeat_yearly` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE `day_off_name` (`name`, `event_date`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#272 - info - CREATE TABLE `ac_languages` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(50)  DEFAULT NULL,
+  `locale` varchar(30) NOT NULL DEFAULT '',
+  `decimal_separator` varchar(1) NOT NULL DEFAULT '.',
+  `thousands_separator` varchar(1) NOT NULL DEFAULT ',',
+  `last_updated_on` datetime  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE `name` (`name`),
+  UNIQUE `locale` (`locale`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#273 - info - CREATE TABLE `ac_language_phrases` (
+  `hash` varchar(32)  DEFAULT NULL,
+  `phrase` text ,
+  `module` varchar(50) NOT NULL DEFAULT '',
+  `is_serverside` int(2) unsigned NULL DEFAULT NULL,
+  `is_clientside` int(2) unsigned NULL DEFAULT NULL,
+  UNIQUE `module_phrase` (`hash`, `module`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#274 - info - CREATE TABLE `ac_language_phrase_translations` (
+  `language_id` int(11) unsigned NOT NULL DEFAULT 0,
+  `phrase_hash` varchar(32)  DEFAULT NULL,
+  `translation` text ,
+  UNIQUE `language_phrase` (`phrase_hash`, `language_id`),
+  INDEX `language_id` (`language_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#275 - info - CREATE TABLE `ac_api_client_subscriptions` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'ApiClientSubscription',
+  `user_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `token` varchar(40)  DEFAULT NULL,
+  `client_name` varchar(100)  DEFAULT NULL,
+  `client_vendor` varchar(100)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `last_used_on` datetime  DEFAULT NULL,
+  `is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `is_read_only` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  UNIQUE `token` (`token`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#276 - info - CREATE TABLE `ac_users` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'User',
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `first_name` varchar(50)  DEFAULT NULL,
+  `last_name` varchar(50)  DEFAULT NULL,
+  `email` varchar(150) NOT NULL DEFAULT '',
+  `password` varchar(255) NOT NULL DEFAULT '',
+  `password_hashed_with` enum('pbkdf2', 'sha1') NOT NULL DEFAULT 'pbkdf2',
+  `password_expires_on` date  DEFAULT NULL,
+  `password_reset_key` varchar(20)  DEFAULT NULL,
+  `password_reset_on` datetime  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  `invited_on` datetime  DEFAULT NULL,
+  `last_login_on` datetime  DEFAULT NULL,
+  `last_visit_on` datetime  DEFAULT NULL,
+  `last_activity_on` datetime  DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  `company_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `auto_assign` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `auto_assign_role_id` int(3) unsigned NULL DEFAULT NULL,
+  `auto_assign_permissions` text ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `email` (`email`),
+  INDEX `last_activity_on` (`last_activity_on`),
+  INDEX `company_id` (`company_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#277 - info - CREATE TABLE `ac_user_addresses` (
+  `user_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `email` varchar(150) NOT NULL DEFAULT '',
+  PRIMARY KEY (`user_id`, `email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#278 - info - CREATE TABLE `ac_user_sessions` (
+  `id` int unsigned NOT NULL auto_increment,
+  `user_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `user_ip` varchar(45)  DEFAULT NULL,
+  `user_agent` text ,
+  `visits` int(10) unsigned NOT NULL DEFAULT 0,
+  `remember` int(3) unsigned NOT NULL DEFAULT 0,
+  `interface` enum('default', 'phone', 'tablet') NOT NULL DEFAULT 'default',
+  `created_on` datetime  DEFAULT NULL,
+  `last_activity_on` datetime  DEFAULT NULL,
+  `expires_on` datetime  DEFAULT NULL,
+  `session_key` varchar(40)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE `session_key` (`session_key`),
+  INDEX `expires_on` (`expires_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#279 - info - CREATE TABLE `ac_security_logs` (
+  `id` bigint unsigned NOT NULL auto_increment,
+  `user_id` int(10) unsigned NULL DEFAULT NULL,
+  `user_name` varchar(100)  DEFAULT NULL,
+  `user_email` varchar(150)  DEFAULT NULL,
+  `login_as_id` int(10) unsigned NULL DEFAULT NULL,
+  `login_as_name` varchar(100)  DEFAULT NULL,
+  `login_as_email` varchar(150)  DEFAULT NULL,
+  `logout_by_id` int(10) unsigned NULL DEFAULT NULL,
+  `logout_by_name` varchar(100)  DEFAULT NULL,
+  `logout_by_email` varchar(150)  DEFAULT NULL,
+  `event` enum('login', 'logout', 'expired', 'failed')  DEFAULT NULL,
+  `event_on` datetime  DEFAULT NULL,
+  `user_ip` varchar(45)  DEFAULT NULL,
+  `user_agent` text ,
+  `is_api` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  INDEX `user_id` (`user_id`),
+  INDEX `login_as_id` (`login_as_id`),
+  INDEX `logout_by_id` (`logout_by_id`),
+  INDEX `event_on` (`event_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#280 - info - CREATE TABLE `ac_api_token_logs` (
+  `id` int unsigned NOT NULL auto_increment,
+  `counts_on` datetime  DEFAULT NULL,
+  `total` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `counts_on` (`counts_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#281 - info - CREATE TABLE `ac_activity_logs` (
+  `id` int unsigned NOT NULL auto_increment,
+  `subject_type` varchar(50) NOT NULL DEFAULT '',
+  `subject_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `subject_context` varchar(255) NOT NULL DEFAULT '',
+  `action` varchar(100) NOT NULL DEFAULT '',
+  `target_type` varchar(50)  DEFAULT NULL,
+  `target_id` int(5) unsigned NULL DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `comment` text ,
+  PRIMARY KEY (`id`),
+  INDEX `created_on` (`created_on`),
+  INDEX `subject` (`subject_type`, `subject_id`),
+  INDEX `subject_context` (`subject_context`),
+  INDEX `action` (`action`),
+  INDEX `target` (`target_type`, `target_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#282 - info - CREATE TABLE `ac_data_filters` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(150) NOT NULL DEFAULT 'DataFilter',
+  `name` varchar(50)  DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int(10) unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `is_private` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `created_by_id` (`created_by_id`),
+  INDEX `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#283 - info - CREATE TABLE `ac_modification_logs` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `is_first` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `created_on` (`created_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#284 - info - CREATE TABLE `ac_modification_log_values` (
+  `modification_id` int(20) unsigned NOT NULL DEFAULT 0,
+  `field` varchar(50) NOT NULL DEFAULT '',
+  `value` longtext ,
+  PRIMARY KEY (`modification_id`, `field`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#285 - info - CREATE TABLE `ac_mailing_activity_logs` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'MailingActivityLog',
+  `direction` enum('in', 'out') NOT NULL DEFAULT 'out',
+  `from_id` int(10) unsigned NULL DEFAULT NULL,
+  `from_name` varchar(100)  DEFAULT NULL,
+  `from_email` varchar(150)  DEFAULT NULL,
+  `to_id` int(10) unsigned NULL DEFAULT NULL,
+  `to_name` varchar(100)  DEFAULT NULL,
+  `to_email` varchar(150)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `created_on` (`created_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#286 - info - CREATE TABLE `ac_outgoing_messages` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `decorator` varchar(255) NOT NULL DEFAULT 'OutgoingMessageDecorator',
+  `sender_id` int(10) unsigned NULL DEFAULT NULL,
+  `sender_name` varchar(100)  DEFAULT NULL,
+  `sender_email` varchar(150)  DEFAULT NULL,
+  `recipient_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `recipient_name` varchar(100)  DEFAULT NULL,
+  `recipient_email` varchar(150)  DEFAULT NULL,
+  `subject` varchar(255)  DEFAULT NULL,
+  `body` longtext ,
+  `context_id` varchar(50)  DEFAULT NULL,
+  `code` varchar(25)  DEFAULT NULL,
+  `mailing_method` varchar(15) NOT NULL DEFAULT 'in_background',
+  `created_on` datetime  DEFAULT NULL,
+  `send_retries` int(5) unsigned NOT NULL DEFAULT 0,
+  `last_send_error` varchar(255)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `recipient_id` (`recipient_id`),
+  INDEX `created_on` (`created_on`),
+  INDEX `recipient_email` (`recipient_email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#287 - info - CREATE TABLE `ac_incoming_mail_attachments` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'IncomingMailAttachment',
+  `mail_id` int(10) unsigned NULL DEFAULT NULL,
+  `temporary_filename` varchar(255)  DEFAULT NULL,
+  `original_filename` varchar(255)  DEFAULT NULL,
+  `content_type` varchar(255)  DEFAULT NULL,
+  `file_size` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#288 - info - CREATE TABLE `ac_incoming_mail_filters` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'IncomingMailFilter',
+  `name` varchar(100)  DEFAULT NULL,
+  `description` text ,
+  `subject` text ,
+  `body` text ,
+  `priority` varchar(200)  DEFAULT NULL,
+  `attachments` varchar(200)  DEFAULT NULL,
+  `sender` longtext ,
+  `to_email` text ,
+  `mailbox_id` text ,
+  `action_name` varchar(100)  DEFAULT NULL,
+  `action_parameters` longtext ,
+  `position` int(10) NOT NULL DEFAULT 0,
+  `is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `is_default` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#289 - info - CREATE TABLE `ac_incoming_mailboxes` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'IncomingMailbox',
+  `name` varchar(100)  DEFAULT NULL,
+  `email` varchar(150)  DEFAULT NULL,
+  `mailbox` varchar(100)  DEFAULT NULL,
+  `username` varchar(50)  DEFAULT NULL,
+  `password` varchar(50)  DEFAULT NULL,
+  `host` varchar(255)  DEFAULT NULL,
+  `server_type` enum('POP3', 'IMAP') NOT NULL DEFAULT 'POP3',
+  `port` int(10) unsigned NULL DEFAULT NULL,
+  `security` enum('NONE', 'TLS', 'SSL') NOT NULL DEFAULT 'NONE',
+  `last_status` int(3) unsigned NOT NULL DEFAULT 0,
+  `is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `failure_attempts` tinyint(3) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#290 - info - CREATE TABLE `ac_incoming_mails` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'IncomingMail',
+  `incoming_mailbox_id` int(10) unsigned NULL DEFAULT NULL,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `is_replay_to_notification` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `subject` varchar(255)  DEFAULT NULL,
+  `body` text ,
+  `to_email` text ,
+  `cc_to` text ,
+  `bcc_to` text ,
+  `reply_to` text ,
+  `priority` varchar(200)  DEFAULT NULL,
+  `additional_data` longtext ,
+  `headers` longtext ,
+  `status` varchar(255)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `incoming_mailbox_id` (`incoming_mailbox_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#291 - info - CREATE TABLE `ac_homescreen_tabs` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'HomescreenTab',
+  `user_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `name` varchar(50)  DEFAULT NULL,
+  `position` int(5) unsigned NOT NULL DEFAULT 0,
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `user_id` (`user_id`),
+  INDEX `position` (`position`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#292 - info - CREATE TABLE `ac_homescreen_widgets` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'HomescreenWidget',
+  `homescreen_tab_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `column_id` int(3) unsigned NOT NULL DEFAULT '1',
+  `position` int(5) unsigned NOT NULL DEFAULT 0,
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `homescreen_tab_id` (`homescreen_tab_id`),
+  INDEX `position` (`position`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#293 - info - CREATE TABLE `ac_announcements` (
+  `id` int unsigned NOT NULL auto_increment,
+  `subject` varchar(255)  DEFAULT NULL,
+  `body` longtext ,
+  `body_type` tinyint(3) NOT NULL DEFAULT 0,
+  `icon` enum('announcement', 'bug', 'comment', 'event', 'idea', 'info', 'joke', 'news', 'question', 'star', 'warning', 'welcome') NOT NULL DEFAULT 'announcement',
+  `target_type` varchar(50)  DEFAULT NULL,
+  `expiration_type` varchar(50)  DEFAULT NULL,
+  `expires_on` date  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `position` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `subject` (`subject`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#294 - info - CREATE TABLE `ac_announcement_target_ids` (
+  `id` int unsigned NOT NULL auto_increment,
+  `announcement_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `target_id` varchar(50) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#295 - info - CREATE TABLE `ac_announcement_dismissals` (
+  `id` int unsigned NOT NULL auto_increment,
+  `announcement_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `user_id` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#296 - info - CREATE TABLE `ac_attachments` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'Attachment',
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `name` varchar(150)  DEFAULT NULL,
+  `mime_type` varchar(255) NOT NULL DEFAULT 'application/octet-stream',
+  `size` int(10) unsigned NOT NULL DEFAULT 0,
+  `location` varchar(50)  DEFAULT NULL,
+  `md5` varchar(32)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `created_on` (`created_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#297 - info - CREATE TABLE `ac_notifications` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'Notification',
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `sender_id` int(10) unsigned NULL DEFAULT NULL,
+  `sender_name` varchar(100)  DEFAULT NULL,
+  `sender_email` varchar(150)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `sender_id` (`sender_id`),
+  INDEX `created_on` (`created_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#298 - info - CREATE TABLE `ac_notification_recipients` (
+  `id` int unsigned NOT NULL auto_increment,
+  `notification_id` int(5) unsigned NULL DEFAULT NULL,
+  `recipient_id` int(10) unsigned NULL DEFAULT NULL,
+  `recipient_name` varchar(100)  DEFAULT NULL,
+  `recipient_email` varchar(150)  DEFAULT NULL,
+  `seen_on` datetime  DEFAULT NULL,
+  `read_on` datetime  DEFAULT NULL,
+  `is_mentioned` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  INDEX `recipient_id` (`recipient_id`),
+  UNIQUE `notification_recipient` (`notification_id`, `recipient_email`),
+  INDEX `seen_on` (`seen_on`),
+  INDEX `read_on` (`read_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#299 - info - CREATE TABLE `ac_subscriptions` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `user_id` int(10) unsigned NULL DEFAULT NULL,
+  `user_name` varchar(100)  DEFAULT NULL,
+  `user_email` varchar(150)  DEFAULT NULL,
+  `subscribed_on` datetime  DEFAULT NULL,
+  `code` varchar(10)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `user_id` (`user_id`),
+  UNIQUE `user_subscribed` (`user_email`, `parent_type`, `parent_id`),
+  INDEX `subscribed_on` (`subscribed_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#300 - info - CREATE TABLE `ac_comments` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'Comment',
+  `source` varchar(50)  DEFAULT NULL,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `body` longtext ,
+  `ip_address` varchar(45)  DEFAULT NULL,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `created_on` (`created_on`),
+  INDEX `created_by_id` (`created_by_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#301 - info - CREATE TABLE `ac_categories` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'Category',
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `name` varchar(100)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  UNIQUE `name` (`parent_type`, `parent_id`, `type`, `name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#302 - info - CREATE TABLE `ac_labels` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'Label',
+  `name` varchar(10)  DEFAULT NULL,
+  `is_default` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  UNIQUE `name` (`name`, `type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#303 - info - CREATE TABLE `ac_assignments` (
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `user_id` int(5) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`parent_type`, `parent_id`, `user_id`),
+  INDEX `user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#304 - info - CREATE TABLE `ac_subtasks` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'Subtask',
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `label_id` int(5) unsigned NULL DEFAULT NULL,
+  `assignee_id` int(10) unsigned NULL DEFAULT NULL,
+  `delegated_by_id` int(10) unsigned NULL DEFAULT NULL,
+  `priority` int(4) NULL DEFAULT NULL,
+  `body` longtext ,
+  `due_on` date  DEFAULT NULL,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  `completed_on` datetime  DEFAULT NULL,
+  `completed_by_id` int unsigned NULL DEFAULT NULL,
+  `completed_by_name` varchar(100)  DEFAULT NULL,
+  `completed_by_email` varchar(150)  DEFAULT NULL,
+  `position` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `created_on` (`created_on`),
+  INDEX `completed_on` (`completed_on`),
+  INDEX `position` (`position`),
+  INDEX `due_on` (`due_on`),
+  INDEX `assignee_id` (`assignee_id`),
+  INDEX `delegated_by_id` (`delegated_by_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#305 - info - CREATE TABLE `ac_favorites` (
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `user_id` int(10) unsigned NULL DEFAULT NULL,
+  UNIQUE `favorite_object` (`parent_type`, `parent_id`, `user_id`),
+  INDEX `user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#306 - info - CREATE TABLE `ac_code_snippets` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `syntax` varchar(50)  DEFAULT NULL,
+  `body` text ,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `created_on` (`created_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#307 - info - CREATE TABLE `ac_payment_gateways` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'ApplicationObject',
+  `raw_additional_properties` longtext ,
+  `is_default` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#308 - info - CREATE TABLE `ac_payments` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'ApplicationObject',
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `amount` decimal(13, 3) NOT NULL DEFAULT '0',
+  `currency_id` int(5) NULL DEFAULT NULL,
+  `gateway_type` varchar(50)  DEFAULT NULL,
+  `gateway_id` int(10) unsigned NULL DEFAULT NULL,
+  `status` enum('Paid', 'Pending', 'Deleted', 'Canceled')  DEFAULT NULL,
+  `reason` enum('Fraud', 'Refund', 'Other')  DEFAULT NULL,
+  `reason_text` text ,
+  `created_by_id` int(10) unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `paid_on` date  DEFAULT NULL,
+  `comment` text ,
+  `method` varchar(100)  DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `created_by_id` (`created_by_id`),
+  INDEX `currency_id` (`currency_id`),
+  INDEX `status` (`status`),
+  INDEX `created_on` (`created_on`),
+  INDEX `paid_on` (`paid_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#309 - info - CREATE TABLE `ac_reminders` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `send_to` varchar(15) NOT NULL DEFAULT 'self',
+  `send_on` datetime  DEFAULT NULL,
+  `sent_on` datetime  DEFAULT NULL,
+  `comment` text ,
+  `selected_user_id` int(10) unsigned NULL DEFAULT NULL,
+  `created_by_id` int(10) unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `dismissed_on` datetime  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `created_by_id` (`created_by_id`),
+  INDEX `created_on` (`created_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#310 - info - CREATE TABLE `ac_reminder_users` (
+  `reminder_id` int(10) unsigned NULL DEFAULT NULL,
+  `user_id` int(10) unsigned NULL DEFAULT NULL,
+  `user_name` varchar(100)  DEFAULT NULL,
+  `user_email` varchar(150)  DEFAULT NULL,
+  `dismissed_on` datetime  DEFAULT NULL,
+  INDEX `user_id` (`user_id`),
+  PRIMARY KEY (`reminder_id`, `user_email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#311 - info - CREATE TABLE `ac_custom_fields` (
+  `field_name` varchar(30)  DEFAULT NULL,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `label` varchar(50)  DEFAULT NULL,
+  `is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`field_name`, `parent_type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#312 - info - CREATE TABLE `ac_calendars` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'UserCalendar',
+  `name` varchar(255)  DEFAULT NULL,
+  `color` varchar(7)  DEFAULT NULL,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `share_type` varchar(255)  DEFAULT NULL,
+  `share_can_add_events` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `raw_additional_properties` longtext ,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `position` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `created_on` (`created_on`),
+  INDEX `position` (`position`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#313 - info - CREATE TABLE `ac_calendar_events` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'CalendarEvent',
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `name` varchar(255)  DEFAULT NULL,
+  `starts_on` date  DEFAULT NULL,
+  `starts_on_time` time  DEFAULT NULL,
+  `ends_on` date  DEFAULT NULL,
+  `repeat_event` varchar(150) NOT NULL DEFAULT 'dont',
+  `repeat_event_option` varchar(150)  DEFAULT NULL,
+  `repeat_until` date  DEFAULT NULL,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `position` int(10) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `created_on` (`created_on`),
+  INDEX `starts_on` (`starts_on`),
+  INDEX `starts_on_time` (`starts_on`, `starts_on_time`),
+  INDEX `ends_on` (`ends_on`),
+  INDEX `position` (`position`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#314 - info - CREATE TABLE `ac_calendar_users` (
+  `user_id` int(10) NOT NULL DEFAULT 0,
+  `calendar_id` int(10) NOT NULL DEFAULT 0,
+  INDEX `calendar_id` (`calendar_id`),
+  INDEX `user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#315 - info - CREATE TABLE `ac_data_sources` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'ApplicationObject',
+  `name` varchar(50)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `is_private` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `created_by_id` (`created_by_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#316 - info - CREATE TABLE `ac_data_source_mappings` (
+  `id` int unsigned NOT NULL auto_increment,
+  `project_id` int(11) NULL DEFAULT NULL,
+  `source_type` varchar(50) NOT NULL DEFAULT '',
+  `source_id` int(11) NULL DEFAULT NULL,
+  `parent_id` int(11) NULL DEFAULT NULL,
+  `parent_type` varchar(50) NOT NULL DEFAULT '',
+  `external_id` int(11) NULL DEFAULT NULL,
+  `external_type` varchar(50) NOT NULL DEFAULT '',
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#317 - info - CREATE TABLE `ac_companies` (
+  `id` int unsigned NOT NULL auto_increment,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `name` varchar(100)  DEFAULT NULL,
+  `note` varchar(255)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  `is_owner` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  INDEX `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#318 - info - CREATE TABLE `ac_projects` (
+  `id` int unsigned NOT NULL auto_increment,
+  `slug` varchar(50)  DEFAULT NULL,
+  `template_id` int(10) unsigned NULL DEFAULT NULL,
+  `based_on_type` varchar(50)  DEFAULT NULL,
+  `based_on_id` int(10) unsigned NULL DEFAULT NULL,
+  `company_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `category_id` int(10) unsigned NULL DEFAULT NULL,
+  `label_id` int(5) unsigned NULL DEFAULT NULL,
+  `currency_id` int(5) unsigned NULL DEFAULT NULL,
+  `budget` decimal(13, 3) unsigned  DEFAULT NULL,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `name` varchar(150)  DEFAULT NULL,
+  `leader_id` int(10) unsigned NULL DEFAULT NULL,
+  `leader_name` varchar(100)  DEFAULT NULL,
+  `leader_email` varchar(150)  DEFAULT NULL,
+  `overview` text ,
+  `completed_on` datetime  DEFAULT NULL,
+  `completed_by_id` int unsigned NULL DEFAULT NULL,
+  `completed_by_name` varchar(100)  DEFAULT NULL,
+  `completed_by_email` varchar(150)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  `custom_field_1` varchar(255)  DEFAULT NULL,
+  `custom_field_2` varchar(255)  DEFAULT NULL,
+  `custom_field_3` varchar(255)  DEFAULT NULL,
+  `mail_to_project_code` varchar(10)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `leader_id` (`leader_id`),
+  INDEX `completed_on` (`completed_on`),
+  INDEX `created_on` (`created_on`),
+  UNIQUE `slug` (`slug`),
+  UNIQUE `mail_to_project_code` (`mail_to_project_code`),
+  INDEX `company_id` (`company_id`),
+  INDEX `category_id` (`category_id`),
+  INDEX `label_id` (`label_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#319 - info - CREATE TABLE `ac_project_roles` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(50)  DEFAULT NULL,
+  `permissions` text ,
+  `is_default` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#320 - info - CREATE TABLE `ac_project_users` (
+  `user_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `project_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `permissions` text ,
+  `role_id` int(3) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`user_id`, `project_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#321 - info - CREATE TABLE `ac_project_requests` (
+  `id` int unsigned NOT NULL auto_increment,
+  `public_id` varchar(32) NOT NULL DEFAULT '',
+  `name` varchar(150)  DEFAULT NULL,
+  `body` text ,
+  `status` int(4) NOT NULL DEFAULT 0,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `created_by_company_id` int(10) NULL DEFAULT NULL,
+  `created_by_company_name` varchar(100) NOT NULL DEFAULT '',
+  `created_by_company_address` varchar(150) NOT NULL DEFAULT '',
+  `custom_field_1` text ,
+  `custom_field_2` text ,
+  `custom_field_3` text ,
+  `custom_field_4` text ,
+  `custom_field_5` text ,
+  `is_locked` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `taken_by_id` int(10) unsigned NULL DEFAULT NULL,
+  `taken_by_name` varchar(100)  DEFAULT NULL,
+  `taken_by_email` varchar(150)  DEFAULT NULL,
+  `closed_on` datetime  DEFAULT NULL,
+  `closed_by_id` int unsigned NULL DEFAULT NULL,
+  `closed_by_name` varchar(100)  DEFAULT NULL,
+  `closed_by_email` varchar(150)  DEFAULT NULL,
+  `last_comment_on` datetime  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `taken_by_id` (`taken_by_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#322 - info - CREATE TABLE `ac_project_objects` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'ProjectObject',
+  `source` varchar(50)  DEFAULT NULL,
+  `module` varchar(30) NOT NULL DEFAULT 'system',
+  `project_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `milestone_id` int(10) unsigned NULL DEFAULT NULL,
+  `category_id` int(10) unsigned NULL DEFAULT NULL,
+  `label_id` int(5) unsigned NULL DEFAULT NULL,
+  `assignee_id` int(10) unsigned NULL DEFAULT NULL,
+  `delegated_by_id` int(10) unsigned NULL DEFAULT NULL,
+  `name` varchar(150)  DEFAULT NULL,
+  `body` longtext ,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `visibility` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_visibility` tinyint(3) unsigned NULL DEFAULT NULL,
+  `priority` int(4) NULL DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  `due_on` date  DEFAULT NULL,
+  `completed_on` datetime  DEFAULT NULL,
+  `completed_by_id` int unsigned NULL DEFAULT NULL,
+  `completed_by_name` varchar(100)  DEFAULT NULL,
+  `completed_by_email` varchar(150)  DEFAULT NULL,
+  `is_locked` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `varchar_field_1` varchar(255)  DEFAULT NULL,
+  `varchar_field_2` varchar(255)  DEFAULT NULL,
+  `varchar_field_3` varchar(255)  DEFAULT NULL,
+  `integer_field_1` int(11) NULL DEFAULT NULL,
+  `integer_field_2` int(11) NULL DEFAULT NULL,
+  `integer_field_3` int(11) NULL DEFAULT NULL,
+  `float_field_1` decimal(12, 2)  DEFAULT NULL,
+  `float_field_2` decimal(12, 2)  DEFAULT NULL,
+  `float_field_3` decimal(12, 2)  DEFAULT NULL,
+  `text_field_1` text ,
+  `text_field_2` text ,
+  `text_field_3` text ,
+  `date_field_1` date  DEFAULT NULL,
+  `date_field_2` date  DEFAULT NULL,
+  `date_field_3` date  DEFAULT NULL,
+  `datetime_field_1` datetime  DEFAULT NULL,
+  `datetime_field_2` datetime  DEFAULT NULL,
+  `datetime_field_3` datetime  DEFAULT NULL,
+  `boolean_field_1` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `boolean_field_2` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `boolean_field_3` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `custom_field_1` varchar(255)  DEFAULT NULL,
+  `custom_field_2` varchar(255)  DEFAULT NULL,
+  `custom_field_3` varchar(255)  DEFAULT NULL,
+  `position` int(10) unsigned NULL DEFAULT NULL,
+  `version` int(11) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `module` (`module`),
+  INDEX `project_id` (`project_id`),
+  INDEX `milestone_id` (`milestone_id`),
+  INDEX `category_id` (`category_id`),
+  INDEX `assignee_id` (`assignee_id`),
+  INDEX `delegated_by_id` (`delegated_by_id`),
+  INDEX `due_on` (`due_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#323 - info - CREATE TABLE `ac_project_templates` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(150)  DEFAULT NULL,
+  `category_id` int(10) unsigned NULL DEFAULT NULL,
+  `company_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  `custom_field_1` varchar(255)  DEFAULT NULL,
+  `custom_field_2` varchar(255)  DEFAULT NULL,
+  `custom_field_3` varchar(255)  DEFAULT NULL,
+  `position` int(10) unsigned NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `created_on` (`created_on`),
+  INDEX `category_id` (`category_id`),
+  INDEX `company_id` (`company_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#324 - info - CREATE TABLE `ac_project_object_templates` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'ProjectObjectTemplate',
+  `subtype` varchar(50)  DEFAULT NULL,
+  `template_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `parent_id` int(10) unsigned NULL DEFAULT NULL,
+  `value` longtext ,
+  `position` int(10) unsigned NULL DEFAULT NULL,
+  `file_size` int(11) unsigned NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `template_id` (`template_id`),
+  INDEX `parent_id` (`parent_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#325 - info - CREATE TABLE `ac_shared_object_profiles` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `sharing_context` varchar(50) NOT NULL DEFAULT '',
+  `sharing_code` varchar(100) NOT NULL DEFAULT '',
+  `expires_on` date  DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `is_discoverable` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE `sharing` (`sharing_context`, `sharing_code`),
+  UNIQUE `parent` (`parent_type`, `parent_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#326 - info - CREATE TABLE `ac_file_versions` (
+  `id` int unsigned NOT NULL auto_increment,
+  `file_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `version_num` int(5) unsigned NOT NULL DEFAULT 0,
+  `name` varchar(255)  DEFAULT NULL,
+  `mime_type` varchar(255) NOT NULL DEFAULT 'application/octet-stream',
+  `size` int(10) unsigned NOT NULL DEFAULT 0,
+  `location` varchar(50)  DEFAULT NULL,
+  `md5` varchar(32)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `created_on` (`created_on`),
+  INDEX `file_version` (`file_id`, `version_num`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#327 - info - CREATE TABLE `ac_text_document_versions` (
+  `id` int unsigned NOT NULL auto_increment,
+  `text_document_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `version_num` int(5) unsigned NOT NULL DEFAULT 0,
+  `name` varchar(255)  DEFAULT NULL,
+  `body` longtext ,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `text_document_version` (`text_document_id`, `version_num`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#328 - info - CREATE TABLE `ac_public_task_forms` (
+  `id` int unsigned NOT NULL auto_increment,
+  `project_id` int(11) unsigned NOT NULL DEFAULT 0,
+  `slug` varchar(50) NOT NULL DEFAULT '',
+  `name` varchar(100)  DEFAULT NULL,
+  `body` text ,
+  `is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '1',
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`),
+  UNIQUE `slug` (`slug`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#329 - info - CREATE TABLE `ac_related_tasks` (
+  `parent_task_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `related_task_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `note` varchar(255)  DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  INDEX `created_on` (`created_on`),
+  PRIMARY KEY (`parent_task_id`, `related_task_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#330 - info - CREATE TABLE `ac_task_segments` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(50)  DEFAULT NULL,
+  `raw_additional_properties` longtext ,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#331 - info - CREATE TABLE `ac_status_updates` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_id` int(10) unsigned NULL DEFAULT NULL,
+  `message` varchar(255) NOT NULL DEFAULT '',
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `last_update_on` datetime  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `created_on` (`created_on`),
+  INDEX `last_update_on` (`last_update_on`),
+  INDEX `parent_id` (`parent_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#332 - info - CREATE TABLE `ac_documents` (
+  `id` int unsigned NOT NULL auto_increment,
+  `category_id` int(11) unsigned NULL DEFAULT NULL,
+  `type` enum('text', 'file') NOT NULL DEFAULT 'text',
+  `name` varchar(150)  DEFAULT NULL,
+  `body` text ,
+  `size` int(11) NULL DEFAULT NULL,
+  `mime_type` varchar(255)  DEFAULT NULL,
+  `location` varchar(50)  DEFAULT NULL,
+  `md5` varchar(32)  DEFAULT NULL,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `visibility` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_visibility` tinyint(3) unsigned NULL DEFAULT NULL,
+  `is_pinned` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#333 - info - CREATE TABLE `ac_time_records` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `job_type_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `record_date` date  DEFAULT NULL,
+  `value` decimal(12, 2)  DEFAULT NULL,
+  `user_id` int(10) unsigned NULL DEFAULT NULL,
+  `user_name` varchar(100)  DEFAULT NULL,
+  `user_email` varchar(150)  DEFAULT NULL,
+  `summary` text ,
+  `billable_status` int(3) unsigned NOT NULL DEFAULT 0,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `user_id` (`user_id`),
+  INDEX `job_type_id` (`job_type_id`),
+  INDEX `record_date` (`record_date`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#334 - info - CREATE TABLE `ac_job_types` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(100)  DEFAULT NULL,
+  `default_hourly_rate` decimal(13, 3) NOT NULL DEFAULT '0',
+  `is_default` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `is_active` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#335 - info - CREATE TABLE `ac_project_hourly_rates` (
+  `project_id` int(10) unsigned NULL DEFAULT NULL,
+  `job_type_id` int(5) unsigned NULL DEFAULT NULL,
+  `hourly_rate` decimal(13, 3) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`project_id`, `job_type_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#336 - info - CREATE TABLE `ac_expenses` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `category_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `record_date` date  DEFAULT NULL,
+  `value` decimal(13, 3) unsigned NOT NULL DEFAULT '0',
+  `user_id` int(10) unsigned NULL DEFAULT NULL,
+  `user_name` varchar(100)  DEFAULT NULL,
+  `user_email` varchar(150)  DEFAULT NULL,
+  `summary` text ,
+  `billable_status` int(3) unsigned NOT NULL DEFAULT 0,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `user_id` (`user_id`),
+  INDEX `category_id` (`category_id`),
+  INDEX `record_date` (`record_date`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#337 - info - CREATE TABLE `ac_expense_categories` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(100)  DEFAULT NULL,
+  `is_default` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#338 - info - CREATE TABLE `ac_estimates` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `job_type_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `value` decimal(12, 2) unsigned  DEFAULT NULL,
+  `comment` text ,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `created_on` (`created_on`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#339 - info - CREATE TABLE `ac_invoice_objects` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'InvoiceObject',
+  `company_id` int(5) unsigned NOT NULL DEFAULT 0,
+  `company_name` varchar(150)  DEFAULT NULL,
+  `company_address` text ,
+  `currency_id` int(4) NOT NULL DEFAULT 0,
+  `language_id` int(3) NOT NULL DEFAULT 0,
+  `project_id` int(5) unsigned NULL DEFAULT NULL,
+  `name` varchar(255)  DEFAULT NULL,
+  `subtotal` decimal(13, 3) NOT NULL DEFAULT '0',
+  `tax` decimal(13, 3) NOT NULL DEFAULT '0',
+  `total` decimal(13, 3) NOT NULL DEFAULT '0',
+  `balance_due` decimal(13, 3) NOT NULL DEFAULT '0',
+  `paid_amount` decimal(13, 3) NOT NULL DEFAULT '0',
+  `note` text ,
+  `private_note` varchar(255)  DEFAULT NULL,
+  `status` int(4) NOT NULL DEFAULT 0,
+  `based_on_type` varchar(50)  DEFAULT NULL,
+  `based_on_id` int(10) unsigned NULL DEFAULT NULL,
+  `allow_payments` tinyint(3) NULL DEFAULT NULL,
+  `second_tax_is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `second_tax_is_compound` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `visibility` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_visibility` tinyint(3) unsigned NULL DEFAULT NULL,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `recipient_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `recipient_name` varchar(100)  DEFAULT NULL,
+  `recipient_email` varchar(150)  DEFAULT NULL,
+  `sent_on` datetime  DEFAULT NULL,
+  `sent_by_id` int unsigned NULL DEFAULT NULL,
+  `sent_by_name` varchar(100)  DEFAULT NULL,
+  `sent_by_email` varchar(150)  DEFAULT NULL,
+  `reminder_sent_on` datetime  DEFAULT NULL,
+  `closed_on` datetime  DEFAULT NULL,
+  `closed_by_id` int unsigned NULL DEFAULT NULL,
+  `closed_by_name` varchar(100)  DEFAULT NULL,
+  `closed_by_email` varchar(150)  DEFAULT NULL,
+  `varchar_field_1` varchar(255)  DEFAULT NULL,
+  `varchar_field_2` varchar(255)  DEFAULT NULL,
+  `varchar_field_3` varchar(255)  DEFAULT NULL,
+  `varchar_field_4` varchar(255)  DEFAULT NULL,
+  `integer_field_1` int(11) NULL DEFAULT NULL,
+  `integer_field_2` int(11) NULL DEFAULT NULL,
+  `integer_field_3` int(11) NULL DEFAULT NULL,
+  `date_field_1` date  DEFAULT NULL,
+  `date_field_2` date  DEFAULT NULL,
+  `date_field_3` date  DEFAULT NULL,
+  `datetime_field_1` datetime  DEFAULT NULL,
+  `hash` varchar(50)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `created_on` (`created_on`),
+  INDEX `sent_on` (`sent_on`),
+  INDEX `closed_on` (`closed_on`),
+  INDEX `company_id` (`company_id`),
+  INDEX `project_id` (`project_id`),
+  INDEX `total` (`total`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#340 - info - CREATE TABLE `ac_invoice_object_items` (
+  `id` int unsigned NOT NULL auto_increment,
+  `type` varchar(50) NOT NULL DEFAULT 'InvoiceObjectItem',
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `first_tax_rate_id` int(3) unsigned NOT NULL DEFAULT 0,
+  `second_tax_rate_id` int(3) unsigned NOT NULL DEFAULT 0,
+  `description` text ,
+  `quantity` decimal(13, 3) unsigned NOT NULL DEFAULT '1',
+  `unit_cost` decimal(13, 3) NOT NULL DEFAULT '0',
+  `subtotal` decimal(13, 3) NOT NULL DEFAULT '0',
+  `first_tax` decimal(13, 3) NOT NULL DEFAULT '0',
+  `second_tax` decimal(13, 3) NOT NULL DEFAULT '0',
+  `total` decimal(13, 3) NOT NULL DEFAULT '0',
+  `second_tax_is_enabled` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `second_tax_is_compound` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `position` int(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  INDEX `type` (`type`),
+  INDEX `parent` (`parent_type`, `parent_id`),
+  INDEX `parent_id` (`parent_id`, `parent_type`, `position`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#341 - info - CREATE TABLE `ac_invoice_item_templates` (
+  `id` int unsigned NOT NULL auto_increment,
+  `first_tax_rate_id` int(3) unsigned NOT NULL DEFAULT 0,
+  `second_tax_rate_id` int(3) unsigned NOT NULL DEFAULT 0,
+  `description` text ,
+  `quantity` decimal(13, 3) unsigned NOT NULL DEFAULT '1',
+  `unit_cost` decimal(13, 3) NOT NULL DEFAULT '0',
+  `position` int(11) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#342 - info - CREATE TABLE `ac_invoice_note_templates` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(150)  DEFAULT NULL,
+  `content` text ,
+  `position` int(10) unsigned NOT NULL DEFAULT 0,
+  `is_default` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#343 - info - CREATE TABLE `ac_invoice_related_records` (
+  `invoice_id` int(5) unsigned NULL DEFAULT NULL,
+  `item_id` int(10) unsigned NULL DEFAULT NULL,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  INDEX `parent` (`parent_type`, `parent_id`),
+  PRIMARY KEY (`invoice_id`, `item_id`, `parent_type`, `parent_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#344 - info - CREATE TABLE `ac_tax_rates` (
+  `id` int unsigned NOT NULL auto_increment,
+  `name` varchar(50)  DEFAULT NULL,
+  `percentage` decimal(6, 3)  DEFAULT NULL,
+  `is_default` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  UNIQUE `name` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#345 - info - CREATE TABLE `ac_notebook_pages` (
+  `id` int unsigned NOT NULL auto_increment,
+  `parent_type` varchar(50)  DEFAULT NULL,
+  `parent_id` int unsigned NULL DEFAULT NULL,
+  `name` varchar(255)  DEFAULT NULL,
+  `body` longtext ,
+  `state` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `original_state` tinyint(3) unsigned NULL DEFAULT NULL,
+  `is_locked` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  `updated_on` datetime  DEFAULT NULL,
+  `updated_by_id` int unsigned NULL DEFAULT NULL,
+  `updated_by_name` varchar(100)  DEFAULT NULL,
+  `updated_by_email` varchar(150)  DEFAULT NULL,
+  `last_version_on` datetime  DEFAULT NULL,
+  `last_version_by_id` int unsigned NULL DEFAULT NULL,
+  `last_version_by_name` varchar(100)  DEFAULT NULL,
+  `last_version_by_email` varchar(150)  DEFAULT NULL,
+  `position` int(10) unsigned NULL DEFAULT NULL,
+  `version` int(5) unsigned NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  INDEX `parent` (`parent_type`, `parent_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#346 - info - CREATE TABLE `ac_notebook_page_versions` (
+  `id` int unsigned NOT NULL auto_increment,
+  `notebook_page_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `version` int(5) unsigned NOT NULL DEFAULT 0,
+  `name` varchar(255)  DEFAULT NULL,
+  `body` longtext ,
+  `created_on` datetime  DEFAULT NULL,
+  `created_by_id` int unsigned NULL DEFAULT NULL,
+  `created_by_name` varchar(100)  DEFAULT NULL,
+  `created_by_email` varchar(150)  DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE `notebook_page_version` (`notebook_page_id`, `version`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+#347 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('maintenance_message', 'environment', NULL)
+#348 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('first_run_on', 'environment', NULL)
+#349 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('help_improve_application', 'environment', 'b:1;')
+#350 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('identity_name', 'environment', 's:11:\"Application\";')
+#351 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('on_logout_url', 'environment', NULL)
+#352 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('last_frequently_activity', 'environment', NULL)
+#353 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('last_hourly_activity', 'environment', NULL)
+#354 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('last_daily_activity', 'environment', NULL)
+#355 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('control_tower_check_scheduled_tasks', 'environment', 'b:1;')
+#356 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('control_tower_check_disk_usage', 'environment', 'b:1;')
+#357 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('control_tower_check_performance', 'environment', 'b:1;')
+#358 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('disk_space_limit', 'environment', 'i:0;')
+#359 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('disk_space_email_notifications', 'environment', 'b:1;')
+#360 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('disk_space_low_space_threshold', 'environment', 'i:95;')
+#361 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('disk_space_old_versions_size', 'environment', NULL)
+#362 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('current_scheme', 'environment', 's:7:\"default\";')
+#363 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('custom_schemes', 'environment', NULL)
+#364 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('whitelisted_tags', 'environment', 'a:1:{s:11:\"environment\";a:3:{s:1:\"a\";a:5:{i:0;s:4:\"href\";i:1;s:5:\"title\";i:2;s:5:\"class\";i:3;s:9:\"object-id\";i:4;s:12:\"object-class\";}s:3:\"div\";a:4:{i:0;s:5:\"class\";i:1;s:16:\"placeholder-type\";i:2;s:21:\"placeholder-object-id\";i:3;s:17:\"placeholder-extra\";}s:3:\"img\";a:4:{i:0;s:3:\"src\";i:1;s:3:\"alt\";i:2;s:5:\"title\";i:3;s:5:\"class\";}}}')
+#365 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('require_index_rebuild', 'environment', 'b:0;')
+#366 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('firewall_enabled', 'environment', 'b:0;')
+#367 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('firewall_settings', 'environment', NULL)
+#368 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('firewall_white_list', 'environment', NULL)
+#369 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('firewall_black_list', 'environment', NULL)
+#370 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('firewall_temp_list', 'environment', NULL)
+#371 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('network_proxy_enabled', 'environment', 'b:0;')
+#372 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('network_proxy_protocol', 'environment', 's:4:\"http\";')
+#373 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('network_proxy_address', 'environment', 's:0:\"\";')
+#374 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('network_proxy_port', 'environment', 's:0:\"\";')
+#375 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('language', 'globalization', 'i:1;')
+#376 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('time_dst', 'globalization', 'b:0;')
+#377 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('time_first_week_day', 'globalization', 'i:0;')
+#378 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('time_timezone', 'globalization', 'i:0;')
+#379 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('time_workdays', 'globalization', 'a:5:{i:0;i:1;i:1;i:2;i:2;i:3;i:3;i:4;i:4;i:5;}')
+#380 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('format_date', 'globalization', 's:9:\"%b %e. %Y\";')
+#381 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('format_time', 'globalization', 's:8:\"%I:%M %p\";')
+#382 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('effective_work_hours', 'globalization', 'i:40;')
+#383 - info - BEGIN WORK
+#384 - info - Transaction level increased to 1. Message: Loading table data for 'globalization' @ AngieFrameworkModel
+#385 - info - INSERT INTO ac_currencies (name, code) VALUES ('Euro', 'EUR')
+#386 - info - INSERT INTO ac_currencies (name, code, is_default) VALUES ('US Dollar', 'USD', '1')
+#387 - info - INSERT INTO ac_currencies (name, code) VALUES ('British Pound', 'GBP')
+#388 - info - INSERT INTO ac_currencies (name, code) VALUES ('Japanese Yen', 'JPY')
+#389 - info - COMMIT
+#390 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('maintenance_enabled', 'authentication', 'b:0;')
+#391 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing', 'email', 's:6:\"native\";')
+#392 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_smtp_authenticate', 'email', 'b:0;')
+#393 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_smtp_host', 'email', NULL)
+#394 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_smtp_username', 'email', NULL)
+#395 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_smtp_password', 'email', NULL)
+#396 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_smtp_port', 'email', 'i:25;')
+#397 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_smtp_security', 'email', 'i:25;')
+#398 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_method', 'email', 's:9:\"instantly\";')
+#399 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_method_override', 'email', 'b:1;')
+#400 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_native_options', 'email', 's:9:\"-oi -f %s\";')
+#401 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mailing_mark_as_bulk', 'email', 'b:1;')
+#402 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('notifications_from_force', 'email', 'b:1;')
+#403 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('notifications_from_name', 'email', 's:0:\"\";')
+#404 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('notifications_from_email', 'email', 's:0:\"\";')
+#405 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('conflict_notifications_delivery', 'email', 'i:2;')
+#406 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('control_tower_check_reply_to_comment', 'email', 'b:1;')
+#407 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('control_tower_check_email_queue', 'email', 'b:1;')
+#408 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('control_tower_check_email_conflicts', 'email', 'b:1;')
+#409 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('disable_mailbox_on_successive_connection_failures', 'email', 'b:1;')
+#410 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('disable_mailbox_successive_connection_attempts', 'email', 'i:3;')
+#411 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('disable_mailbox_notify_administrator', 'email', 'b:1;')
+#412 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('default_homescreen_tab_id', 'homescreens', NULL)
+#413 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('notifications_show_indicators', 'notifications', 'i:2;')
+#414 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('email_notifications_enabled', 'notifications', 'b:1;')
+#415 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('popup_show_only_unread', 'notifications', 'b:0;')
+#416 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('who_can_override_channel_settings', 'notifications', 'a:1:{s:5:\"email\";a:1:{i:0;s:6:\"Member\";}}')
+#417 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'NEW', 'a:2:{s:8:\"fg_color\";s:7:\"#000000\";s:8:\"bg_color\";s:7:\"#FFFF00\";}')
+#418 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'CONFIRMED', 'a:2:{s:8:\"fg_color\";s:7:\"#FFFFFF\";s:8:\"bg_color\";s:7:\"#F26522\";}')
+#419 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'WORKS4ME', 'a:2:{s:8:\"fg_color\";s:7:\"#FFFFFF\";s:8:\"bg_color\";s:7:\"#00A651\";}')
+#420 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'DUPLICATE', 'a:2:{s:8:\"fg_color\";s:7:\"#FFFFFF\";s:8:\"bg_color\";s:7:\"#00A651\";}')
+#421 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'WONTFIX', 'a:2:{s:8:\"fg_color\";s:7:\"#FFFFFF\";s:8:\"bg_color\";s:7:\"#00A651\";}')
+#422 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'ASSIGNED', 'a:2:{s:8:\"fg_color\";s:7:\"#FFFFFF\";s:8:\"bg_color\";s:7:\"#FF0000\";}')
+#423 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'BLOCKED', 'a:2:{s:8:\"fg_color\";s:7:\"#000000\";s:8:\"bg_color\";s:7:\"#ACACAC\";}')
+#424 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'INPROGRESS', 'a:2:{s:8:\"fg_color\";s:7:\"#000000\";s:8:\"bg_color\";s:7:\"#FFFF00\";}')
+#425 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'FIXED', 'a:2:{s:8:\"fg_color\";s:7:\"#FFFFFF\";s:8:\"bg_color\";s:7:\"#0000FF\";}')
+#426 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'REOPENED', 'a:2:{s:8:\"fg_color\";s:7:\"#FFFFFF\";s:8:\"bg_color\";s:7:\"#FF0000\";}')
+#427 - info - INSERT INTO ac_labels (type, name, raw_additional_properties) VALUES ('AssignmentLabel', 'VERIFIED', 'a:2:{s:8:\"fg_color\";s:7:\"#FFFFFF\";s:8:\"bg_color\";s:7:\"#00A651\";}')
+#428 - info - SELECT value FROM ac_config_options WHERE name = 'whitelisted_tags'
+#429 - info - SELECT COUNT(name) FROM ac_config_options WHERE name = 'whitelisted_tags'
+#430 - info - UPDATE ac_config_options SET value = 'a:2:{s:11:\"environment\";a:3:{s:1:\"a\";a:5:{i:0;s:4:\"href\";i:1;s:5:\"title\";i:2;s:5:\"class\";i:3;s:9:\"object-id\";i:4;s:12:\"object-class\";}s:3:\"div\";a:4:{i:0;s:5:\"class\";i:1;s:16:\"placeholder-type\";i:2;s:21:\"placeholder-object-id\";i:3;s:17:\"placeholder-extra\";}s:3:\"img\";a:4:{i:0;s:3:\"src\";i:1;s:3:\"alt\";i:2;s:5:\"title\";i:3;s:5:\"class\";}}s:13:\"visual_editor\";a:12:{s:1:\"p\";a:2:{i:0;s:5:\"class\";i:1;s:5:\"style\";}s:3:\"img\";a:3:{i:0;s:10:\"image-type\";i:1;s:9:\"object-id\";i:2;s:5:\"class\";}s:6:\"strike\";a:2:{i:0;s:5:\"class\";i:1;s:5:\"style\";}s:4:\"span\";a:4:{i:0;s:5:\"class\";i:1;s:27:\"data-redactor-inlinemethods\";i:2;s:13:\"data-redactor\";i:3;s:9:\"object-id\";}s:1:\"a\";a:2:{i:0;s:5:\"class\";i:1;s:4:\"href\";}s:10:\"blockquote\";N;s:2:\"br\";N;s:1:\"b\";N;s:6:\"strong\";N;s:1:\"i\";N;s:2:\"em\";N;s:1:\"u\";N;}}' WHERE name = 'whitelisted_tags'
+#431 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('allow_payments', 'payments', 'b:0;')
+#432 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('allow_payments_for_invoice', 'payments', 'b:0;')
+#433 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('payment_methods_common', 'payments', 'a:5:{i:0;s:12:\"Bank Deposit\";i:1;s:5:\"Check\";i:2;s:4:\"Cash\";i:3;s:6:\"Credit\";i:4;s:5:\"Debit\";}')
+#434 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('payment_methods_credit_card', 'payments', 'a:6:{i:0;s:11:\"Credit Card\";i:1;s:18:\"Credit Card (Visa)\";i:2;s:24:\"Credit Card (Mastercard)\";i:3;s:22:\"Credit Card (Discover)\";i:4;s:30:\"Credit Card (American Express)\";i:5;s:20:\"Credit Card (Diners)\";}')
+#435 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('payment_methods_online', 'payments', 'a:3:{i:0;s:14:\"Online Payment\";i:1;s:23:\"Online Payment (PayPal)\";i:2;s:26:\"Online Payment (Authorize)\";}')
+#436 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('search_provider', 'search', 's:19:\"MySqlSearchProvider\";')
+#437 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('search_initialized_on', 'search', NULL)
+#438 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('elastic_search_hosts', 'search', 's:14:\"localhost:9200\";')
+#439 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('calendar_config', 'calendars', NULL)
+#440 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('calendar_sidebar_hidden', 'calendars', NULL)
+#441 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('default_project_calendar_filter', 'calendars', 'a:1:{s:4:\"type\";s:25:\"everything_in_my_projects\";}')
+#442 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_tabs', 'system', 'a:5:{i:0;s:7:\"outline\";i:1;s:10:\"milestones\";i:2;s:5:\"tasks\";i:3;s:11:\"discussions\";i:4;s:5:\"files\";}')
+#443 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('clients_can_delegate_to_employees', 'system', 'b:1;')
+#444 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('license_details_updated_on', 'system', 'i:1395066418;')
+#445 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('latest_version', 'system', 's:7:\"current\";')
+#446 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('latest_available_version', 'system', 's:7:\"current\";')
+#447 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('license_copyright_removed', 'system', 'b:0;')
+#448 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('license_expires', 'system', 'i:1352592000;')
+#449 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('remove_branding_url', 'system', NULL)
+#450 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('renew_support_url', 'system', NULL)
+#451 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('update_instructions_url', 'system', NULL)
+#452 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('update_archive_url', 'system', NULL)
+#453 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('office_address', 'system', NULL)
+#454 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('office_fax', 'system', NULL)
+#455 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('office_homepage', 'system', NULL)
+#456 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('office_phone', 'system', NULL)
+#457 - info - SELECT COUNT(name) FROM ac_config_options WHERE name = 'identity_name'
+#458 - info - UPDATE ac_config_options SET value = 's:8:\"Projects\";' WHERE name = 'identity_name'
+#459 - info - SELECT COUNT(name) FROM ac_config_options WHERE name = 'identity_client_welcome_message'
+#460 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('identity_client_welcome_message', 'system', 's:193:\"Welcome to our project collaboration environment! You will find all your projects by clicking the \'Projects\' icon in the main menu. To return to this page, click on the \'Home Screen\' menu item.\";')
+#461 - info - SELECT COUNT(name) FROM ac_config_options WHERE name = 'identity_logo_on_white'
+#462 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('identity_logo_on_white', 'system', 'b:0;')
+#463 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('title', 'system', NULL)
+#464 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('phone_mobile', 'system', NULL)
+#465 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('phone_work', 'system', NULL)
+#466 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('im_type', 'system', NULL)
+#467 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('im_value', 'system', NULL)
+#468 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('welcome_message', 'system', NULL)
+#469 - info - SELECT COUNT(name) FROM ac_config_options WHERE name = 'who_can_override_channel_settings'
+#470 - info - UPDATE ac_config_options SET value = 'a:1:{s:5:\"email\";a:2:{i:0;s:6:\"Member\";i:1;s:7:\"Manager\";}}' WHERE name = 'who_can_override_channel_settings'
+#471 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('default_project_object_visibility', 'system', 'i:1;')
+#472 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('first_milestone_starts_on', 'system', NULL)
+#473 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('job_type_id', 'system', NULL)
+#474 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_requests_enabled', 'system', 'b:0;')
+#475 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_requests_page_title', 'system', 's:17:\"Request a Project\";')
+#476 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_requests_page_description', 'system', 's:38:\"Please tell us more about your project\";')
+#477 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_requests_custom_fields', 'system', 'a:5:{s:14:\"custom_field_1\";a:2:{s:7:\"enabled\";b:1;s:4:\"name\";s:6:\"Budget\";}s:14:\"custom_field_2\";a:2:{s:7:\"enabled\";b:1;s:4:\"name\";s:10:\"Time Frame\";}s:14:\"custom_field_3\";a:2:{s:7:\"enabled\";b:0;s:4:\"name\";s:0:\"\";}s:14:\"custom_field_4\";a:2:{s:7:\"enabled\";b:0;s:4:\"name\";s:0:\"\";}s:14:\"custom_field_5\";a:2:{s:7:\"enabled\";b:0;s:4:\"name\";s:0:\"\";}}')
+#478 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_requests_captcha_enabled', 'system', 'b:0;')
+#479 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_requests_notify_user_ids', 'system', NULL)
+#480 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('control_tower_check_for_new_version', 'system', 'b:1;')
+#481 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('new_modules_available', 'system', 'b:0;')
+#482 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('update_download_progress', 'system', 'i:0;')
+#483 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mail_to_project', 'system', 'i:0;')
+#484 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('mail_to_project_default_action', 'system', 'i:0;')
+#485 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_sync_locked', 'system', 'b:0;')
+#486 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_last_synced_on', 'system', NULL)
+#487 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('project_last_sync_locked_until', 'system', NULL)
+#488 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('my_tasks_labels_filter', 'system', 's:3:\"any\";')
+#489 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('my_tasks_labels_filter_data', 'system', NULL)
+#490 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('multiple_assignees_for_milestones_and_tasks', 'system', 'b:1;')
+#491 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('morning_paper_enabled', 'system', 'b:1;')
+#492 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('first_morning_paper', 'system', 'b:1;')
+#493 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('morning_paper_include_all_projects', 'system', 'b:0;')
+#494 - info - INSERT INTO ac_config_options (name, module, value) VALUES ('morning_paper_last_activity', 'system', 'i:0;')
+#495 - info - INSERT INTO ac_custom_fields (field_name, parent_type) VALUES ('custom_field_1', 'Project')
+#496 - info - INSERT INTO ac_custom_fields (field_name, parent_type) VALUES ('custom_field_2', 'Project')
+#497 - info - SELECT * FROM ac_users WHERE id = '1' LIMIT 0, 1
+
+cache
+
+#1 - info - Cache miss 'models/users/1'
+
+routing
+
+#1 - info - Compiled match file created at '/Build/Workspaces/QA/activeCollab/instance/compile/_router_assemble_187b59b67cf2809801aa211c6aa944555ee4a382.php'
+
+events
+
+#1 - info - Event 'on_shutdown' triggered
+
+======================================================
+

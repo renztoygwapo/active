@@ -1,0 +1,15 @@
+form textarea.new_page_html {
+    height: 386px;
+    width: 700px;
+}
+
+div#editable_div {
+    width: 828px;
+	height: 394px;
+    border: 1px solid #ccc;
+    padding: 5px;s
+}
+
+.redactor_box {
+	height: 379px;
+}

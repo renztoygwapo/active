@@ -1,0 +1,3 @@
+2014-03-17 14:26:56 Recoverable Error : Argument 1 passed to NotificationsFrameworkModel::__construct() must be an instance of SubscriptionsFramework, instance of NotificationsFramework given, called in /Build/Workspaces/QA/angie/classes/application/AngieFramework.class.php on line 93 and defined (at /Build/Workspaces/QA/angie/frameworks/notifications/resources/NotificationsFrameworkModel.class.php on 16 line)
+2014-03-17 14:26:58 Warning : in_array() expects parameter 2 to be array, null given (at /Build/Workspaces/QA/angie/tools/cli/commands/test.php on 66 line)
+2014-03-17 14:26:58 Warning : in_array() expects parameter 2 to be array, null given (at /Build/Workspaces/QA/angie/tools/cli/commands/test.php on 70 line)

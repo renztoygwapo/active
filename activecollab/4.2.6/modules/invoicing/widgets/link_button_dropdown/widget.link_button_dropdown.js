@@ -1,0 +1,1 @@
+(function($){$.fn.linkButtonDropdown=function(){return this.each(function(){var $this=$(this);var popup=$this.find(".link_button_dropdown_dropdown");popup.css("display","none");$this.click(function(){popup.css("display","block")});$this.delayedHover(null,function(){popup.css("display","none")},300);popup.click(function(){popup.css("display","none")})})}})(jQuery);

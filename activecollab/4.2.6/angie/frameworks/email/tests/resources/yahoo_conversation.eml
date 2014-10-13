@@ -1,0 +1,367 @@
+From MAILER-DAEMON Fri Jul  8 12:08:34 2011
+Delivered-To: activecollabt@gmail.com
+Received: by 10.70.53.1 with SMTP id x1csp165470pdo;
+        Tue, 17 Dec 2013 02:47:29 -0800 (PST)
+X-Received: by 10.49.18.100 with SMTP id v4mr41578818qed.76.1387277248825;
+        Tue, 17 Dec 2013 02:47:28 -0800 (PST)
+Return-Path: <gaxoman@yahoo.com>
+Received: from nm16.bullet.mail.bf1.yahoo.com (nm16.bullet.mail.bf1.yahoo.com. [98.139.212.175])
+        by mx.google.com with ESMTPS id m3si6096531qcg.109.2013.12.17.02.47.28
+        for <activecollabt@gmail.com>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Tue, 17 Dec 2013 02:47:28 -0800 (PST)
+Received-SPF: pass (google.com: best guess record for domain of gaxoman@yahoo.com designates 98.139.212.175 as permitted sender) client-ip=98.139.212.175;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: best guess record for domain of gaxoman@yahoo.com designates 98.139.212.175 as permitted sender) smtp.mail=gaxoman@yahoo.com;
+       dkim=pass header.i=@yahoo.com
+Received: from [98.139.215.142] by nm16.bullet.mail.bf1.yahoo.com with NNFMP; 17 Dec 2013 10:47:28 -0000
+Received: from [98.139.212.228] by tm13.bullet.mail.bf1.yahoo.com with NNFMP; 17 Dec 2013 10:47:28 -0000
+Received: from [127.0.0.1] by omp1037.mail.bf1.yahoo.com with NNFMP; 17 Dec 2013 10:47:28 -0000
+X-Yahoo-Newman-Property: ymail-3
+X-Yahoo-Newman-Id: 104881.85877.bm@omp1037.mail.bf1.yahoo.com
+Received: (qmail 61105 invoked by uid 60001); 17 Dec 2013 10:47:28 -0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yahoo.com; s=s1024; t=1387277247; bh=NjbWGso7gmYnlTg/xdl5nGwMyjeXQBJmUU7HdBMHP88=; h=X-YMail-OSG:Received:X-Rocket-MIMEInfo:X-Mailer:References:Message-ID:Date:From:Reply-To:Subject:To:In-Reply-To:MIME-Version:Content-Type; b=dRvmh66u9dOgbOcBY5G3Gpe0nmQPvRRVMdvFLVNghOSQ5rtkeys+5rst0yOflApdZJKZhjy5ifC7iW1kvr7GpDO7YVgFatu0zT77OCnFBFG15v7yWbaGUREk71iBG9zEkc+IQFnxOrPYWV+6S6TefM4x1AwQ7MYLgFvss3BEReE=
+DomainKey-Signature:a=rsa-sha1; q=dns; c=nofws;
+  s=s1024; d=yahoo.com;
+  h=X-YMail-OSG:Received:X-Rocket-MIMEInfo:X-Mailer:References:Message-ID:Date:From:Reply-To:Subject:To:In-Reply-To:MIME-Version:Content-Type;
+  b=bMxKK1VSRC4FiRlQ+PfiSrF9rMTICSWSmDtargZ9/vxiQKX1nFkf5Hat9BK7RH8Juee9cR6aFM6mxn+0uGkLcE6ZW/59iG7c6riaWYa0EBoTesqfVKeTyLR4sikIklEkaswsv0n5xg4NfIJlFazQSAUWgxpprbDif9bGm9HVeXg=;
+X-YMail-OSG: yndd_fYVM1nzfwchio_HIvUOKCGJ0uwHhdhq0gIFBIRSUK4
+ rSyzCLwxNn2F8lsmZkeus4EoJ5dxXElgTriszhDro6TawTp5zINWfOm39eJf
+ sENuEQx1ErTueHtgnqdr4N9oWeETFE8SiX7t4KTVQBtHG8AMu9J8RjHyVmFl
+ 14kuvdJdaSxTeVMuU9VQL2hZXWpSTaP112Zj37b_pNxwISMhlZEBorKjwnMo
+ FHQKy4QGvc6_0l1iAEAEn7EEtPw1oM.g1h7u.gk2qSZGe_8BtT1BbP3LeIqh
+ m2hHiueWWuPDO52rvdG1hrkge0kqmJcKV03wOf3j1nGAcbrg2UsctAZ0dUBf
+ XBQZc1kgfZwrjoTJVGZzESWUeXPdGwqd67ISRlRTE_z9.NhVex2UeU_3zAvL
+ YTl8VoZvDqHUKbvw0Ul608ESdbdjWS7Jv4nTUGPyUP9_aOQKrY_T8aQhskCj
+ Ju4unP41MCJQUBkoKusnJtcnDN1yZ_evpIfPLakI7Zo9CDV6OTVf5l0ZUSgX
+ MWQr6l3L27oOc7R2GaPZQTDpwGjUTSniqApiyXN1TYIU2liwUsNot.cdYgRM
+ ZNx_iRvpD_sE-
+Received: from [89.216.122.78] by web162305.mail.bf1.yahoo.com via HTTP; Tue, 17 Dec 2013 02:47:27 PST
+X-Rocket-MIMEInfo: 002.001,RW1haWwgUmVwbHkKCgoKCk9uICwgSWdvciBHYXZyaWMgPGdheG9tYW5AeWFob28uY29tPiB3cm90ZToKIApKdXN0IGEgdGVzdAoKCgpPbiBUdWVzZGF5LCBEZWNlbWJlciAxNywgMjAxMyAxMTo0NCBBTSwgSWdvciBHYXZyacSHIDxhY3RpdmVjb2xsYWJ0QGdtYWlsLmNvbT4gd3JvdGU6CiAKRW1haWwgCk5vdGlmaWNhdGlvbgotLSBSRVBMWSBBQk9WRSBUSElTIExJTkUgCi0tICAKICBEaXNjdXNzaW9uOiBEYW5hw4PigKbDgsKhbmppIHByb2JsZW1pIApzYSBzZXJ2ZXJvbSAKUHJvamVjdDogQTUxICYgCmVraXABMAEBAQE-
+X-Mailer: YahooMailWebService/0.8.170.612
+References: <1387277128.52b02b4851a8c@activecollab3.git> <1387277083.68337.YahooMailNeo@web162301.mail.bf1.yahoo.com>
+Message-ID: <1387277247.15073.YahooMailNeo@web162305.mail.bf1.yahoo.com>
+Date: Tue, 17 Dec 2013 02:47:27 -0800 (PST)
+From: Igor Gavric <gaxoman@yahoo.com>
+Reply-To: Igor Gavric <gaxoman@yahoo.com>
+Subject: =?utf-8?B?UmU6IFtBNTEgJiBla2lwYV0gTmV3IGNvbW1lbnQgb24gJ0RhbmHDg+KApsOC?=
+ =?utf-8?B?wqFuamkgcHJvYmxlbWkgc2Egc2VydmVyb20nIGRpc2N1c3Npb24ge0RJU0NV?=
+ =?utf-8?B?U1NJT04vOTUwM30=?=
+To: "activecollabt@gmail.com" <activecollabt@gmail.com>
+In-Reply-To: <1387277083.68337.YahooMailNeo@web162301.mail.bf1.yahoo.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="-600603132-1903138634-1387277247=:15073"
+X-IMAPbase: 1387277525 1
+Status: RO
+X-Status: 
+X-Keywords:                      
+X-UID: 1
+
+---600603132-1903138634-1387277247=:15073
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Email Reply=0A=0A=0A=0A=0AOn , Igor Gavric <gaxoman@yahoo.com> wrote:=0A =
+=0AJust a test=0A=0A=0A=0AOn Tuesday, December 17, 2013 11:44 AM, Igor Gavr=
+i=C4=87 <activecollabt@gmail.com> wrote:=0A =0AEmail =0ANotification=0A-- R=
+EPLY ABOVE THIS LINE =0A--  =0A  Discussion: Dana=C3=83=E2=80=A6=C3=82=C2=
+=A1nji problemi =0Asa serverom =0AProject: A51 & =0Aekipa  Created by=0AIli=
+ja =0AS.    =0A =0A Igor =0AG. =C2=A0 Dec 17, 2013 =C2=A0 New!=0ATest  =0A =
+Igor =0AG. =C2=A0 Dec 17, 2013=0Aodgovor sa yahoo-a   =0A Igor =0AG. =C2=A0=
+ Dec 10, 2013=0AAndroid email1 =0A[Automatizacija] New comment on '=C5=A0ta=
+ jo=C5=A1 ovde ko=C4=8Dim_' =0Adiscussion {DISCUSSION 37986}_20131209.eml27=
+.03kb=0A   =0A Igor =0AG. =C2=A0 Dec 10, 2013=0AEmail Reply=0A1   =0A Igor =
+=0AG. =C2=A0 Dec 10, 2013=0AAndroid email=0A=0A=0A-------- Original message=
+ --------=0AFrom: afiveone <afiveone@mail.manageprojects.com> =0ADate: 2013=
+/12/09 20:54 (GMT+01:00) =0ATo: Danijel Krmar <danijel@a51dev.com> =0ASubje=
+ct: =0A[Automatizacija] New comment on '=C5=A0ta jo=C5=A1 ovde ko=C4=8Dim?'=
+ discussion =0A{DISCUSSION/37986} =0A[Automatizacija] New comment on '=C5=
+=A0ta jo=C5=A1 ovde ko=C4=8Dim_' =0Adiscussion {DISCUSSION 37986}_20131209.=
+eml27.03kb=0A  =0AShowing 5 out of 12 Comments    =0AStop receiving email =
+=0Anotifications about this discussion. =0A=C2=A92013 by A51. Powered =0Aby=
+: activeCollab. 
+---600603132-1903138634-1387277247=:15073
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><body><div style=3D"color:#000; background-color:#fff; font-family:He=
+lveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;fo=
+nt-size:12pt"><div><span>Email Reply<br></span></div><div class=3D"yahoo_qu=
+oted" style=3D"display: block;"> <br> <br> <div style=3D"font-family: Helve=
+ticaNeue, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; =
+font-size: 12pt;"> <div style=3D"font-family: HelveticaNeue, 'Helvetica Neu=
+e', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 12pt;"> <div =
+dir=3D"ltr"> <font size=3D"2" face=3D"Arial"> On , Igor Gavric &lt;gaxoman@=
+yahoo.com&gt; wrote:<br> </font> </div>  <div class=3D"y_msg_container"><di=
+v id=3D"yiv8755666303"><div><div style=3D"color: rgb(0, 0, 0); background-c=
+olor: rgb(255, 255, 255); font-family: HelveticaNeue, 'Helvetica Neue', Hel=
+vetica, Arial, 'Lucida Grande', sans-serif; font-size: 12pt;"><div><span>Ju=
+st a test</span></div><div class=3D"yiv8755666303yqt6748755229"
+ id=3D"yiv8755666303yqt11231"><div class=3D"yiv8755666303yahoo_quoted" styl=
+e=3D"display: block;"> <br clear=3D"none"> <br clear=3D"none"> <div style=
+=3D"font-family: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, 'Lucida=
+ Grande', sans-serif; font-size: 12pt;"> <div style=3D"font-family: Helveti=
+caNeue, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; fo=
+nt-size: 12pt;"> <div dir=3D"ltr"> <font size=3D"2" face=3D"Arial"> On Tues=
+day, December 17, 2013 11:44 AM, Igor Gavri=C4=87 &lt;activecollabt@gmail.c=
+om&gt; wrote:<br clear=3D"none"> </font> </div>  <div class=3D"yiv875566630=
+3y_msg_container"><div id=3D"yiv8755666303">=0A=0A</div></div></div></div><=
+/div></div></div></div><div class=3D"yiv8755666303yqt6748755229" id=3D"yiv8=
+755666303yqt30911"><title>Email =0ANotification</title><style type=3D"text/=
+css">=0A=0A#yiv8755666303  #yiv8755666303outlook a {padding:0;}=0A=0A#yiv87=
+55666303  body{width:100% !important;margin:0;padding:0;}=0A=0A#yiv87556663=
+03  .yiv8755666303ExternalClass {width:100%;}=0A=0A#yiv8755666303  .yiv8755=
+666303ExternalClass, #yiv8755666303  .yiv8755666303ExternalClass p, #yiv875=
+5666303  .yiv8755666303ExternalClass span, =0A#yiv8755666303  .yiv875566630=
+3ExternalClass font, #yiv8755666303  .yiv8755666303ExternalClass td, #yiv87=
+55666303  .yiv8755666303ExternalClass div {=0Aline-height:100%;}=0A=0A#yiv8=
+755666303  #yiv8755666303backgroundTable {margin:0;padding:0;width:100% !im=
+portant;line-height:100% !important;}=0A=0A#yiv8755666303  img {outline:non=
+e;text-decoration:none;}=0A=0A#yiv8755666303  a img {border:none;}=0A=0A#yi=
+v8755666303  .yiv8755666303image_fix {display:block;}=0A=0A#yiv8755666303  =
+p {margin:1em 0;line-height:14px !important;}=0A=0A#yiv8755666303  h1, #yiv=
+8755666303  h2, #yiv8755666303  h3, #yiv8755666303  h4, #yiv8755666303  h5,=
+ #yiv8755666303  h6 {color:black;}=0A=0A#yiv8755666303  h1 a, #yiv875566630=
+3  h2 a, #yiv8755666303  h3 a, #yiv8755666303  h4 a, #yiv8755666303  h5 a, =
+#yiv8755666303  h6 a {color:blue;}=0A=0A#yiv8755666303  h1 a:active, #yiv87=
+55666303  h2 a:active, #yiv8755666303  h3 a:active, #yiv8755666303  h4 a:ac=
+tive, #yiv8755666303  h5 a:active, =0A#yiv8755666303  h6 a:active {color:re=
+d;}=0A=0A#yiv8755666303  h1 a:visited, #yiv8755666303  h2 a:visited, #yiv87=
+55666303  h3 a:visited, #yiv8755666303  h4 a:visited, #yiv8755666303  h5 =
+=0Aa:visited, #yiv8755666303  h6 a:visited {color:purple;}=0A=0A#yiv8755666=
+303  table td {border-collapse:collapse;}=0A=0A#yiv8755666303  table {borde=
+r-collapse:collapse;}=0A=0A=0A#yiv8755666303 filtered  {=0A}=0A#yiv87556663=
+03  a .yiv8755666303filtered99999 , #yiv8755666303  a .yiv8755666303filtere=
+d99999  {text-decoration:none;color:black;cursor:default;}=0A#yiv8755666303=
+  .yiv8755666303mobile_link a .yiv8755666303filtered99999 , #yiv8755666303 =
+ .yiv8755666303mobile_link a .yiv8755666303filtered99999  {=0Acolor:orange;=
+cursor:default;}=0A#yiv8755666303  table .yiv8755666303filtered99999 , #yiv=
+8755666303  td .yiv8755666303filtered99999 {width:auto !important;max-width=
+:656px !important;}=0A#yiv8755666303  #yiv8755666303mainContent{padding:20p=
+x 5px !important;}=0A#yiv8755666303  td .yiv8755666303filtered99999 {paddin=
+g:20px 5px;}=0A#yiv8755666303  td .yiv8755666303filtered99999  img{width:30=
+px !important;height:30px !important;}=0A#yiv8755666303  td .yiv8755666303f=
+iltered99999 {padding-left:5px !important;padding-right:5px !important;widt=
+h:30px;}=0A#yiv8755666303  td .yiv8755666303filtered99999  img{width:40px;h=
+eight:40px;}=0A#yiv8755666303  td .yiv8755666303filtered99999 {padding-left=
+:5px !important;padding-right:5px !important;}=0A#yiv8755666303  table .yiv=
+8755666303filtered99999 {padding-left:5px !important;padding-right:5px !imp=
+ortant;width:auto !important;}=0A#yiv8755666303  table .yiv8755666303filter=
+ed99999 {width:100px !important;}=0A#yiv8755666303  td .yiv8755666303filter=
+ed99999 {padding:10px !important;}=0A#yiv8755666303  td .yiv8755666303filte=
+red99999  td{padding:5px !important;}=0A#yiv8755666303  td .yiv8755666303fi=
+ltered99999  img{max-width:270px;}=0A#yiv8755666303  =0A=0A filtered  {=0A}=
+=0A#yiv8755666303  a .yiv8755666303filtered99999 , #yiv8755666303  a .yiv87=
+55666303filtered99999  {text-decoration:none;color:blue;cursor:default;}=0A=
+#yiv8755666303  .yiv8755666303mobile_link a .yiv8755666303filtered99999 , #=
+yiv8755666303  .yiv8755666303mobile_link a .yiv8755666303filtered99999  {=
+=0Acolor:orange;cursor:default;}=0A#yiv8755666303  table .yiv8755666303filt=
+ered99999 , #yiv8755666303  td .yiv8755666303filtered99999 {width:auto !imp=
+ortant;max-width:656px !important;}=0A#yiv8755666303  =0A=0A filtered  {=0A=
+}=0A#yiv8755666303  a .yiv8755666303filtered99999 , #yiv8755666303  a .yiv8=
+755666303filtered99999  {text-decoration:none;color:blue;cursor:default;}=
+=0A#yiv8755666303  .yiv8755666303mobile_link a .yiv8755666303filtered99999 =
+, #yiv8755666303  .yiv8755666303mobile_link a .yiv8755666303filtered99999  =
+{=0Acolor:orange;cursor:default;}=0A#yiv8755666303  table .yiv8755666303fil=
+tered99999 {width:auto !important;}=0A#yiv8755666303  #yiv8755666303mainTab=
+le, #yiv8755666303  #yiv8755666303mainContent{width:auto !important;max-wid=
+th:656px !important;}=0A#yiv8755666303  =0A=0A filtered  {=0A}=0A#yiv875566=
+6303  table .yiv8755666303filtered99999 {width:auto !important;}=0A#yiv8755=
+666303  table .yiv8755666303filtered99999 , #yiv8755666303  td .yiv87556663=
+03filtered99999 {width:auto !important;max-width:656px !important;}=0A#yiv8=
+755666303  =0A=0A filtered  {=0A}=0A#yiv8755666303  table .yiv8755666303fil=
+tered99999 {width:auto !important;}=0A#yiv8755666303  table .yiv8755666303f=
+iltered99999 , #yiv8755666303  td .yiv8755666303filtered99999 {width:auto !=
+important;max-width:656px !important;}=0A#yiv8755666303  =0A=0A filtered  {=
+=0A}=0A#yiv8755666303  table .yiv8755666303filtered99999 {width:auto !impor=
+tant;}=0A#yiv8755666303  table .yiv8755666303filtered99999 , #yiv8755666303=
+  td .yiv8755666303filtered99999 {width:auto !important;max-width:656px !im=
+portant;}=0A#yiv8755666303  td .yiv8755666303filtered99999 {padding:20px 5p=
+x !important;}=0A#yiv8755666303  td .yiv8755666303filtered99999  img{width:=
+30px !important;height:30px !important;}=0A#yiv8755666303  td .yiv875566630=
+3filtered99999 {padding-left:5px !important;padding-right:5px !important;wi=
+dth:30px;}=0A#yiv8755666303  td .yiv8755666303filtered99999  img{width:40px=
+;height:40px;}=0A#yiv8755666303  td .yiv8755666303filtered99999 {padding-le=
+ft:5px !important;padding-right:5px !important;}=0A#yiv8755666303  table .y=
+iv8755666303filtered99999 {padding-left:5px !important;padding-right:5px !i=
+mportant;}=0A#yiv8755666303  table .yiv8755666303filtered99999 {width:100px=
+ !important;}=0A#yiv8755666303  =0A=0A filtered  {=0A}=0A#yiv8755666303  ta=
+ble .yiv8755666303filtered99999 {width:auto !important;}=0A#yiv8755666303  =
+table .yiv8755666303filtered99999 , #yiv8755666303  td .yiv8755666303filter=
+ed99999 {width:auto !important;max-width:656px !important;}=0A#yiv875566630=
+3 </style><div><div><table align=3D"center" id=3D"yiv8755666303backgroundTa=
+ble" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" style=
+=3D"font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; ba=
+ckground-color: rgb(242, 242, 227);"><tbody><tr><td align=3D"center" colspa=
+n=3D"1" rowspan=3D"1" style=3D"text-transform:uppercase;font-size:11px;heig=
+ht:20px;background:#ededde;color:#727265;text-align:center;padding:5px 0;">=
+-- REPLY ABOVE THIS LINE =0A--</td></tr><tr><td colspan=3D"1" rowspan=3D"1"=
+ style=3D"border-bottom:1px solid #e3e3ce;height:1px;line-height:1;padding:=
+0;margin:0;"></td></tr><tr><td align=3D"center" colspan=3D"1" rowspan=3D"1"=
+ id=3D"yiv8755666303mainContent" style=3D"padding:40px 20px;"><table align=
+=3D"center" id=3D"yiv8755666303mainTable" width=3D"654" cellpadding=3D"0" c=
+ellspacing=3D"0" border=3D"0" style=3D"width:654px;margin:0 auto;border-spa=
+cing:0;border-collapse:separate;border:1px solid #d0d2c9;text-align:left;">=
+<tbody><tr><td colspan=3D"1" rowspan=3D"1">      =09=09 =0A=09=09=09<table =
+align=3D"center" id=3D"yiv8755666303inspector" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" style=3D"border-collapse:separate;padding:15px;"><tbod=
+y><tr><td colspan=3D"1" rowspan=3D"1" class=3D"yiv8755666303branding" style=
+=3D"text-align:center;padding:10px;">=0A=09=09=09=09=09=09<img src=3D"http:=
+//activecollab3.git/brand/logo.80x80.png?timestamp=3D1366622677" alt=3D"Log=
+o">=0A=09=09=09=09=09</td><td colspan=3D"1" rowspan=3D"1" style=3D"text-ali=
+gn:left;width:624px;"><table align=3D"left" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" style=3D"font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; font-size: 12px; background-color: rgb(242, 242, 227=
+); line-height: 16px;"><tbody><tr><td colspan=3D"1" rowspan=3D"1" style=3D"=
+width:80px;vertical-align:top;padding:3px 2px 4px 4px;">Discussion:</td><td=
+ colspan=3D"1" rowspan=3D"1" style=3D"vertical-align:top;padding:2px;width:=
+auto !important;"><a rel=3D"nofollow" shape=3D"rect" target=3D"_blank" href=
+=3D"http://activecollab3.git/index.php?path_info=3Dprojects%2Fa51%2Fdiscuss=
+ions%2F9503" style=3D"color:#950000;text-decoration:underline;">Dana=C3=83=
+=E2=80=A6=C3=82=C2=A1nji problemi =0Asa serverom</a></td></tr><tr><td colsp=
+an=3D"1" rowspan=3D"1" style=3D"width:80px;vertical-align:top;padding:3px 2=
+px 4px 4px;">Project:</td><td colspan=3D"1" rowspan=3D"1" style=3D"vertical=
+-align:top;padding:2px;width:auto !important;"><a rel=3D"nofollow" shape=3D=
+"rect" target=3D"_blank" href=3D"http://activecollab3.git/index.php?path_in=
+fo=3Dprojects%2Fa51" style=3D"color:#950000;text-decoration:underline;">A51=
+ &amp; =0Aekipa</a></td></tr></tbody></table></td><td colspan=3D"1" rowspan=
+=3D"1"><table align=3D"center" id=3D"yiv8755666303createdBy" cellpadding=3D=
+"0" cellspacing=3D"0" border=3D"0" style=3D"width: 150px; font-family: 'Luc=
+ida Grande', Verdana, Arial, Helvetica, sans-serif; font-size: 12px;"><tbod=
+y><tr><td align=3D"right" colspan=3D"1" rowspan=3D"1" style=3D"margin:5px;w=
+idth:100px;" width=3D"100">Created by<br clear=3D"none"> <a rel=3D"nofollow=
+" shape=3D"rect" target=3D"_blank" href=3D"http://activecollab3.git/index.p=
+hp?path_info=3Dpeople%2F1%2Fusers%2F1" style=3D"padding-top:5px;color:#9500=
+00;text-decoration:underline;">Ilija =0AS.</a></td><td colspan=3D"1" rowspa=
+n=3D"1" class=3D"yiv8755666303avatar" style=3D"padding:5px 10px;"><img src=
+=3D"http://activecollab3.git/assets/images/authentication/default/user-role=
+s/member.40x40.png" alt=3D""></td></tr></tbody></table></td></tr></tbody></=
+table>=0A=09=09</td></tr><tr><td colspan=3D"1" rowspan=3D"1" style=3D"width=
+:654px;background-color:#ffffff;border-collapse:separate;">=09=09=09=09=09=
+=0A=09=09=09<table class=3D"yiv8755666303ExternalClass" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" style=3D"font-family: 'Lucida Grande', Verdan=
+a, Arial, Helvetica, sans-serif; font-size: 12px;"><tbody><tr><td colspan=
+=3D"2" rowspan=3D"1" style=3D"border-top:1px solid #d7d8cf;height:1px;line-=
+height:1px;width:654px;"></td></tr><tr><td colspan=3D"1" rowspan=3D"1" clas=
+s=3D"yiv8755666303avatar" style=3D"padding:15px;vertical-align:top;text-ali=
+gn:center;width:40px;"><a rel=3D"nofollow" shape=3D"rect" target=3D"_blank"=
+ href=3D"http://activecollab3.git/index.php?path_info=3Dpeople%2F1%2Fusers%=
+2F43"><img src=3D"http://activecollab3.git/avatars/43.40x40.png?time=3D1387=
+276938" alt=3D"avatar"></a></td><td colspan=3D"1" rowspan=3D"1" style=3D"pa=
+dding:15px 15px 15px 0;">=0A=09=09=09=09=09=09=09<div style=3D"padding-bott=
+om:5px;"><a rel=3D"nofollow" shape=3D"rect" target=3D"_blank" href=3D"http:=
+//activecollab3.git/index.php?path_info=3Dpeople%2F1%2Fusers%2F43" style=3D=
+"color:#950000;text-decoration:underline;font-weight:bold;">Igor =0AG.</a> =
+&nbsp; Dec 17, 2013 &nbsp; <span style=3D"font-weight:bold;">New!</span></d=
+iv>=0A=09=09=09=09=09=09=09<div>=0A=09=09=09=09=09=09=09=09<div>Test</div>=
+=0A=09=09=09=09=09=09=09=09=0A=09=09=09=09=09=09=09</div>=0A=09=09=09=09=09=
+=09</td></tr><tr><td colspan=3D"3" rowspan=3D"1" height=3D"1" style=3D"widt=
+h:654px;"><div style=3D"height:1px;border-bottom:1px solid #d7d8cf;padding:=
+0;height:1;line-height:1;"></div></td></tr><tr><td colspan=3D"1" rowspan=3D=
+"1" class=3D"yiv8755666303avatar" style=3D"padding:15px;vertical-align:top;=
+text-align:center;width:40px;"><a rel=3D"nofollow" shape=3D"rect" target=3D=
+"_blank" href=3D"http://activecollab3.git/index.php?path_info=3Dpeople%2F1%=
+2Fusers%2F43"><img src=3D"http://activecollab3.git/avatars/43.40x40.png?tim=
+e=3D1387276938" alt=3D"avatar"></a></td><td colspan=3D"1" rowspan=3D"1" sty=
+le=3D"padding:15px 15px 15px 0;">=0A=09=09=09=09=09=09=09<div style=3D"padd=
+ing-bottom:5px;"><a rel=3D"nofollow" shape=3D"rect" target=3D"_blank" href=
+=3D"http://activecollab3.git/index.php?path_info=3Dpeople%2F1%2Fusers%2F43"=
+ style=3D"color:#950000;text-decoration:underline;font-weight:bold;">Igor =
+=0AG.</a> &nbsp; Dec 17, 2013</div>=0A=09=09=09=09=09=09=09<div>=0A=09=09=
+=09=09=09=09=09=09odgovor sa yahoo-a=0A=09=09=09=09=09=09=09=09=0A=09=09=09=
+=09=09=09=09</div>=0A=09=09=09=09=09=09</td></tr><tr><td colspan=3D"3" rows=
+pan=3D"1" height=3D"1" style=3D"width:654px;"><div style=3D"height:1px;bord=
+er-bottom:1px solid #d7d8cf;padding:0;height:1;line-height:1;"></div></td><=
+/tr><tr><td colspan=3D"1" rowspan=3D"1" class=3D"yiv8755666303avatar" style=
+=3D"padding:15px;vertical-align:top;text-align:center;width:40px;"><a rel=
+=3D"nofollow" shape=3D"rect" target=3D"_blank" href=3D"http://activecollab3=
+.git/index.php?path_info=3Dpeople%2F1%2Fusers%2F43"><img src=3D"http://acti=
+vecollab3.git/avatars/43.40x40.png?time=3D1387276938" alt=3D"avatar"></a></=
+td><td colspan=3D"1" rowspan=3D"1" style=3D"padding:15px 15px 15px 0;">=0A=
+=09=09=09=09=09=09=09<div style=3D"padding-bottom:5px;"><a rel=3D"nofollow"=
+ shape=3D"rect" target=3D"_blank" href=3D"http://activecollab3.git/index.ph=
+p?path_info=3Dpeople%2F1%2Fusers%2F43" style=3D"color:#950000;text-decorati=
+on:underline;font-weight:bold;">Igor =0AG.</a> &nbsp; Dec 10, 2013</div>=0A=
+=09=09=09=09=09=09=09<div>=0A=09=09=09=09=09=09=09=09Android email1=0A=09=
+=09=09=09=09=09=09=09<table id=3D"yiv8755666303attachment" width=3D"100%"><=
+tbody><tr><td colspan=3D"1" rowspan=3D"1" style=3D"padding-bottom:15px;"><i=
+mg src=3D"http://activecollab3.git/assets/images/attachments/default/icons/=
+12x12/manage-attachments.png"><a rel=3D"nofollow" shape=3D"rect" target=3D"=
+_blank" href=3D"http://activecollab3.git/index.php?path_info=3Dprojects%2Fa=
+51%2Fdiscussions%2F9503%2Fcomments%2F1781%2Fattachments%2F1876%2Fdownload&a=
+mp;force=3D1&amp;disposition=3Dattachment" style=3D"margin-left:5px;color:#=
+950000;text-decoration:underline;">[Automatizacija] New comment on '=C5=A0t=
+a jo=C5=A1 ovde ko=C4=8Dim_' =0Adiscussion {DISCUSSION 37986}_20131209.eml<=
+/a><span style=3D"margin-left:5px;font-size:9px;color:#91918D;">27.03kb</sp=
+an><br clear=3D"none"></td></tr></tbody></table>=0A=09=09=09=09=09=09=09</d=
+iv>=0A=09=09=09=09=09=09</td></tr><tr><td colspan=3D"3" rowspan=3D"1" heigh=
+t=3D"1" style=3D"width:654px;"><div style=3D"height:1px;border-bottom:1px s=
+olid #d7d8cf;padding:0;height:1;line-height:1;"></div></td></tr><tr><td col=
+span=3D"1" rowspan=3D"1" class=3D"yiv8755666303avatar" style=3D"padding:15p=
+x;vertical-align:top;text-align:center;width:40px;"><a rel=3D"nofollow" sha=
+pe=3D"rect" target=3D"_blank" href=3D"http://activecollab3.git/index.php?pa=
+th_info=3Dpeople%2F1%2Fusers%2F43"><img src=3D"http://activecollab3.git/ava=
+tars/43.40x40.png?time=3D1387276938" alt=3D"avatar"></a></td><td colspan=3D=
+"1" rowspan=3D"1" style=3D"padding:15px 15px 15px 0;">=0A=09=09=09=09=09=09=
+=09<div style=3D"padding-bottom:5px;"><a rel=3D"nofollow" shape=3D"rect" ta=
+rget=3D"_blank" href=3D"http://activecollab3.git/index.php?path_info=3Dpeop=
+le%2F1%2Fusers%2F43" style=3D"color:#950000;text-decoration:underline;font-=
+weight:bold;">Igor =0AG.</a> &nbsp; Dec 10, 2013</div>=0A=09=09=09=09=09=09=
+=09<div>=0A=09=09=09=09=09=09=09=09Email Reply<br clear=3D"none"> 1=0A=09=
+=09=09=09=09=09=09=09=0A=09=09=09=09=09=09=09</div>=0A=09=09=09=09=09=09</t=
+d></tr><tr><td colspan=3D"3" rowspan=3D"1" height=3D"1" style=3D"width:654p=
+x;"><div style=3D"height:1px;border-bottom:1px solid #d7d8cf;padding:0;heig=
+ht:1;line-height:1;"></div></td></tr><tr><td colspan=3D"1" rowspan=3D"1" cl=
+ass=3D"yiv8755666303avatar" style=3D"padding:15px;vertical-align:top;text-a=
+lign:center;width:40px;"><a rel=3D"nofollow" shape=3D"rect" target=3D"_blan=
+k" href=3D"http://activecollab3.git/index.php?path_info=3Dpeople%2F1%2Fuser=
+s%2F43"><img src=3D"http://activecollab3.git/avatars/43.40x40.png?time=3D13=
+87276938" alt=3D"avatar"></a></td><td colspan=3D"1" rowspan=3D"1" style=3D"=
+padding:15px 15px 15px 0;">=0A=09=09=09=09=09=09=09<div style=3D"padding-bo=
+ttom:5px;"><a rel=3D"nofollow" shape=3D"rect" target=3D"_blank" href=3D"htt=
+p://activecollab3.git/index.php?path_info=3Dpeople%2F1%2Fusers%2F43" style=
+=3D"color:#950000;text-decoration:underline;font-weight:bold;">Igor =0AG.</=
+a> &nbsp; Dec 10, 2013</div>=0A=09=09=09=09=09=09=09<div>=0A=09=09=09=09=09=
+=09=09=09Android email<br clear=3D"none"><br clear=3D"none"><br clear=3D"no=
+ne"> -------- Original message --------<br clear=3D"none"> From: afiveone &=
+lt;<a rel=3D"nofollow" shape=3D"rect" ymailto=3D"mailto:afiveone@mail.manag=
+eprojects.com" target=3D"_blank" href=3D"mailto:afiveone@mail.manageproject=
+s.com">afiveone@mail.manageprojects.com</a>&gt; =0A<br clear=3D"none"> Date=
+: 2013/12/09 20:54 (GMT+01:00) <br clear=3D"none"> To: Danijel Krmar &lt;<a=
+ rel=3D"nofollow" shape=3D"rect" ymailto=3D"mailto:danijel@a51dev.com" targ=
+et=3D"_blank" href=3D"mailto:danijel@a51dev.com">danijel@a51dev.com</a>&gt;=
+ <br clear=3D"none"> Subject: =0A[Automatizacija] New comment on '=C5=A0ta =
+jo=C5=A1 ovde ko=C4=8Dim?' discussion =0A{DISCUSSION/37986}=0A=09=09=09=09=
+=09=09=09=09<table id=3D"yiv8755666303attachment" width=3D"100%"><tbody><tr=
+><td colspan=3D"1" rowspan=3D"1" style=3D"padding-bottom:15px;"><img src=3D=
+"http://activecollab3.git/assets/images/attachments/default/icons/12x12/man=
+age-attachments.png"><a rel=3D"nofollow" shape=3D"rect" target=3D"_blank" h=
+ref=3D"http://activecollab3.git/index.php?path_info=3Dprojects%2Fa51%2Fdisc=
+ussions%2F9503%2Fcomments%2F1779%2Fattachments%2F1875%2Fdownload&amp;force=
+=3D1&amp;disposition=3Dattachment" style=3D"margin-left:5px;color:#950000;t=
+ext-decoration:underline;">[Automatizacija] New comment on '=C5=A0ta jo=C5=
+=A1 ovde ko=C4=8Dim_' =0Adiscussion {DISCUSSION 37986}_20131209.eml</a><spa=
+n style=3D"margin-left:5px;font-size:9px;color:#91918D;">27.03kb</span><br =
+clear=3D"none"></td></tr></tbody></table>=0A=09=09=09=09=09=09=09</div>=0A=
+=09=09=09=09=09=09</td></tr><tr><td colspan=3D"3" rowspan=3D"1" style=3D"pa=
+dding:15px;color:#999;text-align:center;">=0A=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=0A=09=09=09=09=09=09=09=09=09=09          =09=09=09=09        =
+    =09Showing <a rel=3D"nofollow" shape=3D"rect" target=3D"_blank" href=3D=
+"http://activecollab3.git/index.php?path_info=3Dprojects%2Fa51%2Fdiscussion=
+s%2F9503" style=3D"color:#950000;text-decoration:underline;">5 out of 12 Co=
+mments</a>=0A=09=09=09            =09=09=09          =09=09=09=09=09=09</td=
+></tr></tbody></table>=0A=09=09</td></tr></tbody></table></td></tr><tr><td =
+colspan=3D"1" rowspan=3D"1" style=3D"text-align:center;padding:5px 0;font-s=
+ize:11px;"><a rel=3D"nofollow" shape=3D"rect" target=3D"_blank" href=3D"htt=
+p://activecollab3.git/index.php?path_info=3Dpublic%2Fsubscriptions%2Funsubs=
+cribe&amp;code=3D3509-KrEv73hcU9" style=3D"color:#950000;text-decoration:un=
+derline;">Stop receiving email =0Anotifications</a> about this discussion.<=
+/td></tr><tr><td colspan=3D"1" rowspan=3D"1" style=3D"text-align:center;pad=
+ding:5px 0 20px 0;font-size:11px;">=C2=A92013 by A51. Powered =0Aby: <a rel=
+=3D"nofollow" shape=3D"rect" target=3D"_blank" href=3D"http://www.activecol=
+lab.com/" style=3D"color:#950000;text-decoration:underline;">activeCollab</=
+a>.</td></tr></tbody></table></div>=0A<br clear=3D"none"><br clear=3D"none"=
+>      </div></div></div><br><br></div>  </div> </div>  </div> </div></body=
+></html>
+---600603132-1903138634-1387277247=:15073--
+

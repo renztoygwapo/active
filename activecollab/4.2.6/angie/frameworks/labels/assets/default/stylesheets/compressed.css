@@ -1,0 +1,2 @@
+/* Minified: main.css */
+span.label_tag{display:inline-block;width:16px;height:16px;position:relative}span.label_tag span.label_overlay{display:block;width:16px;height:16px;background:url("assets/images/labels/default/objects-list/label-icon.png") repeat-x left bottom;position:relative;z-index:2}span.label_tag span.label_background{display:block;width:8px;height:8px;position:absolute;z-index:1;left:3px;top:5px;border-radius:6px}

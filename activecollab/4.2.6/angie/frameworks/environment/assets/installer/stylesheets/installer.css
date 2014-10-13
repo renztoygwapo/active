@@ -1,0 +1,75 @@
+#application_installer {
+	margin: 50px auto;
+	text-align: left;
+	width: 600px;
+}
+
+#application_installer div.installer_section {
+	margin: 20px 0;
+}
+
+#application_installer div.installer_section div.body {
+	padding: 0 20px;
+}
+
+/** Base form elements **/
+
+#application_installer form p.wrap_form_element {
+	overflow: hidden;
+}
+
+#application_installer form label {
+	width: 120px;
+	float: left;
+	display: block;
+}
+
+/** Validation errors **/
+
+#application_installer div.installer_section.has_errors h1 span {
+  color: red;
+}
+
+#application_installer div.installer_section div.body div.validation_errors p {
+	font-style: italic;
+}
+
+#application_installer div.installer_section div.body div.validation_errors ul li {
+	color: red;
+}
+
+/** Validation log **/
+
+ul.validation_log {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.validation_log li {
+	margin: 4px 0;
+}
+
+ul.validation_log li span.status {
+	font-weight: bold;
+}
+
+ul.validation_log li.ok span.status {
+	color: green;
+}
+
+ul.validation_log li.warning span.status {
+	color: orange;
+}
+
+ul.validation_log li.error span.status {
+	color: red;
+}
+
+ul.validation_log li span.explanation {
+	display: block;
+	font-style: italic;
+	font-size: 90%;
+	margin: 4px 0;
+	padding-left: 10px;
+}

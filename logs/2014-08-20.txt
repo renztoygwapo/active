@@ -1,0 +1,118 @@
+Logged on: Wednesday, 20-Aug-2014 05:51:04 GMT
+Memory usage: 12.35MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-08-20 05:51:04'
+#4 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#5 - info - Routing string ''
+#6 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = ''
+#7 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '132'
+#8 - info - Event 'on_initial_javascript_assign' triggered
+#9 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#10 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-08-20 05:51:04'
+#4 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#5 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = ''
+#6 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '132'
+
+routing
+
+#1 - info - Routing string ''
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_shutdown' triggered
+
+======================================================
+
+Logged on: Wednesday, 20-Aug-2014 12:11:00 GMT
+Memory usage: 10.39MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-08-20 12:11:00'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '50' AND acx_user_sessions.session_key = 'F3vcN08VzGdBGnpymEmWvnsIQh7QtZAZRV3tTZdi'
+#5 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#6 - info - Routing string 'wireframe-updates'
+#7 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'wireframe-updates'
+#8 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '137'
+#9 - info - Event 'on_initial_javascript_assign' triggered
+#10 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#11 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-08-20 12:11:00'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '50' AND acx_user_sessions.session_key = 'F3vcN08VzGdBGnpymEmWvnsIQh7QtZAZRV3tTZdi'
+#5 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#6 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'wireframe-updates'
+#7 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '137'
+
+routing
+
+#1 - info - Routing string 'wireframe-updates'
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_shutdown' triggered
+
+======================================================
+
+Logged on: Wednesday, 20-Aug-2014 12:11:59 GMT
+Memory usage: 10.39MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-08-20 12:11:59'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '50' AND acx_user_sessions.session_key = 'F3vcN08VzGdBGnpymEmWvnsIQh7QtZAZRV3tTZdi'
+#5 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#6 - info - Routing string 'wireframe-updates'
+#7 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'wireframe-updates'
+#8 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '137'
+#9 - info - Event 'on_initial_javascript_assign' triggered
+#10 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#11 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-08-20 12:11:59'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '50' AND acx_user_sessions.session_key = 'F3vcN08VzGdBGnpymEmWvnsIQh7QtZAZRV3tTZdi'
+#5 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#6 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'wireframe-updates'
+#7 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '137'
+
+routing
+
+#1 - info - Routing string 'wireframe-updates'
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_shutdown' triggered
+
+======================================================
+

@@ -1,0 +1,932 @@
+Logged on: Wednesday, 24-Sep-2014 20:39:03 GMT
+Memory usage: 20.33MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - SELECT name, value FROM acx_config_options
+#4 - info - SELECT name, is_enabled FROM acx_modules WHERE name != 'system' ORDER BY position
+#5 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-24 20:38:59'
+#6 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '54' AND acx_user_sessions.session_key = 'bnyIvjCy9RPTvrKyHuKbVUBCs5ZrcAceNAM9KevH'
+#7 - info - BEGIN WORK
+#8 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#9 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '54'
+#10 - info - UPDATE acx_user_sessions SET user_ip = '65.102.124.30', user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.122 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-10-08 20:38:59', visits = visits + 1 WHERE id = '54'
+#11 - info - UPDATE acx_users SET last_visit_on = last_login_on, last_login_on = '2014-09-24 20:38:59', last_activity_on = '2014-09-24 20:38:59' WHERE id = '1'
+#12 - info - COMMIT
+#13 - info - SELECT value FROM acx_config_option_values WHERE name = 'language' AND parent_type = 'User' AND parent_id = '1'
+#14 - info - SELECT * FROM acx_languages WHERE id = '1' LIMIT 0, 1
+#15 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#16 - info - Routing string 'people/2/users/14'
+#17 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'people/2/users/14'
+#18 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '213'
+#19 - info - SELECT * FROM acx_currencies    ORDER BY is_default DESC LIMIT 0, 1
+#20 - info - SELECT DAY(event_date) AS 'day', MONTH(event_date) AS 'month', YEAR(event_date) AS 'year', repeat_yearly, name FROM acx_day_offs ORDER BY event_date
+#21 - info - Event 'on_initial_javascript_assign' triggered
+#22 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#23 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#24 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#25 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#26 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#27 - info - Event 'on_people_tabs' triggered
+#28 - info - SELECT * FROM acx_companies WHERE id = '2' LIMIT 0, 1
+#29 - info - SELECT id FROM acx_companies ORDER BY name
+#30 - info - SELECT * FROM acx_users WHERE id = '14' LIMIT 0, 1
+#31 - info - SELECT id FROM acx_users WHERE state >= '1'
+#32 - info - SELECT id, name, state FROM acx_companies WHERE id IN ('1', '4', '2', '3') AND state >= '2' ORDER BY is_owner DESC, name ASC
+#33 - info - SELECT id FROM acx_users WHERE state >= '3'
+#34 - info - SELECT * FROM acx_users WHERE id IN ('1', '2', '3', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14') AND company_id IN ('1', '4', '2', '3') AND state >= '2'   ORDER BY CONCAT(first_name, last_name, email) 
+#35 - info - SELECT id, name, state FROM acx_companies WHERE id IN ('1', '4', '2', '3') AND state > '2' ORDER BY name
+#36 - info - SELECT value FROM acx_config_options WHERE name = 'last_frequently_activity'
+#37 - info - Event 'on_load_control_tower_badge' triggered
+#38 - info - SELECT * FROM acx_incoming_mailboxes WHERE email = 'george@mangotreemobile.com'   ORDER BY name LIMIT 0, 1
+#39 - info - SELECT COUNT(*) AS 'row_count' FROM acx_outgoing_messages WHERE send_retries >= '5'
+#40 - info - SELECT COUNT(*) AS 'row_count' FROM acx_incoming_mails
+#41 - info - Callback 'email_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#42 - info - Callback 'system_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#43 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#44 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#45 - info - SELECT * FROM acx_users WHERE id IN ('1')   ORDER BY CONCAT(first_name, last_name, email) 
+#46 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#47 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#48 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#49 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#50 - info - Event 'on_object_options' triggered
+#51 - info - Callback 'tracking_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#52 - info - Callback 'invoicing_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#53 - info - Callback 'project_exporter_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#54 - info - Callback 'source_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#55 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_timezone' AND parent_type = 'User' AND parent_id = '1'
+#56 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_dst' AND parent_type = 'User' AND parent_id = '1'
+#57 - info - SELECT value FROM acx_config_option_values WHERE name = 'format_time' AND parent_type = 'User' AND parent_id = '1'
+#58 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#59 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#60 - info - SELECT value FROM acx_config_option_values WHERE name = 'office_address' AND parent_type = 'Company' AND parent_id = '1'
+#61 - info - SELECT value FROM acx_config_option_values WHERE name = 'office_phone' AND parent_type = 'Company' AND parent_id = '1'
+#62 - info - SELECT value FROM acx_config_option_values WHERE name = 'office_fax' AND parent_type = 'Company' AND parent_id = '1'
+#63 - info - SELECT value FROM acx_config_option_values WHERE name = 'office_homepage' AND parent_type = 'Company' AND parent_id = '1'
+#64 - info - SELECT value FROM acx_config_option_values WHERE name = 'title' AND parent_type = 'User' AND parent_id = '1'
+#65 - info - SELECT value FROM acx_config_option_values WHERE name = 'phone_work' AND parent_type = 'User' AND parent_id = '1'
+#66 - info - SELECT value FROM acx_config_option_values WHERE name = 'phone_mobile' AND parent_type = 'User' AND parent_id = '1'
+#67 - info - SELECT value FROM acx_config_option_values WHERE name = 'im_type' AND parent_type = 'User' AND parent_id = '1'
+#68 - info - SELECT value FROM acx_config_option_values WHERE name = 'im_value' AND parent_type = 'User' AND parent_id = '1'
+#69 - info - Event 'on_main_menu' triggered
+#70 - info - Callback 'authentication_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#71 - info - Callback 'reports_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#72 - info - Callback 'calendars_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#73 - info - Event 'on_custom_user_permissions' triggered
+#74 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#75 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#76 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#77 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#78 - info - SELECT COUNT(*) AS 'row_count' FROM acx_invoice_objects WHERE status = '1' AND date_field_1 < '2014-09-24' AND type = 'Invoice'
+#79 - info - Callback 'invoicing_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#80 - info - Callback 'documents_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#81 - info - SELECT parent_id AS project_id from acx_favorites WHERE parent_type = 'Project' AND user_id = '1'
+#82 - info - SELECT acx_projects.*, (acx_projects.id IN (NULL)) as is_favorite FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND acx_projects.state >= '3' AND acx_projects.completed_on IS NULL ORDER BY is_favorite DESC, acx_projects.name
+#83 - info - Event 'on_projects_tabs' triggered
+#84 - info - Callback 'system_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#85 - info - Event 'on_custom_user_permissions' triggered
+#86 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#87 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#88 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#89 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#90 - info - Callback 'invoicing_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#91 - info - Event 'on_status_bar' triggered
+#92 - info - SELECT COUNT(acx_notifications.id) FROM acx_notifications, acx_notification_recipients WHERE acx_notifications.id = acx_notification_recipients.notification_id AND acx_notification_recipients.recipient_id = '1' AND acx_notification_recipients.seen_on IS NULL
+#93 - info - Callback 'notifications_handle_on_status_bar' called for 'on_status_bar'. Execution result: NULL
+#94 - info - SELECT value FROM acx_config_option_values WHERE name = 'status_update_last_visited' AND parent_type = 'User' AND parent_id = '1'
+#95 - info - SELECT COUNT(*) AS 'row_count' FROM acx_status_updates WHERE created_by_id IN ('1', '2', '3', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14') AND created_on > NULL
+#96 - info - Callback 'status_handle_on_status_bar' called for 'on_status_bar'. Execution result: NULL
+#97 - info - Event 'on_load_control_tower_badge' triggered
+#98 - info - SELECT * FROM acx_incoming_mailboxes WHERE email = 'george@mangotreemobile.com'   ORDER BY name LIMIT 0, 1
+#99 - info - SELECT COUNT(*) AS 'row_count' FROM acx_outgoing_messages WHERE send_retries >= '5'
+#100 - info - SELECT COUNT(*) AS 'row_count' FROM acx_incoming_mails
+#101 - info - Callback 'email_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#102 - info - Callback 'system_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#103 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#104 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#105 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#106 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#107 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#108 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#109 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#110 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#111 - info - Event 'on_main_menu' triggered
+#112 - info - Callback 'authentication_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#113 - info - Callback 'reports_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#114 - info - Callback 'calendars_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#115 - info - Event 'on_custom_user_permissions' triggered
+#116 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#117 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#118 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#119 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#120 - info - SELECT COUNT(*) AS 'row_count' FROM acx_invoice_objects WHERE status = '1' AND date_field_1 < '2014-09-24' AND type = 'Invoice'
+#121 - info - Callback 'invoicing_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#122 - info - Callback 'documents_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#123 - info - SELECT parent_id AS project_id from acx_favorites WHERE parent_type = 'Project' AND user_id = '1'
+#124 - info - SELECT acx_projects.*, (acx_projects.id IN (NULL)) as is_favorite FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND acx_projects.state >= '3' AND acx_projects.completed_on IS NULL ORDER BY is_favorite DESC, acx_projects.name
+#125 - info - Event 'on_projects_tabs' triggered
+#126 - info - Callback 'system_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#127 - info - Event 'on_custom_user_permissions' triggered
+#128 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#129 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#130 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#131 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#132 - info - Callback 'invoicing_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#133 - info - Event 'on_status_bar' triggered
+#134 - info - SELECT COUNT(acx_notifications.id) FROM acx_notifications, acx_notification_recipients WHERE acx_notifications.id = acx_notification_recipients.notification_id AND acx_notification_recipients.recipient_id = '1' AND acx_notification_recipients.seen_on IS NULL
+#135 - info - Callback 'notifications_handle_on_status_bar' called for 'on_status_bar'. Execution result: NULL
+#136 - info - SELECT COUNT(*) AS 'row_count' FROM acx_status_updates WHERE created_by_id IN ('1', '2', '3', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14') AND created_on > NULL
+#137 - info - Callback 'status_handle_on_status_bar' called for 'on_status_bar'. Execution result: NULL
+#138 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#139 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#140 - info - SELECT value FROM acx_config_option_values WHERE name = 'format_date' AND parent_type = 'User' AND parent_id = '1'
+#141 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - SELECT name, value FROM acx_config_options
+#4 - info - SELECT name, is_enabled FROM acx_modules WHERE name != 'system' ORDER BY position
+#5 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-24 20:38:59'
+#6 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '54' AND acx_user_sessions.session_key = 'bnyIvjCy9RPTvrKyHuKbVUBCs5ZrcAceNAM9KevH'
+#7 - info - BEGIN WORK
+#8 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#9 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '54'
+#10 - info - UPDATE acx_user_sessions SET user_ip = '65.102.124.30', user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.122 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-10-08 20:38:59', visits = visits + 1 WHERE id = '54'
+#11 - info - UPDATE acx_users SET last_visit_on = last_login_on, last_login_on = '2014-09-24 20:38:59', last_activity_on = '2014-09-24 20:38:59' WHERE id = '1'
+#12 - info - COMMIT
+#13 - info - SELECT value FROM acx_config_option_values WHERE name = 'language' AND parent_type = 'User' AND parent_id = '1'
+#14 - info - SELECT * FROM acx_languages WHERE id = '1' LIMIT 0, 1
+#15 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#16 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'people/2/users/14'
+#17 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '213'
+#18 - info - SELECT * FROM acx_currencies    ORDER BY is_default DESC LIMIT 0, 1
+#19 - info - SELECT DAY(event_date) AS 'day', MONTH(event_date) AS 'month', YEAR(event_date) AS 'year', repeat_yearly, name FROM acx_day_offs ORDER BY event_date
+#20 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#21 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#22 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#23 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#24 - info - SELECT * FROM acx_companies WHERE id = '2' LIMIT 0, 1
+#25 - info - SELECT id FROM acx_companies ORDER BY name
+#26 - info - SELECT * FROM acx_users WHERE id = '14' LIMIT 0, 1
+#27 - info - SELECT id FROM acx_users WHERE state >= '1'
+#28 - info - SELECT id, name, state FROM acx_companies WHERE id IN ('1', '4', '2', '3') AND state >= '2' ORDER BY is_owner DESC, name ASC
+#29 - info - SELECT id FROM acx_users WHERE state >= '3'
+#30 - info - SELECT * FROM acx_users WHERE id IN ('1', '2', '3', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14') AND company_id IN ('1', '4', '2', '3') AND state >= '2'   ORDER BY CONCAT(first_name, last_name, email) 
+#31 - info - SELECT id, name, state FROM acx_companies WHERE id IN ('1', '4', '2', '3') AND state > '2' ORDER BY name
+#32 - info - SELECT value FROM acx_config_options WHERE name = 'last_frequently_activity'
+#33 - info - SELECT * FROM acx_incoming_mailboxes WHERE email = 'george@mangotreemobile.com'   ORDER BY name LIMIT 0, 1
+#34 - info - SELECT COUNT(*) AS 'row_count' FROM acx_outgoing_messages WHERE send_retries >= '5'
+#35 - info - SELECT COUNT(*) AS 'row_count' FROM acx_incoming_mails
+#36 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#37 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#38 - info - SELECT * FROM acx_users WHERE id IN ('1')   ORDER BY CONCAT(first_name, last_name, email) 
+#39 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#40 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#41 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#42 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#43 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_timezone' AND parent_type = 'User' AND parent_id = '1'
+#44 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_dst' AND parent_type = 'User' AND parent_id = '1'
+#45 - info - SELECT value FROM acx_config_option_values WHERE name = 'format_time' AND parent_type = 'User' AND parent_id = '1'
+#46 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#47 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#48 - info - SELECT value FROM acx_config_option_values WHERE name = 'office_address' AND parent_type = 'Company' AND parent_id = '1'
+#49 - info - SELECT value FROM acx_config_option_values WHERE name = 'office_phone' AND parent_type = 'Company' AND parent_id = '1'
+#50 - info - SELECT value FROM acx_config_option_values WHERE name = 'office_fax' AND parent_type = 'Company' AND parent_id = '1'
+#51 - info - SELECT value FROM acx_config_option_values WHERE name = 'office_homepage' AND parent_type = 'Company' AND parent_id = '1'
+#52 - info - SELECT value FROM acx_config_option_values WHERE name = 'title' AND parent_type = 'User' AND parent_id = '1'
+#53 - info - SELECT value FROM acx_config_option_values WHERE name = 'phone_work' AND parent_type = 'User' AND parent_id = '1'
+#54 - info - SELECT value FROM acx_config_option_values WHERE name = 'phone_mobile' AND parent_type = 'User' AND parent_id = '1'
+#55 - info - SELECT value FROM acx_config_option_values WHERE name = 'im_type' AND parent_type = 'User' AND parent_id = '1'
+#56 - info - SELECT value FROM acx_config_option_values WHERE name = 'im_value' AND parent_type = 'User' AND parent_id = '1'
+#57 - info - SELECT COUNT(*) AS 'row_count' FROM acx_invoice_objects WHERE status = '1' AND date_field_1 < '2014-09-24' AND type = 'Invoice'
+#58 - info - SELECT parent_id AS project_id from acx_favorites WHERE parent_type = 'Project' AND user_id = '1'
+#59 - info - SELECT acx_projects.*, (acx_projects.id IN (NULL)) as is_favorite FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND acx_projects.state >= '3' AND acx_projects.completed_on IS NULL ORDER BY is_favorite DESC, acx_projects.name
+#60 - info - SELECT COUNT(acx_notifications.id) FROM acx_notifications, acx_notification_recipients WHERE acx_notifications.id = acx_notification_recipients.notification_id AND acx_notification_recipients.recipient_id = '1' AND acx_notification_recipients.seen_on IS NULL
+#61 - info - SELECT value FROM acx_config_option_values WHERE name = 'status_update_last_visited' AND parent_type = 'User' AND parent_id = '1'
+#62 - info - SELECT COUNT(*) AS 'row_count' FROM acx_status_updates WHERE created_by_id IN ('1', '2', '3', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14') AND created_on > NULL
+#63 - info - SELECT * FROM acx_incoming_mailboxes WHERE email = 'george@mangotreemobile.com'   ORDER BY name LIMIT 0, 1
+#64 - info - SELECT COUNT(*) AS 'row_count' FROM acx_outgoing_messages WHERE send_retries >= '5'
+#65 - info - SELECT COUNT(*) AS 'row_count' FROM acx_incoming_mails
+#66 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#67 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#68 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#69 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#70 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#71 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#72 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#73 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#74 - info - SELECT COUNT(*) AS 'row_count' FROM acx_invoice_objects WHERE status = '1' AND date_field_1 < '2014-09-24' AND type = 'Invoice'
+#75 - info - SELECT parent_id AS project_id from acx_favorites WHERE parent_type = 'Project' AND user_id = '1'
+#76 - info - SELECT acx_projects.*, (acx_projects.id IN (NULL)) as is_favorite FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND acx_projects.state >= '3' AND acx_projects.completed_on IS NULL ORDER BY is_favorite DESC, acx_projects.name
+#77 - info - SELECT COUNT(acx_notifications.id) FROM acx_notifications, acx_notification_recipients WHERE acx_notifications.id = acx_notification_recipients.notification_id AND acx_notification_recipients.recipient_id = '1' AND acx_notification_recipients.seen_on IS NULL
+#78 - info - SELECT COUNT(*) AS 'row_count' FROM acx_status_updates WHERE created_by_id IN ('1', '2', '3', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14') AND created_on > NULL
+#79 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#80 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#81 - info - SELECT value FROM acx_config_option_values WHERE name = 'format_date' AND parent_type = 'User' AND parent_id = '1'
+
+routing
+
+#1 - info - Routing string 'people/2/users/14'
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_people_tabs' triggered
+#4 - info - Event 'on_load_control_tower_badge' triggered
+#5 - info - Callback 'email_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#6 - info - Callback 'system_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#7 - info - Event 'on_object_options' triggered
+#8 - info - Callback 'tracking_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#9 - info - Callback 'invoicing_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#10 - info - Callback 'project_exporter_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#11 - info - Callback 'source_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#12 - info - Event 'on_main_menu' triggered
+#13 - info - Callback 'authentication_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#14 - info - Callback 'reports_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#15 - info - Callback 'calendars_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#16 - info - Event 'on_custom_user_permissions' triggered
+#17 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#18 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#19 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#20 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#21 - info - Callback 'invoicing_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#22 - info - Callback 'documents_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#23 - info - Event 'on_projects_tabs' triggered
+#24 - info - Callback 'system_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#25 - info - Event 'on_custom_user_permissions' triggered
+#26 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#27 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#28 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#29 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#30 - info - Callback 'invoicing_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#31 - info - Event 'on_status_bar' triggered
+#32 - info - Callback 'notifications_handle_on_status_bar' called for 'on_status_bar'. Execution result: NULL
+#33 - info - Callback 'status_handle_on_status_bar' called for 'on_status_bar'. Execution result: NULL
+#34 - info - Event 'on_load_control_tower_badge' triggered
+#35 - info - Callback 'email_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#36 - info - Callback 'system_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#37 - info - Event 'on_main_menu' triggered
+#38 - info - Callback 'authentication_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#39 - info - Callback 'reports_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#40 - info - Callback 'calendars_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#41 - info - Event 'on_custom_user_permissions' triggered
+#42 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#43 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#44 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#45 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#46 - info - Callback 'invoicing_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#47 - info - Callback 'documents_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#48 - info - Event 'on_projects_tabs' triggered
+#49 - info - Callback 'system_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#50 - info - Event 'on_custom_user_permissions' triggered
+#51 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#52 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#53 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#54 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#55 - info - Callback 'invoicing_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#56 - info - Event 'on_status_bar' triggered
+#57 - info - Callback 'notifications_handle_on_status_bar' called for 'on_status_bar'. Execution result: NULL
+#58 - info - Callback 'status_handle_on_status_bar' called for 'on_status_bar'. Execution result: NULL
+#59 - info - Event 'on_shutdown' triggered
+
+======================================================
+
+Logged on: Wednesday, 24-Sep-2014 20:39:08 GMT
+Memory usage: 18.83MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-24 20:39:07'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '54' AND acx_user_sessions.session_key = 'bnyIvjCy9RPTvrKyHuKbVUBCs5ZrcAceNAM9KevH'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '54'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '65.102.124.30', user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.122 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-10-08 20:39:07', visits = visits + 1 WHERE id = '54'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-24 20:39:07' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - Routing string 'quick-add'
+#13 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'quick-add'
+#14 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '133'
+#15 - info - Event 'on_initial_javascript_assign' triggered
+#16 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#17 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#18 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#19 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#20 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#21 - info - SELECT parent_id AS project_id from acx_favorites WHERE parent_type = 'Project' AND user_id = '1'
+#22 - info - SELECT acx_projects.*, (acx_projects.id IN (NULL)) as is_favorite FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND acx_projects.state >= '3' AND acx_projects.completed_on IS NULL ORDER BY is_favorite DESC, acx_projects.name
+#23 - info - SELECT id FROM acx_companies ORDER BY name
+#24 - info - SELECT * FROM acx_companies WHERE id IN ('1', '4', '2', '3') AND state >= '3'    
+#25 - info - Event 'on_quick_add' triggered
+#26 - info - SELECT value FROM acx_config_option_values WHERE name = 'project_tabs' AND parent_type = 'Project' AND parent_id = '1'
+#27 - info - Event 'on_project_tabs' triggered
+#28 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#29 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#30 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#31 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#32 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#33 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#34 - info - SELECT value FROM acx_config_option_values WHERE name = 'project_tabs' AND parent_type = 'Project' AND parent_id = '2'
+#35 - info - Event 'on_project_tabs' triggered
+#36 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#37 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#38 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#39 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#40 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#41 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#42 - info - Callback 'system_handle_on_quick_add' called for 'on_quick_add'. Execution result: NULL
+#43 - info - Callback 'tracking_handle_on_quick_add' called for 'on_quick_add'. Execution result: NULL
+#44 - info - Event 'on_custom_user_permissions' triggered
+#45 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#46 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#47 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#48 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#49 - info - Event 'on_custom_user_permissions' triggered
+#50 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#51 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#52 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#53 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#54 - info - Event 'on_custom_user_permissions' triggered
+#55 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#56 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#57 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#58 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#59 - info - Callback 'invoicing_handle_on_quick_add' called for 'on_quick_add'. Execution result: NULL
+#60 - info - Event 'on_project_tabs' triggered
+#61 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#62 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#63 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#64 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#65 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#66 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#67 - info - Event 'on_project_tabs' triggered
+#68 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#69 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#70 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#71 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#72 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#73 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#74 - info - Callback 'tasks_handle_on_quick_add' called for 'on_quick_add'. Execution result: NULL
+#75 - info - Event 'on_project_tabs' triggered
+#76 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#77 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#78 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#79 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#80 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#81 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#82 - info - Event 'on_project_tabs' triggered
+#83 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#84 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#85 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#86 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#87 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#88 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#89 - info - Callback 'files_handle_on_quick_add' called for 'on_quick_add'. Execution result: NULL
+#90 - info - Event 'on_project_tabs' triggered
+#91 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#92 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#93 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#94 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#95 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#96 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#97 - info - Event 'on_project_tabs' triggered
+#98 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#99 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#100 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#101 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#102 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#103 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#104 - info - Callback 'notebooks_handle_on_quick_add' called for 'on_quick_add'. Execution result: NULL
+#105 - info - Event 'on_project_tabs' triggered
+#106 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#107 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#108 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#109 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#110 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#111 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#112 - info - Event 'on_project_tabs' triggered
+#113 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#114 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#115 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#116 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#117 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#118 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#119 - info - Callback 'discussions_handle_on_quick_add' called for 'on_quick_add'. Execution result: NULL
+#120 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-24 20:39:07'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '54' AND acx_user_sessions.session_key = 'bnyIvjCy9RPTvrKyHuKbVUBCs5ZrcAceNAM9KevH'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '54'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '65.102.124.30', user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.122 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-10-08 20:39:07', visits = visits + 1 WHERE id = '54'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-24 20:39:07' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'quick-add'
+#13 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '133'
+#14 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#15 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#16 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#17 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#18 - info - SELECT parent_id AS project_id from acx_favorites WHERE parent_type = 'Project' AND user_id = '1'
+#19 - info - SELECT acx_projects.*, (acx_projects.id IN (NULL)) as is_favorite FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND acx_projects.state >= '3' AND acx_projects.completed_on IS NULL ORDER BY is_favorite DESC, acx_projects.name
+#20 - info - SELECT id FROM acx_companies ORDER BY name
+#21 - info - SELECT * FROM acx_companies WHERE id IN ('1', '4', '2', '3') AND state >= '3'    
+#22 - info - SELECT value FROM acx_config_option_values WHERE name = 'project_tabs' AND parent_type = 'Project' AND parent_id = '1'
+#23 - info - SELECT value FROM acx_config_option_values WHERE name = 'project_tabs' AND parent_type = 'Project' AND parent_id = '2'
+
+routing
+
+#1 - info - Routing string 'quick-add'
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_quick_add' triggered
+#4 - info - Event 'on_project_tabs' triggered
+#5 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#6 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#7 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#8 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#9 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#10 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#11 - info - Event 'on_project_tabs' triggered
+#12 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#13 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#14 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#15 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#16 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#17 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#18 - info - Callback 'system_handle_on_quick_add' called for 'on_quick_add'. Execution result: NULL
+#19 - info - Callback 'tracking_handle_on_quick_add' called for 'on_quick_add'. Execution result: NULL
+#20 - info - Event 'on_custom_user_permissions' triggered
+#21 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#22 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#23 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#24 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#25 - info - Event 'on_custom_user_permissions' triggered
+#26 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#27 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#28 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#29 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#30 - info - Event 'on_custom_user_permissions' triggered
+#31 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#32 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#33 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#34 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#35 - info - Callback 'invoicing_handle_on_quick_add' called for 'on_quick_add'. Execution result: NULL
+#36 - info - Event 'on_project_tabs' triggered
+#37 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#38 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#39 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#40 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#41 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#42 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#43 - info - Event 'on_project_tabs' triggered
+#44 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#45 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#46 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#47 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#48 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#49 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#50 - info - Callback 'tasks_handle_on_quick_add' called for 'on_quick_add'. Execution result: NULL
+#51 - info - Event 'on_project_tabs' triggered
+#52 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#53 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#54 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#55 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#56 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#57 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#58 - info - Event 'on_project_tabs' triggered
+#59 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#60 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#61 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#62 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#63 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#64 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#65 - info - Callback 'files_handle_on_quick_add' called for 'on_quick_add'. Execution result: NULL
+#66 - info - Event 'on_project_tabs' triggered
+#67 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#68 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#69 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#70 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#71 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#72 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#73 - info - Event 'on_project_tabs' triggered
+#74 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#75 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#76 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#77 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#78 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#79 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#80 - info - Callback 'notebooks_handle_on_quick_add' called for 'on_quick_add'. Execution result: NULL
+#81 - info - Event 'on_project_tabs' triggered
+#82 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#83 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#84 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#85 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#86 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#87 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#88 - info - Event 'on_project_tabs' triggered
+#89 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#90 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#91 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#92 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#93 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#94 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#95 - info - Callback 'discussions_handle_on_quick_add' called for 'on_quick_add'. Execution result: NULL
+#96 - info - Event 'on_shutdown' triggered
+
+======================================================
+
+Logged on: Wednesday, 24-Sep-2014 20:39:09 GMT
+Memory usage: 17.01MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-24 20:39:08'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '54' AND acx_user_sessions.session_key = 'bnyIvjCy9RPTvrKyHuKbVUBCs5ZrcAceNAM9KevH'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '54'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '65.102.124.30', user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.122 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-10-08 20:39:08', visits = visits + 1 WHERE id = '54'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-24 20:39:08' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - Routing string 'people/2/users/14'
+#13 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'people/2/users/14'
+#14 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '213'
+#15 - info - Event 'on_initial_javascript_assign' triggered
+#16 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#17 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#18 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#19 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#20 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#21 - info - Event 'on_people_tabs' triggered
+#22 - info - SELECT id FROM acx_companies ORDER BY name
+#23 - info - Event 'on_custom_user_permissions' triggered
+#24 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#25 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#26 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#27 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#28 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#29 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#30 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#31 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#32 - info - Event 'on_object_options' triggered
+#33 - info - Callback 'tracking_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#34 - info - Callback 'invoicing_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#35 - info - Callback 'project_exporter_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#36 - info - Callback 'source_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#37 - info - Event 'on_inline_tabs' triggered
+#38 - info - Callback 'system_handle_on_inline_tabs' called for 'on_inline_tabs'. Execution result: NULL
+#39 - info - Callback 'invoicing_handle_on_inline_tabs' called for 'on_inline_tabs'. Execution result: NULL
+#40 - info - Event 'on_object_inspector' triggered
+#41 - info - Callback 'system_handle_on_object_inspector' called for 'on_object_inspector'. Execution result: NULL
+#42 - info - Callback 'invoicing_handle_on_object_inspector' called for 'on_object_inspector'. Execution result: NULL
+#43 - info - Callback 'tasks_handle_on_object_inspector' called for 'on_object_inspector'. Execution result: NULL
+#44 - info - Callback 'files_handle_on_object_inspector' called for 'on_object_inspector'. Execution result: NULL
+#45 - info - Callback 'notebooks_handle_on_object_inspector' called for 'on_object_inspector'. Execution result: NULL
+#46 - info - Callback 'source_handle_on_object_inspector' called for 'on_object_inspector'. Execution result: NULL
+#47 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#48 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#49 - info - SELECT * FROM acx_users WHERE id IN ('1')   ORDER BY CONCAT(first_name, last_name, email) 
+#50 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#51 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#52 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#53 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#54 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_timezone' AND parent_type = 'User' AND parent_id = '14'
+#55 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_dst' AND parent_type = 'User' AND parent_id = '14'
+#56 - info - SELECT value FROM acx_config_option_values WHERE name = 'format_time' AND parent_type = 'User' AND parent_id = '14'
+#57 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#58 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#59 - info - SELECT id FROM acx_users WHERE company_id = '2' AND state >= '3'
+#60 - info - SELECT * FROM acx_users WHERE company_id = '2' AND id IN ('3', '5', '6', '7', '8', '9', '10', '11', '13', '14') AND state >= '3'   ORDER BY CONCAT(first_name, last_name, email) 
+#61 - info - SELECT COUNT(*) AS 'row_count' FROM acx_users WHERE type = 'Administrator' AND state = '3'
+#62 - info - SELECT COUNT(*) AS 'row_count' FROM acx_users WHERE type = 'Administrator' AND state = '3'
+#63 - info - SELECT COUNT(*) AS 'row_count' FROM acx_users WHERE type = 'Administrator' AND state = '3'
+#64 - info - SELECT * FROM acx_users WHERE company_id = '2' AND id IN ('3', '5', '6', '7', '8', '9', '10', '11', '13', '14') AND state >= '3'   ORDER BY CONCAT(first_name, last_name, email) 
+#65 - info - SELECT COUNT(*) AS 'row_count' FROM acx_users WHERE type = 'Administrator' AND state = '3'
+#66 - info - SELECT COUNT(*) AS 'row_count' FROM acx_users WHERE type = 'Administrator' AND state = '3'
+#67 - info - SELECT COUNT(*) AS 'row_count' FROM acx_users WHERE type = 'Administrator' AND state = '3'
+#68 - info - SELECT value FROM acx_config_option_values WHERE name = 'office_address' AND parent_type = 'Company' AND parent_id = '2'
+#69 - info - SELECT value FROM acx_config_option_values WHERE name = 'office_phone' AND parent_type = 'Company' AND parent_id = '2'
+#70 - info - SELECT value FROM acx_config_option_values WHERE name = 'office_fax' AND parent_type = 'Company' AND parent_id = '2'
+#71 - info - SELECT value FROM acx_config_option_values WHERE name = 'office_homepage' AND parent_type = 'Company' AND parent_id = '2'
+#72 - info - SELECT value FROM acx_config_option_values WHERE name = 'title' AND parent_type = 'User' AND parent_id = '14'
+#73 - info - SELECT value FROM acx_config_option_values WHERE name = 'phone_work' AND parent_type = 'User' AND parent_id = '14'
+#74 - info - SELECT value FROM acx_config_option_values WHERE name = 'phone_mobile' AND parent_type = 'User' AND parent_id = '14'
+#75 - info - SELECT value FROM acx_config_option_values WHERE name = 'im_type' AND parent_type = 'User' AND parent_id = '14'
+#76 - info - SELECT value FROM acx_config_option_values WHERE name = 'im_value' AND parent_type = 'User' AND parent_id = '14'
+#77 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#78 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-24 20:39:08'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '54' AND acx_user_sessions.session_key = 'bnyIvjCy9RPTvrKyHuKbVUBCs5ZrcAceNAM9KevH'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '54'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '65.102.124.30', user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.122 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-10-08 20:39:08', visits = visits + 1 WHERE id = '54'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-24 20:39:08' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'people/2/users/14'
+#13 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '213'
+#14 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#15 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#16 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#17 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#18 - info - SELECT id FROM acx_companies ORDER BY name
+#19 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#20 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#21 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#22 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#23 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#24 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#25 - info - SELECT * FROM acx_users WHERE id IN ('1')   ORDER BY CONCAT(first_name, last_name, email) 
+#26 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#27 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#28 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#29 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#30 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_timezone' AND parent_type = 'User' AND parent_id = '14'
+#31 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_dst' AND parent_type = 'User' AND parent_id = '14'
+#32 - info - SELECT value FROM acx_config_option_values WHERE name = 'format_time' AND parent_type = 'User' AND parent_id = '14'
+#33 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#34 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#35 - info - SELECT id FROM acx_users WHERE company_id = '2' AND state >= '3'
+#36 - info - SELECT * FROM acx_users WHERE company_id = '2' AND id IN ('3', '5', '6', '7', '8', '9', '10', '11', '13', '14') AND state >= '3'   ORDER BY CONCAT(first_name, last_name, email) 
+#37 - info - SELECT COUNT(*) AS 'row_count' FROM acx_users WHERE type = 'Administrator' AND state = '3'
+#38 - info - SELECT COUNT(*) AS 'row_count' FROM acx_users WHERE type = 'Administrator' AND state = '3'
+#39 - info - SELECT COUNT(*) AS 'row_count' FROM acx_users WHERE type = 'Administrator' AND state = '3'
+#40 - info - SELECT * FROM acx_users WHERE company_id = '2' AND id IN ('3', '5', '6', '7', '8', '9', '10', '11', '13', '14') AND state >= '3'   ORDER BY CONCAT(first_name, last_name, email) 
+#41 - info - SELECT COUNT(*) AS 'row_count' FROM acx_users WHERE type = 'Administrator' AND state = '3'
+#42 - info - SELECT COUNT(*) AS 'row_count' FROM acx_users WHERE type = 'Administrator' AND state = '3'
+#43 - info - SELECT COUNT(*) AS 'row_count' FROM acx_users WHERE type = 'Administrator' AND state = '3'
+#44 - info - SELECT value FROM acx_config_option_values WHERE name = 'office_address' AND parent_type = 'Company' AND parent_id = '2'
+#45 - info - SELECT value FROM acx_config_option_values WHERE name = 'office_phone' AND parent_type = 'Company' AND parent_id = '2'
+#46 - info - SELECT value FROM acx_config_option_values WHERE name = 'office_fax' AND parent_type = 'Company' AND parent_id = '2'
+#47 - info - SELECT value FROM acx_config_option_values WHERE name = 'office_homepage' AND parent_type = 'Company' AND parent_id = '2'
+#48 - info - SELECT value FROM acx_config_option_values WHERE name = 'title' AND parent_type = 'User' AND parent_id = '14'
+#49 - info - SELECT value FROM acx_config_option_values WHERE name = 'phone_work' AND parent_type = 'User' AND parent_id = '14'
+#50 - info - SELECT value FROM acx_config_option_values WHERE name = 'phone_mobile' AND parent_type = 'User' AND parent_id = '14'
+#51 - info - SELECT value FROM acx_config_option_values WHERE name = 'im_type' AND parent_type = 'User' AND parent_id = '14'
+#52 - info - SELECT value FROM acx_config_option_values WHERE name = 'im_value' AND parent_type = 'User' AND parent_id = '14'
+#53 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+
+routing
+
+#1 - info - Routing string 'people/2/users/14'
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_people_tabs' triggered
+#4 - info - Event 'on_custom_user_permissions' triggered
+#5 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#6 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#7 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#8 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#9 - info - Event 'on_object_options' triggered
+#10 - info - Callback 'tracking_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#11 - info - Callback 'invoicing_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#12 - info - Callback 'project_exporter_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#13 - info - Callback 'source_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#14 - info - Event 'on_inline_tabs' triggered
+#15 - info - Callback 'system_handle_on_inline_tabs' called for 'on_inline_tabs'. Execution result: NULL
+#16 - info - Callback 'invoicing_handle_on_inline_tabs' called for 'on_inline_tabs'. Execution result: NULL
+#17 - info - Event 'on_object_inspector' triggered
+#18 - info - Callback 'system_handle_on_object_inspector' called for 'on_object_inspector'. Execution result: NULL
+#19 - info - Callback 'invoicing_handle_on_object_inspector' called for 'on_object_inspector'. Execution result: NULL
+#20 - info - Callback 'tasks_handle_on_object_inspector' called for 'on_object_inspector'. Execution result: NULL
+#21 - info - Callback 'files_handle_on_object_inspector' called for 'on_object_inspector'. Execution result: NULL
+#22 - info - Callback 'notebooks_handle_on_object_inspector' called for 'on_object_inspector'. Execution result: NULL
+#23 - info - Callback 'source_handle_on_object_inspector' called for 'on_object_inspector'. Execution result: NULL
+#24 - info - Event 'on_shutdown' triggered
+
+======================================================
+
+Logged on: Wednesday, 24-Sep-2014 20:39:10 GMT
+Memory usage: 16.45MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-24 20:39:10'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '54' AND acx_user_sessions.session_key = 'bnyIvjCy9RPTvrKyHuKbVUBCs5ZrcAceNAM9KevH'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '54'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '65.102.124.30', user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.122 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-10-08 20:39:10', visits = visits + 1 WHERE id = '54'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-24 20:39:10' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - Routing string 'refresh-menu'
+#13 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'refresh-menu'
+#14 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '134'
+#15 - info - Event 'on_initial_javascript_assign' triggered
+#16 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#17 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#18 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#19 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#20 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#21 - info - Event 'on_main_menu' triggered
+#22 - info - Callback 'authentication_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#23 - info - Callback 'reports_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#24 - info - Callback 'calendars_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#25 - info - Callback 'invoicing_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#26 - info - Callback 'documents_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#27 - info - SELECT parent_id AS project_id from acx_favorites WHERE parent_type = 'Project' AND user_id = '1'
+#28 - info - SELECT acx_projects.*, (acx_projects.id IN (NULL)) as is_favorite FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND acx_projects.state >= '3' AND acx_projects.completed_on IS NULL ORDER BY is_favorite DESC, acx_projects.name
+#29 - info - Event 'on_projects_tabs' triggered
+#30 - info - Callback 'system_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#31 - info - Event 'on_custom_user_permissions' triggered
+#32 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#33 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#34 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#35 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#36 - info - Callback 'invoicing_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#37 - info - SELECT id, name FROM acx_companies WHERE state >= '1' ORDER BY is_owner DESC, name
+#38 - info - SELECT id, name FROM acx_categories WHERE (type IN ('ProjectCategory')) ORDER BY name
+#39 - info - SELECT * FROM acx_labels WHERE type = 'ProjectLabel'   ORDER BY name 
+#40 - info - SELECT parent_id AS project_id from acx_favorites WHERE parent_type = 'Project' AND user_id = '1'
+#41 - info - SELECT acx_projects.*, (acx_projects.id IN (NULL)) as is_favorite FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND acx_projects.state >= '3' AND acx_projects.completed_on IS NULL ORDER BY is_favorite DESC, acx_projects.name
+#42 - info - Event 'on_project_tabs' triggered
+#43 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#44 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#45 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#46 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#47 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#48 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#49 - info - Event 'on_project_tabs' triggered
+#50 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#51 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#52 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#53 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#54 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#55 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#56 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-24 20:39:10'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '54' AND acx_user_sessions.session_key = 'bnyIvjCy9RPTvrKyHuKbVUBCs5ZrcAceNAM9KevH'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '54'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '65.102.124.30', user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.122 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-10-08 20:39:10', visits = visits + 1 WHERE id = '54'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-24 20:39:10' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'refresh-menu'
+#13 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '134'
+#14 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#15 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#16 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#17 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#18 - info - SELECT parent_id AS project_id from acx_favorites WHERE parent_type = 'Project' AND user_id = '1'
+#19 - info - SELECT acx_projects.*, (acx_projects.id IN (NULL)) as is_favorite FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND acx_projects.state >= '3' AND acx_projects.completed_on IS NULL ORDER BY is_favorite DESC, acx_projects.name
+#20 - info - SELECT id, name FROM acx_companies WHERE state >= '1' ORDER BY is_owner DESC, name
+#21 - info - SELECT id, name FROM acx_categories WHERE (type IN ('ProjectCategory')) ORDER BY name
+#22 - info - SELECT * FROM acx_labels WHERE type = 'ProjectLabel'   ORDER BY name 
+#23 - info - SELECT parent_id AS project_id from acx_favorites WHERE parent_type = 'Project' AND user_id = '1'
+#24 - info - SELECT acx_projects.*, (acx_projects.id IN (NULL)) as is_favorite FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND acx_projects.state >= '3' AND acx_projects.completed_on IS NULL ORDER BY is_favorite DESC, acx_projects.name
+
+routing
+
+#1 - info - Routing string 'refresh-menu'
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_main_menu' triggered
+#4 - info - Callback 'authentication_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#5 - info - Callback 'reports_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#6 - info - Callback 'calendars_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#7 - info - Callback 'invoicing_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#8 - info - Callback 'documents_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#9 - info - Event 'on_projects_tabs' triggered
+#10 - info - Callback 'system_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#11 - info - Event 'on_custom_user_permissions' triggered
+#12 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#13 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#14 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#15 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#16 - info - Callback 'invoicing_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#17 - info - Event 'on_project_tabs' triggered
+#18 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#19 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#20 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#21 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#22 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#23 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#24 - info - Event 'on_project_tabs' triggered
+#25 - info - Callback 'tracking_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#26 - info - Callback 'tasks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#27 - info - Callback 'files_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#28 - info - Callback 'notebooks_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#29 - info - Callback 'source_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#30 - info - Callback 'discussions_handle_on_project_tabs' called for 'on_project_tabs'. Execution result: NULL
+#31 - info - Event 'on_shutdown' triggered
+
+======================================================
+
+Logged on: Wednesday, 24-Sep-2014 20:39:11 GMT
+Memory usage: 16.75MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-24 20:39:11'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '54' AND acx_user_sessions.session_key = 'bnyIvjCy9RPTvrKyHuKbVUBCs5ZrcAceNAM9KevH'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '54'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '65.102.124.30', user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.122 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-10-08 20:39:11', visits = visits + 1 WHERE id = '54'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-24 20:39:11' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - Routing string 'people/2/users/14/projects'
+#13 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'people/2/users/14/projects'
+#14 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '214'
+#15 - info - Event 'on_initial_javascript_assign' triggered
+#16 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#17 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#18 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#19 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#20 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#21 - info - Event 'on_people_tabs' triggered
+#22 - info - SELECT id FROM acx_companies ORDER BY name
+#23 - info - SELECT acx_projects.* FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '14' AND acx_project_users.project_id = acx_projects.id AND (acx_projects.state >= '3') ORDER BY acx_projects.completed_on asc, acx_projects.name ASC
+#24 - info - SELECT role_id, permissions FROM acx_project_users WHERE user_id = '14' AND project_id = '1'
+#25 - info - SELECT role_id, permissions FROM acx_project_users WHERE user_id = '14' AND project_id = '2'
+#26 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-24 20:39:11'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '54' AND acx_user_sessions.session_key = 'bnyIvjCy9RPTvrKyHuKbVUBCs5ZrcAceNAM9KevH'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '54'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '65.102.124.30', user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.122 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-10-08 20:39:11', visits = visits + 1 WHERE id = '54'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-24 20:39:11' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'people/2/users/14/projects'
+#13 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '214'
+#14 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#15 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#16 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#17 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#18 - info - SELECT id FROM acx_companies ORDER BY name
+#19 - info - SELECT acx_projects.* FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '14' AND acx_project_users.project_id = acx_projects.id AND (acx_projects.state >= '3') ORDER BY acx_projects.completed_on asc, acx_projects.name ASC
+#20 - info - SELECT role_id, permissions FROM acx_project_users WHERE user_id = '14' AND project_id = '1'
+#21 - info - SELECT role_id, permissions FROM acx_project_users WHERE user_id = '14' AND project_id = '2'
+
+routing
+
+#1 - info - Routing string 'people/2/users/14/projects'
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_people_tabs' triggered
+#4 - info - Event 'on_shutdown' triggered
+
+======================================================
+

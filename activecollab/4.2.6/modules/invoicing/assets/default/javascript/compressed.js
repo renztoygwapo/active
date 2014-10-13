@@ -1,0 +1,2 @@
+/* Minified: wireframe.js */
+App.Wireframe.Utils.formatWhenToSendOverdueReminder=function(value){if(!value){return App.lang(":days days",{days:0})}else{if(value==1){return App.lang("1 day")}else{if(value==7){return App.lang("1 week")}else{if(value==14){return App.lang("2 weeks")}else{if(value==31){return App.lang("1 month")}else{return App.lang(":days days",{days:value})}}}}}};App.Wireframe.Utils.parseWhenToSendOverdueReminder=function(value){var parsed=App.parseNumeric(value);return isNaN(parsed)||parsed%1!=0?0:parsed};

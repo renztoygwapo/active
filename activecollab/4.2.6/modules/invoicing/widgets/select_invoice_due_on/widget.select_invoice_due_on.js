@@ -1,0 +1,1 @@
+jQuery.fn.selectInvoiceDueOn=function(){return this.each(function(){var wrapper=$(this);wrapper.find("input[type=radio]").click(function(){if($(this).attr("value")=="selected"){wrapper.find("div.select_invoice_due_on_selected").slideDown()}else{wrapper.find("div.select_invoice_due_on_selected").slideUp()}});wrapper.find("input[type=radio]:checked").click()})};

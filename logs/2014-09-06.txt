@@ -1,0 +1,1210 @@
+Logged on: Saturday, 06-Sep-2014 02:09:10 GMT
+Memory usage: 20.58MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:09:09'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:09:09', visits = visits + 1 WHERE id = '53'
+#9 - info - UPDATE acx_users SET last_visit_on = last_login_on, last_login_on = '2014-09-06 02:09:09', last_activity_on = '2014-09-06 02:09:09' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - Routing string ''
+#13 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = ''
+#14 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '132'
+#15 - info - Event 'on_initial_javascript_assign' triggered
+#16 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#17 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#18 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#19 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#20 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#21 - info - SELECT value FROM acx_config_options WHERE name = 'require_index_rebuild'
+#22 - info - SELECT * FROM acx_homescreen_tabs WHERE user_id = '1'   ORDER BY position 
+#23 - info - SELECT acx_projects.id FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND ((acx_projects.completed_on IS NULL) AND (acx_projects.state >= '2')) ORDER BY acx_projects.name
+#24 - info - SELECT acx_subtasks.id, acx_subtasks.parent_type, acx_subtasks.parent_id, acx_subtasks.label_id, acx_subtasks.assignee_id, acx_subtasks.priority, acx_subtasks.body, acx_subtasks.created_on, DATEDIFF(UTC_TIMESTAMP(), acx_subtasks.created_on) AS 'age', acx_subtasks.created_by_id, acx_subtasks.created_by_name, acx_subtasks.created_by_email, acx_subtasks.due_on, acx_subtasks.completed_on, acx_subtasks.completed_by_id, acx_subtasks.completed_by_name, acx_subtasks.completed_by_email FROM acx_subtasks, acx_project_objects WHERE (acx_project_objects.type = acx_subtasks.parent_type AND acx_project_objects.id = acx_subtasks.parent_id) AND (((acx_project_objects.project_id = 2 AND acx_project_objects.type IN ('Task')) OR (acx_project_objects.project_id = 1 AND acx_project_objects.type IN ('Task')))) AND ((acx_subtasks.state >= '3') AND (acx_subtasks.assignee_id IN ('1')) AND (acx_subtasks.completed_on IS NULL)) ORDER BY acx_subtasks.priority DESC, completed_on
+#25 - info - SELECT field_name, label, is_enabled FROM acx_custom_fields WHERE parent_type = 'Task' ORDER BY field_name
+#26 - info - SELECT DISTINCT acx_project_objects.id, acx_project_objects.type, acx_project_objects.project_id, acx_project_objects.assignee_id, acx_project_objects.label_id, acx_project_objects.category_id, acx_project_objects.milestone_id, acx_project_objects.name, acx_project_objects.body, acx_project_objects.created_on, DATEDIFF(UTC_TIMESTAMP(), acx_project_objects.created_on) AS 'age', acx_project_objects.created_by_id, acx_project_objects.created_by_name, acx_project_objects.created_by_email, acx_project_objects.due_on, acx_project_objects.completed_on, acx_project_objects.completed_by_id, acx_project_objects.completed_by_name, acx_project_objects.completed_by_email, acx_project_objects.priority, acx_project_objects.integer_field_1 AS 'task_id'  FROM acx_project_objects LEFT OUTER JOIN acx_assignments ON acx_project_objects.type = acx_assignments.parent_type AND acx_project_objects.id = acx_assignments.parent_id WHERE ((acx_project_objects.state >= '3' AND acx_project_objects.visibility >= '0') AND (acx_project_objects.assignee_id IN ('1') OR (acx_assignments.parent_type = acx_project_objects.type AND acx_assignments.parent_id = acx_project_objects.id AND acx_assignments.user_id IN ('1'))) AND (acx_project_objects.completed_on IS NULL)) AND (((acx_project_objects.project_id = 2 AND acx_project_objects.type IN ('Task')) OR (acx_project_objects.project_id = 1 AND acx_project_objects.type IN ('Task')))) ORDER BY acx_project_objects.priority DESC, ISNULL(acx_project_objects.position), acx_project_objects.position
+#27 - info - SELECT id, name FROM acx_projects ORDER BY name
+#28 - info - SELECT id, name FROM acx_categories WHERE (type IN ('TaskCategory')) ORDER BY name
+#29 - info - SELECT parent_id, job_type_id, value FROM acx_estimates WHERE parent_type = 'Task' AND parent_id IN ('1') ORDER BY created_on DESC
+#30 - info - SELECT parent_id, SUM(value) AS 'tracked_time' FROM acx_time_records WHERE state >= '3' AND parent_type = 'Task' AND parent_id IN ('1') GROUP BY parent_type, parent_id
+#31 - info - SELECT id, first_name, last_name, email FROM acx_users ORDER BY CONCAT(first_name, last_name, email)
+#32 - info - SELECT acx_projects.id FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND ((acx_projects.completed_on IS NULL) AND (acx_projects.state >= '2')) ORDER BY acx_projects.name
+#33 - info - SELECT acx_subtasks.id, acx_subtasks.parent_type, acx_subtasks.parent_id, acx_subtasks.label_id, acx_subtasks.assignee_id, acx_subtasks.priority, acx_subtasks.body, acx_subtasks.created_on, DATEDIFF(UTC_TIMESTAMP(), acx_subtasks.created_on) AS 'age', acx_subtasks.created_by_id, acx_subtasks.created_by_name, acx_subtasks.created_by_email, acx_subtasks.due_on, acx_subtasks.completed_on, acx_subtasks.completed_by_id, acx_subtasks.completed_by_name, acx_subtasks.completed_by_email FROM acx_subtasks, acx_project_objects WHERE (acx_project_objects.type = acx_subtasks.parent_type AND acx_project_objects.id = acx_subtasks.parent_id) AND (((acx_project_objects.project_id = 2 AND acx_project_objects.type IN ('Task')) OR (acx_project_objects.project_id = 1 AND acx_project_objects.type IN ('Task')))) AND ((acx_subtasks.state >= '3') AND (acx_subtasks.assignee_id IN ('1')) AND (acx_subtasks.due_on <= '2014-09-06') AND (acx_subtasks.completed_on IS NULL)) ORDER BY acx_subtasks.priority DESC, completed_on
+#34 - info - SELECT DISTINCT acx_project_objects.id, acx_project_objects.type, acx_project_objects.project_id, acx_project_objects.assignee_id, acx_project_objects.label_id, acx_project_objects.category_id, acx_project_objects.milestone_id, acx_project_objects.name, acx_project_objects.body, acx_project_objects.created_on, DATEDIFF(UTC_TIMESTAMP(), acx_project_objects.created_on) AS 'age', acx_project_objects.created_by_id, acx_project_objects.created_by_name, acx_project_objects.created_by_email, acx_project_objects.due_on, acx_project_objects.completed_on, acx_project_objects.completed_by_id, acx_project_objects.completed_by_name, acx_project_objects.completed_by_email, acx_project_objects.priority, acx_project_objects.integer_field_1 AS 'task_id'  FROM acx_project_objects LEFT OUTER JOIN acx_assignments ON acx_project_objects.type = acx_assignments.parent_type AND acx_project_objects.id = acx_assignments.parent_id WHERE ((acx_project_objects.state >= '3' AND acx_project_objects.visibility >= '0') AND (acx_project_objects.assignee_id IN ('1') OR (acx_assignments.parent_type = acx_project_objects.type AND acx_assignments.parent_id = acx_project_objects.id AND acx_assignments.user_id IN ('1'))) AND (acx_project_objects.due_on <= '2014-09-06') AND (acx_project_objects.completed_on IS NULL)) AND (((acx_project_objects.project_id = 2 AND acx_project_objects.type IN ('Task')) OR (acx_project_objects.project_id = 1 AND acx_project_objects.type IN ('Task')))) ORDER BY acx_project_objects.priority DESC, ISNULL(acx_project_objects.position), acx_project_objects.position
+#35 - info - SELECT value FROM acx_config_options WHERE name = 'last_frequently_activity'
+#36 - info - Event 'on_load_control_tower_badge' triggered
+#37 - info - SELECT * FROM acx_incoming_mailboxes WHERE email = 'george@mangotreemobile.com'   ORDER BY name LIMIT 0, 1
+#38 - info - SELECT COUNT(*) AS 'row_count' FROM acx_outgoing_messages WHERE send_retries >= '5'
+#39 - info - SELECT COUNT(*) AS 'row_count' FROM acx_incoming_mails
+#40 - info - Callback 'email_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#41 - info - Callback 'system_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#42 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#43 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#44 - info - SELECT * FROM acx_users WHERE id IN ('1')   ORDER BY CONCAT(first_name, last_name, email) 
+#45 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#46 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#47 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#48 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#49 - info - Event 'on_object_options' triggered
+#50 - info - Callback 'tracking_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#51 - info - Callback 'invoicing_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#52 - info - Callback 'project_exporter_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#53 - info - Callback 'source_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#54 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#55 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#56 - info - Event 'on_main_menu' triggered
+#57 - info - Callback 'authentication_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#58 - info - Callback 'reports_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#59 - info - Callback 'calendars_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#60 - info - Event 'on_custom_user_permissions' triggered
+#61 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#62 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#63 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#64 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#65 - info - SELECT COUNT(*) AS 'row_count' FROM acx_invoice_objects WHERE status = '1' AND date_field_1 < '2014-09-06' AND type = 'Invoice'
+#66 - info - Callback 'invoicing_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#67 - info - Callback 'documents_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#68 - info - SELECT parent_id AS project_id from acx_favorites WHERE parent_type = 'Project' AND user_id = '1'
+#69 - info - SELECT acx_projects.*, (acx_projects.id IN (NULL)) as is_favorite FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND acx_projects.state >= '3' AND acx_projects.completed_on IS NULL ORDER BY is_favorite DESC, acx_projects.name
+#70 - info - Event 'on_projects_tabs' triggered
+#71 - info - Callback 'system_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#72 - info - Event 'on_custom_user_permissions' triggered
+#73 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#74 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#75 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#76 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#77 - info - Callback 'invoicing_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#78 - info - Event 'on_status_bar' triggered
+#79 - info - SELECT COUNT(acx_notifications.id) FROM acx_notifications, acx_notification_recipients WHERE acx_notifications.id = acx_notification_recipients.notification_id AND acx_notification_recipients.recipient_id = '1' AND acx_notification_recipients.seen_on IS NULL
+#80 - info - Callback 'notifications_handle_on_status_bar' called for 'on_status_bar'. Execution result: NULL
+#81 - info - SELECT COUNT(*) AS 'row_count' FROM acx_status_updates WHERE created_by_id IN ('1', '2', '3', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14') AND created_on > NULL
+#82 - info - Callback 'status_handle_on_status_bar' called for 'on_status_bar'. Execution result: NULL
+#83 - info - Event 'on_load_control_tower_badge' triggered
+#84 - info - SELECT * FROM acx_incoming_mailboxes WHERE email = 'george@mangotreemobile.com'   ORDER BY name LIMIT 0, 1
+#85 - info - SELECT COUNT(*) AS 'row_count' FROM acx_outgoing_messages WHERE send_retries >= '5'
+#86 - info - SELECT COUNT(*) AS 'row_count' FROM acx_incoming_mails
+#87 - info - Callback 'email_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#88 - info - Callback 'system_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#89 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#90 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#91 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#92 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#93 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#94 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#95 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#96 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#97 - info - Event 'on_main_menu' triggered
+#98 - info - Callback 'authentication_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#99 - info - Callback 'reports_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#100 - info - Callback 'calendars_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#101 - info - Event 'on_custom_user_permissions' triggered
+#102 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#103 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#104 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#105 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#106 - info - SELECT COUNT(*) AS 'row_count' FROM acx_invoice_objects WHERE status = '1' AND date_field_1 < '2014-09-06' AND type = 'Invoice'
+#107 - info - Callback 'invoicing_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#108 - info - Callback 'documents_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#109 - info - SELECT parent_id AS project_id from acx_favorites WHERE parent_type = 'Project' AND user_id = '1'
+#110 - info - SELECT acx_projects.*, (acx_projects.id IN (NULL)) as is_favorite FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND acx_projects.state >= '3' AND acx_projects.completed_on IS NULL ORDER BY is_favorite DESC, acx_projects.name
+#111 - info - Event 'on_projects_tabs' triggered
+#112 - info - Callback 'system_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#113 - info - Event 'on_custom_user_permissions' triggered
+#114 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#115 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#116 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#117 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#118 - info - Callback 'invoicing_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#119 - info - Event 'on_status_bar' triggered
+#120 - info - SELECT COUNT(acx_notifications.id) FROM acx_notifications, acx_notification_recipients WHERE acx_notifications.id = acx_notification_recipients.notification_id AND acx_notification_recipients.recipient_id = '1' AND acx_notification_recipients.seen_on IS NULL
+#121 - info - Callback 'notifications_handle_on_status_bar' called for 'on_status_bar'. Execution result: NULL
+#122 - info - SELECT COUNT(*) AS 'row_count' FROM acx_status_updates WHERE created_by_id IN ('1', '2', '3', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14') AND created_on > NULL
+#123 - info - Callback 'status_handle_on_status_bar' called for 'on_status_bar'. Execution result: NULL
+#124 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#125 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#126 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:09:09'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:09:09', visits = visits + 1 WHERE id = '53'
+#9 - info - UPDATE acx_users SET last_visit_on = last_login_on, last_login_on = '2014-09-06 02:09:09', last_activity_on = '2014-09-06 02:09:09' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = ''
+#13 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '132'
+#14 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#15 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#16 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#17 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#18 - info - SELECT value FROM acx_config_options WHERE name = 'require_index_rebuild'
+#19 - info - SELECT * FROM acx_homescreen_tabs WHERE user_id = '1'   ORDER BY position 
+#20 - info - SELECT acx_projects.id FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND ((acx_projects.completed_on IS NULL) AND (acx_projects.state >= '2')) ORDER BY acx_projects.name
+#21 - info - SELECT acx_subtasks.id, acx_subtasks.parent_type, acx_subtasks.parent_id, acx_subtasks.label_id, acx_subtasks.assignee_id, acx_subtasks.priority, acx_subtasks.body, acx_subtasks.created_on, DATEDIFF(UTC_TIMESTAMP(), acx_subtasks.created_on) AS 'age', acx_subtasks.created_by_id, acx_subtasks.created_by_name, acx_subtasks.created_by_email, acx_subtasks.due_on, acx_subtasks.completed_on, acx_subtasks.completed_by_id, acx_subtasks.completed_by_name, acx_subtasks.completed_by_email FROM acx_subtasks, acx_project_objects WHERE (acx_project_objects.type = acx_subtasks.parent_type AND acx_project_objects.id = acx_subtasks.parent_id) AND (((acx_project_objects.project_id = 2 AND acx_project_objects.type IN ('Task')) OR (acx_project_objects.project_id = 1 AND acx_project_objects.type IN ('Task')))) AND ((acx_subtasks.state >= '3') AND (acx_subtasks.assignee_id IN ('1')) AND (acx_subtasks.completed_on IS NULL)) ORDER BY acx_subtasks.priority DESC, completed_on
+#22 - info - SELECT field_name, label, is_enabled FROM acx_custom_fields WHERE parent_type = 'Task' ORDER BY field_name
+#23 - info - SELECT DISTINCT acx_project_objects.id, acx_project_objects.type, acx_project_objects.project_id, acx_project_objects.assignee_id, acx_project_objects.label_id, acx_project_objects.category_id, acx_project_objects.milestone_id, acx_project_objects.name, acx_project_objects.body, acx_project_objects.created_on, DATEDIFF(UTC_TIMESTAMP(), acx_project_objects.created_on) AS 'age', acx_project_objects.created_by_id, acx_project_objects.created_by_name, acx_project_objects.created_by_email, acx_project_objects.due_on, acx_project_objects.completed_on, acx_project_objects.completed_by_id, acx_project_objects.completed_by_name, acx_project_objects.completed_by_email, acx_project_objects.priority, acx_project_objects.integer_field_1 AS 'task_id'  FROM acx_project_objects LEFT OUTER JOIN acx_assignments ON acx_project_objects.type = acx_assignments.parent_type AND acx_project_objects.id = acx_assignments.parent_id WHERE ((acx_project_objects.state >= '3' AND acx_project_objects.visibility >= '0') AND (acx_project_objects.assignee_id IN ('1') OR (acx_assignments.parent_type = acx_project_objects.type AND acx_assignments.parent_id = acx_project_objects.id AND acx_assignments.user_id IN ('1'))) AND (acx_project_objects.completed_on IS NULL)) AND (((acx_project_objects.project_id = 2 AND acx_project_objects.type IN ('Task')) OR (acx_project_objects.project_id = 1 AND acx_project_objects.type IN ('Task')))) ORDER BY acx_project_objects.priority DESC, ISNULL(acx_project_objects.position), acx_project_objects.position
+#24 - info - SELECT id, name FROM acx_projects ORDER BY name
+#25 - info - SELECT id, name FROM acx_categories WHERE (type IN ('TaskCategory')) ORDER BY name
+#26 - info - SELECT parent_id, job_type_id, value FROM acx_estimates WHERE parent_type = 'Task' AND parent_id IN ('1') ORDER BY created_on DESC
+#27 - info - SELECT parent_id, SUM(value) AS 'tracked_time' FROM acx_time_records WHERE state >= '3' AND parent_type = 'Task' AND parent_id IN ('1') GROUP BY parent_type, parent_id
+#28 - info - SELECT id, first_name, last_name, email FROM acx_users ORDER BY CONCAT(first_name, last_name, email)
+#29 - info - SELECT acx_projects.id FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND ((acx_projects.completed_on IS NULL) AND (acx_projects.state >= '2')) ORDER BY acx_projects.name
+#30 - info - SELECT acx_subtasks.id, acx_subtasks.parent_type, acx_subtasks.parent_id, acx_subtasks.label_id, acx_subtasks.assignee_id, acx_subtasks.priority, acx_subtasks.body, acx_subtasks.created_on, DATEDIFF(UTC_TIMESTAMP(), acx_subtasks.created_on) AS 'age', acx_subtasks.created_by_id, acx_subtasks.created_by_name, acx_subtasks.created_by_email, acx_subtasks.due_on, acx_subtasks.completed_on, acx_subtasks.completed_by_id, acx_subtasks.completed_by_name, acx_subtasks.completed_by_email FROM acx_subtasks, acx_project_objects WHERE (acx_project_objects.type = acx_subtasks.parent_type AND acx_project_objects.id = acx_subtasks.parent_id) AND (((acx_project_objects.project_id = 2 AND acx_project_objects.type IN ('Task')) OR (acx_project_objects.project_id = 1 AND acx_project_objects.type IN ('Task')))) AND ((acx_subtasks.state >= '3') AND (acx_subtasks.assignee_id IN ('1')) AND (acx_subtasks.due_on <= '2014-09-06') AND (acx_subtasks.completed_on IS NULL)) ORDER BY acx_subtasks.priority DESC, completed_on
+#31 - info - SELECT DISTINCT acx_project_objects.id, acx_project_objects.type, acx_project_objects.project_id, acx_project_objects.assignee_id, acx_project_objects.label_id, acx_project_objects.category_id, acx_project_objects.milestone_id, acx_project_objects.name, acx_project_objects.body, acx_project_objects.created_on, DATEDIFF(UTC_TIMESTAMP(), acx_project_objects.created_on) AS 'age', acx_project_objects.created_by_id, acx_project_objects.created_by_name, acx_project_objects.created_by_email, acx_project_objects.due_on, acx_project_objects.completed_on, acx_project_objects.completed_by_id, acx_project_objects.completed_by_name, acx_project_objects.completed_by_email, acx_project_objects.priority, acx_project_objects.integer_field_1 AS 'task_id'  FROM acx_project_objects LEFT OUTER JOIN acx_assignments ON acx_project_objects.type = acx_assignments.parent_type AND acx_project_objects.id = acx_assignments.parent_id WHERE ((acx_project_objects.state >= '3' AND acx_project_objects.visibility >= '0') AND (acx_project_objects.assignee_id IN ('1') OR (acx_assignments.parent_type = acx_project_objects.type AND acx_assignments.parent_id = acx_project_objects.id AND acx_assignments.user_id IN ('1'))) AND (acx_project_objects.due_on <= '2014-09-06') AND (acx_project_objects.completed_on IS NULL)) AND (((acx_project_objects.project_id = 2 AND acx_project_objects.type IN ('Task')) OR (acx_project_objects.project_id = 1 AND acx_project_objects.type IN ('Task')))) ORDER BY acx_project_objects.priority DESC, ISNULL(acx_project_objects.position), acx_project_objects.position
+#32 - info - SELECT value FROM acx_config_options WHERE name = 'last_frequently_activity'
+#33 - info - SELECT * FROM acx_incoming_mailboxes WHERE email = 'george@mangotreemobile.com'   ORDER BY name LIMIT 0, 1
+#34 - info - SELECT COUNT(*) AS 'row_count' FROM acx_outgoing_messages WHERE send_retries >= '5'
+#35 - info - SELECT COUNT(*) AS 'row_count' FROM acx_incoming_mails
+#36 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#37 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#38 - info - SELECT * FROM acx_users WHERE id IN ('1')   ORDER BY CONCAT(first_name, last_name, email) 
+#39 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#40 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#41 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#42 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#43 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#44 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#45 - info - SELECT COUNT(*) AS 'row_count' FROM acx_invoice_objects WHERE status = '1' AND date_field_1 < '2014-09-06' AND type = 'Invoice'
+#46 - info - SELECT parent_id AS project_id from acx_favorites WHERE parent_type = 'Project' AND user_id = '1'
+#47 - info - SELECT acx_projects.*, (acx_projects.id IN (NULL)) as is_favorite FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND acx_projects.state >= '3' AND acx_projects.completed_on IS NULL ORDER BY is_favorite DESC, acx_projects.name
+#48 - info - SELECT COUNT(acx_notifications.id) FROM acx_notifications, acx_notification_recipients WHERE acx_notifications.id = acx_notification_recipients.notification_id AND acx_notification_recipients.recipient_id = '1' AND acx_notification_recipients.seen_on IS NULL
+#49 - info - SELECT COUNT(*) AS 'row_count' FROM acx_status_updates WHERE created_by_id IN ('1', '2', '3', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14') AND created_on > NULL
+#50 - info - SELECT * FROM acx_incoming_mailboxes WHERE email = 'george@mangotreemobile.com'   ORDER BY name LIMIT 0, 1
+#51 - info - SELECT COUNT(*) AS 'row_count' FROM acx_outgoing_messages WHERE send_retries >= '5'
+#52 - info - SELECT COUNT(*) AS 'row_count' FROM acx_incoming_mails
+#53 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#54 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#55 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#56 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#57 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#58 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#59 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#60 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#61 - info - SELECT COUNT(*) AS 'row_count' FROM acx_invoice_objects WHERE status = '1' AND date_field_1 < '2014-09-06' AND type = 'Invoice'
+#62 - info - SELECT parent_id AS project_id from acx_favorites WHERE parent_type = 'Project' AND user_id = '1'
+#63 - info - SELECT acx_projects.*, (acx_projects.id IN (NULL)) as is_favorite FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND acx_projects.state >= '3' AND acx_projects.completed_on IS NULL ORDER BY is_favorite DESC, acx_projects.name
+#64 - info - SELECT COUNT(acx_notifications.id) FROM acx_notifications, acx_notification_recipients WHERE acx_notifications.id = acx_notification_recipients.notification_id AND acx_notification_recipients.recipient_id = '1' AND acx_notification_recipients.seen_on IS NULL
+#65 - info - SELECT COUNT(*) AS 'row_count' FROM acx_status_updates WHERE created_by_id IN ('1', '2', '3', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14') AND created_on > NULL
+#66 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#67 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+
+routing
+
+#1 - info - Routing string ''
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_load_control_tower_badge' triggered
+#4 - info - Callback 'email_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#5 - info - Callback 'system_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#6 - info - Event 'on_object_options' triggered
+#7 - info - Callback 'tracking_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#8 - info - Callback 'invoicing_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#9 - info - Callback 'project_exporter_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#10 - info - Callback 'source_handle_on_object_options' called for 'on_object_options'. Execution result: NULL
+#11 - info - Event 'on_main_menu' triggered
+#12 - info - Callback 'authentication_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#13 - info - Callback 'reports_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#14 - info - Callback 'calendars_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#15 - info - Event 'on_custom_user_permissions' triggered
+#16 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#17 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#18 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#19 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#20 - info - Callback 'invoicing_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#21 - info - Callback 'documents_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#22 - info - Event 'on_projects_tabs' triggered
+#23 - info - Callback 'system_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#24 - info - Event 'on_custom_user_permissions' triggered
+#25 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#26 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#27 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#28 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#29 - info - Callback 'invoicing_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#30 - info - Event 'on_status_bar' triggered
+#31 - info - Callback 'notifications_handle_on_status_bar' called for 'on_status_bar'. Execution result: NULL
+#32 - info - Callback 'status_handle_on_status_bar' called for 'on_status_bar'. Execution result: NULL
+#33 - info - Event 'on_load_control_tower_badge' triggered
+#34 - info - Callback 'email_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#35 - info - Callback 'system_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#36 - info - Event 'on_main_menu' triggered
+#37 - info - Callback 'authentication_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#38 - info - Callback 'reports_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#39 - info - Callback 'calendars_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#40 - info - Event 'on_custom_user_permissions' triggered
+#41 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#42 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#43 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#44 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#45 - info - Callback 'invoicing_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#46 - info - Callback 'documents_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#47 - info - Event 'on_projects_tabs' triggered
+#48 - info - Callback 'system_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#49 - info - Event 'on_custom_user_permissions' triggered
+#50 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#51 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#52 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#53 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#54 - info - Callback 'invoicing_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#55 - info - Event 'on_status_bar' triggered
+#56 - info - Callback 'notifications_handle_on_status_bar' called for 'on_status_bar'. Execution result: NULL
+#57 - info - Callback 'status_handle_on_status_bar' called for 'on_status_bar'. Execution result: NULL
+#58 - info - Event 'on_shutdown' triggered
+
+======================================================
+
+Logged on: Saturday, 06-Sep-2014 02:09:16 GMT
+Memory usage: 14.08MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:09:16'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:09:16', visits = visits + 1 WHERE id = '53'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:09:16' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - Routing string 'refresh-menu'
+#13 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'refresh-menu'
+#14 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '134'
+#15 - info - Event 'on_initial_javascript_assign' triggered
+#16 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#17 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#18 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#19 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#20 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#21 - info - Event 'on_main_menu' triggered
+#22 - info - Callback 'authentication_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#23 - info - Callback 'reports_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#24 - info - Callback 'calendars_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#25 - info - Callback 'invoicing_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#26 - info - Callback 'documents_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#27 - info - SELECT parent_id AS project_id from acx_favorites WHERE parent_type = 'Project' AND user_id = '1'
+#28 - info - SELECT acx_projects.*, (acx_projects.id IN (NULL)) as is_favorite FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND acx_projects.state >= '3' AND acx_projects.completed_on IS NULL ORDER BY is_favorite DESC, acx_projects.name
+#29 - info - Event 'on_projects_tabs' triggered
+#30 - info - Callback 'system_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#31 - info - Event 'on_custom_user_permissions' triggered
+#32 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#33 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#34 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#35 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#36 - info - Callback 'invoicing_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#37 - info - SELECT id, name FROM acx_categories WHERE (type IN ('ProjectCategory')) ORDER BY name
+#38 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:09:16'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:09:16', visits = visits + 1 WHERE id = '53'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:09:16' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'refresh-menu'
+#13 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '134'
+#14 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#15 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#16 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#17 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#18 - info - SELECT parent_id AS project_id from acx_favorites WHERE parent_type = 'Project' AND user_id = '1'
+#19 - info - SELECT acx_projects.*, (acx_projects.id IN (NULL)) as is_favorite FROM acx_projects, acx_project_users WHERE acx_project_users.user_id = '1' AND acx_project_users.project_id = acx_projects.id AND acx_projects.state >= '3' AND acx_projects.completed_on IS NULL ORDER BY is_favorite DESC, acx_projects.name
+#20 - info - SELECT id, name FROM acx_categories WHERE (type IN ('ProjectCategory')) ORDER BY name
+
+routing
+
+#1 - info - Routing string 'refresh-menu'
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_main_menu' triggered
+#4 - info - Callback 'authentication_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#5 - info - Callback 'reports_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#6 - info - Callback 'calendars_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#7 - info - Callback 'invoicing_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#8 - info - Callback 'documents_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#9 - info - Event 'on_projects_tabs' triggered
+#10 - info - Callback 'system_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#11 - info - Event 'on_custom_user_permissions' triggered
+#12 - info - Callback 'system_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#13 - info - Callback 'status_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#14 - info - Callback 'invoicing_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#15 - info - Callback 'documents_handle_on_custom_user_permissions' called for 'on_custom_user_permissions'. Execution result: NULL
+#16 - info - Callback 'invoicing_handle_on_projects_tabs' called for 'on_projects_tabs'. Execution result: NULL
+#17 - info - Event 'on_shutdown' triggered
+
+======================================================
+
+Logged on: Saturday, 06-Sep-2014 02:09:27 GMT
+Memory usage: 12.75MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:09:26'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:09:26', visits = visits + 1 WHERE id = '53'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:09:26' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - Routing string 'refresh-menu'
+#13 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'refresh-menu'
+#14 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '134'
+#15 - info - Event 'on_initial_javascript_assign' triggered
+#16 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#17 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#18 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#19 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#20 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#21 - info - SELECT value FROM acx_config_options WHERE name = 'last_frequently_activity'
+#22 - info - Event 'on_load_control_tower_badge' triggered
+#23 - info - SELECT * FROM acx_incoming_mailboxes WHERE email = 'george@mangotreemobile.com'   ORDER BY name LIMIT 0, 1
+#24 - info - SELECT COUNT(*) AS 'row_count' FROM acx_outgoing_messages WHERE send_retries >= '5'
+#25 - info - SELECT COUNT(*) AS 'row_count' FROM acx_incoming_mails
+#26 - info - Callback 'email_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#27 - info - Callback 'system_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#28 - info - Event 'on_load_control_tower' triggered
+#29 - info - SELECT * FROM acx_incoming_mailboxes WHERE email = 'george@mangotreemobile.com'   ORDER BY name LIMIT 0, 1
+#30 - info - SELECT COUNT(*) AS 'row_count' FROM acx_outgoing_messages WHERE send_retries >= '5'
+#31 - info - SELECT COUNT(*) AS 'row_count' FROM acx_incoming_mails
+#32 - info - Callback 'email_handle_on_load_control_tower' called for 'on_load_control_tower'. Execution result: NULL
+#33 - info - Callback 'system_handle_on_load_control_tower' called for 'on_load_control_tower'. Execution result: NULL
+#34 - info - Event 'on_main_menu' triggered
+#35 - info - Callback 'authentication_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#36 - info - Callback 'reports_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#37 - info - Callback 'calendars_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#38 - info - Callback 'invoicing_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#39 - info - Callback 'documents_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#40 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:09:26'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:09:26', visits = visits + 1 WHERE id = '53'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:09:26' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'refresh-menu'
+#13 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '134'
+#14 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#15 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#16 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#17 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#18 - info - SELECT value FROM acx_config_options WHERE name = 'last_frequently_activity'
+#19 - info - SELECT * FROM acx_incoming_mailboxes WHERE email = 'george@mangotreemobile.com'   ORDER BY name LIMIT 0, 1
+#20 - info - SELECT COUNT(*) AS 'row_count' FROM acx_outgoing_messages WHERE send_retries >= '5'
+#21 - info - SELECT COUNT(*) AS 'row_count' FROM acx_incoming_mails
+#22 - info - SELECT * FROM acx_incoming_mailboxes WHERE email = 'george@mangotreemobile.com'   ORDER BY name LIMIT 0, 1
+#23 - info - SELECT COUNT(*) AS 'row_count' FROM acx_outgoing_messages WHERE send_retries >= '5'
+#24 - info - SELECT COUNT(*) AS 'row_count' FROM acx_incoming_mails
+
+routing
+
+#1 - info - Routing string 'refresh-menu'
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_load_control_tower_badge' triggered
+#4 - info - Callback 'email_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#5 - info - Callback 'system_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#6 - info - Event 'on_load_control_tower' triggered
+#7 - info - Callback 'email_handle_on_load_control_tower' called for 'on_load_control_tower'. Execution result: NULL
+#8 - info - Callback 'system_handle_on_load_control_tower' called for 'on_load_control_tower'. Execution result: NULL
+#9 - info - Event 'on_main_menu' triggered
+#10 - info - Callback 'authentication_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#11 - info - Callback 'reports_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#12 - info - Callback 'calendars_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#13 - info - Callback 'invoicing_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#14 - info - Callback 'documents_handle_on_main_menu' called for 'on_main_menu'. Execution result: NULL
+#15 - info - Event 'on_shutdown' triggered
+
+======================================================
+
+Logged on: Saturday, 06-Sep-2014 02:09:27 GMT
+Memory usage: 15MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:09:27'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:09:27', visits = visits + 1 WHERE id = '53'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:09:27' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - Routing string 'admin'
+#13 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'admin'
+#14 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '204'
+#15 - info - Event 'on_initial_javascript_assign' triggered
+#16 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#17 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#18 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#19 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#20 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#21 - info - Event 'on_admin_tabs' triggered
+#22 - info - Event 'on_extra_stats' triggered
+#23 - info - SELECT state, LOWER(type) AS 'type', COUNT(id) AS 'records_count' FROM acx_project_objects GROUP BY state, type
+#24 - info - SELECT state, COUNT(id) AS records_count FROM acx_comments GROUP BY state
+#25 - info - SELECT state, COUNT(id) AS records_count FROM acx_subtasks GROUP BY state
+#26 - info - SELECT state, COUNT(id) AS records_count FROM acx_projects GROUP BY state
+#27 - info - SELECT state, COUNT(id) AS records_count FROM acx_companies GROUP BY state
+#28 - info - SELECT state, COUNT(id) AS records_count FROM acx_users GROUP BY state
+#29 - info - SELECT COUNT(*) AS 'row_count' FROM acx_users WHERE last_activity_on >= '2014-08-30'
+#30 - info - SELECT MAX(DATE(last_activity_on)) FROM acx_users
+#31 - info - SELECT COUNT(*) AS 'row_count' FROM acx_incoming_mailboxes WHERE is_enabled > 0
+#32 - info - SELECT * FROM acx_incoming_mailboxes WHERE email = 'george@mangotreemobile.com'   ORDER BY name LIMIT 0, 1
+#33 - info - Callback 'system_handle_on_extra_stats' called for 'on_extra_stats'. Execution result: NULL
+#34 - info - SELECT state, COUNT(id) AS records_count FROM acx_time_records GROUP BY state
+#35 - info - SELECT MAX(DATE(created_on)) FROM acx_time_records
+#36 - info - SELECT state, COUNT(id) AS records_count FROM acx_expenses GROUP BY state
+#37 - info - SELECT MAX(DATE(created_on)) FROM acx_expenses
+#38 - info - SELECT COUNT(id) FROM acx_estimates
+#39 - info - SELECT MAX(DATE(created_on)) FROM acx_estimates
+#40 - info - Callback 'tracking_handle_on_extra_stats' called for 'on_extra_stats'. Execution result: NULL
+#41 - info - SELECT COUNT(*) AS 'row_count' FROM acx_payment_gateways WHERE is_enabled > 0
+#42 - info - SELECT type, COUNT(id) AS 'record_count' FROM acx_invoice_objects GROUP BY type
+#43 - info - Callback 'invoicing_handle_on_extra_stats' called for 'on_extra_stats'. Execution result: NULL
+#44 - info - SELECT state, COUNT(id) AS records_count FROM acx_notebook_pages GROUP BY state
+#45 - info - Callback 'notebooks_handle_on_extra_stats' called for 'on_extra_stats'. Execution result: NULL
+#46 - info - Event 'on_admin_panel' triggered
+#47 - info - Callback 'globalization_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#48 - info - Callback 'authentication_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#49 - info - Callback 'email_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#50 - info - Callback 'announcements_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#51 - info - Callback 'notifications_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#52 - info - Callback 'assignees_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#53 - info - Callback 'payments_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#54 - info - Callback 'search_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#55 - info - Callback 'system_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#56 - info - Callback 'tracking_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#57 - info - Callback 'invoicing_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#58 - info - Callback 'tasks_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#59 - info - Callback 'source_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#60 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#61 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:09:27'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:09:27', visits = visits + 1 WHERE id = '53'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:09:27' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'admin'
+#13 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '204'
+#14 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#15 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#16 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#17 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#18 - info - SELECT state, LOWER(type) AS 'type', COUNT(id) AS 'records_count' FROM acx_project_objects GROUP BY state, type
+#19 - info - SELECT state, COUNT(id) AS records_count FROM acx_comments GROUP BY state
+#20 - info - SELECT state, COUNT(id) AS records_count FROM acx_subtasks GROUP BY state
+#21 - info - SELECT state, COUNT(id) AS records_count FROM acx_projects GROUP BY state
+#22 - info - SELECT state, COUNT(id) AS records_count FROM acx_companies GROUP BY state
+#23 - info - SELECT state, COUNT(id) AS records_count FROM acx_users GROUP BY state
+#24 - info - SELECT COUNT(*) AS 'row_count' FROM acx_users WHERE last_activity_on >= '2014-08-30'
+#25 - info - SELECT MAX(DATE(last_activity_on)) FROM acx_users
+#26 - info - SELECT COUNT(*) AS 'row_count' FROM acx_incoming_mailboxes WHERE is_enabled > 0
+#27 - info - SELECT * FROM acx_incoming_mailboxes WHERE email = 'george@mangotreemobile.com'   ORDER BY name LIMIT 0, 1
+#28 - info - SELECT state, COUNT(id) AS records_count FROM acx_time_records GROUP BY state
+#29 - info - SELECT MAX(DATE(created_on)) FROM acx_time_records
+#30 - info - SELECT state, COUNT(id) AS records_count FROM acx_expenses GROUP BY state
+#31 - info - SELECT MAX(DATE(created_on)) FROM acx_expenses
+#32 - info - SELECT COUNT(id) FROM acx_estimates
+#33 - info - SELECT MAX(DATE(created_on)) FROM acx_estimates
+#34 - info - SELECT COUNT(*) AS 'row_count' FROM acx_payment_gateways WHERE is_enabled > 0
+#35 - info - SELECT type, COUNT(id) AS 'record_count' FROM acx_invoice_objects GROUP BY type
+#36 - info - SELECT state, COUNT(id) AS records_count FROM acx_notebook_pages GROUP BY state
+#37 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+
+routing
+
+#1 - info - Routing string 'admin'
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_admin_tabs' triggered
+#4 - info - Event 'on_extra_stats' triggered
+#5 - info - Callback 'system_handle_on_extra_stats' called for 'on_extra_stats'. Execution result: NULL
+#6 - info - Callback 'tracking_handle_on_extra_stats' called for 'on_extra_stats'. Execution result: NULL
+#7 - info - Callback 'invoicing_handle_on_extra_stats' called for 'on_extra_stats'. Execution result: NULL
+#8 - info - Callback 'notebooks_handle_on_extra_stats' called for 'on_extra_stats'. Execution result: NULL
+#9 - info - Event 'on_admin_panel' triggered
+#10 - info - Callback 'globalization_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#11 - info - Callback 'authentication_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#12 - info - Callback 'email_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#13 - info - Callback 'announcements_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#14 - info - Callback 'notifications_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#15 - info - Callback 'assignees_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#16 - info - Callback 'payments_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#17 - info - Callback 'search_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#18 - info - Callback 'system_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#19 - info - Callback 'tracking_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#20 - info - Callback 'invoicing_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#21 - info - Callback 'tasks_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#22 - info - Callback 'source_handle_on_admin_panel' called for 'on_admin_panel'. Execution result: NULL
+#23 - info - Event 'on_shutdown' triggered
+
+======================================================
+
+Logged on: Saturday, 06-Sep-2014 02:09:27 GMT
+Memory usage: 12.41MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:09:27'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:09:27', visits = visits + 1 WHERE id = '53'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:09:27' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - Routing string 'admin/disk-space/usage'
+#13 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'admin/disk-space/usage'
+#14 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '149'
+#15 - info - Event 'on_initial_javascript_assign' triggered
+#16 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#17 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#18 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#19 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#20 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#21 - info - Event 'on_admin_tabs' triggered
+#22 - info - BEGIN WORK
+#23 - info - Transaction level increased to 1. Message: Setting configuration values @ ConfigOptions
+#24 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'disk_space_old_versions_size'
+#25 - info - UPDATE acx_config_options SET value = 'a:1:{s:5:\"4.2.6\";i:59973815;}' WHERE name = 'disk_space_old_versions_size'
+#26 - info - COMMIT
+#27 - info - SELECT name, value FROM acx_config_options
+#28 - info - BEGIN WORK
+#29 - info - Transaction level increased to 1. Message: Setting configuration values @ ConfigOptions
+#30 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'disk_space_old_versions_size'
+#31 - info - UPDATE acx_config_options SET value = 'a:0:{}' WHERE name = 'disk_space_old_versions_size'
+#32 - info - COMMIT
+#33 - info - SELECT varchar_field_2 FROM acx_project_objects WHERE type = 'File' AND state > '0'
+#34 - info - SELECT location FROM acx_attachments WHERE state > '0'
+#35 - info - SHOW TABLES LIKE 'acx_%'
+#36 - info - SELECT location FROM acx_file_versions
+#37 - info - SELECT location FROM acx_documents WHERE type = 'file' AND state > '0'
+#38 - info - Event 'on_used_disk_space' triggered
+#39 - info - SELECT SUM(file_size) FROM acx_incoming_mail_attachments
+#40 - info - Callback 'email_handle_on_used_disk_space' called for 'on_used_disk_space'. Execution result: NULL
+#41 - info - Callback 'preview_handle_on_used_disk_space' called for 'on_used_disk_space'. Execution result: NULL
+#42 - info - SELECT SUM(size) FROM acx_attachments WHERE state > '0' AND !(parent_id IS NULL OR parent_id = 0)
+#43 - info - SELECT SUM(size) FROM acx_attachments WHERE (parent_id IS NULL OR parent_id = 0)
+#44 - info - Callback 'attachments_handle_on_used_disk_space' called for 'on_used_disk_space'. Execution result: NULL
+#45 - info - SELECT SUM(file_size) FROM acx_project_object_templates WHERE type = 'File'
+#46 - info - Callback 'system_handle_on_used_disk_space' called for 'on_used_disk_space'. Execution result: NULL
+#47 - info - SELECT SUM(integer_field_2) FROM acx_project_objects WHERE type = 'File'
+#48 - info - SELECT SUM(size) FROM acx_file_versions
+#49 - info - Callback 'files_handle_on_used_disk_space' called for 'on_used_disk_space'. Execution result: NULL
+#50 - info - SELECT SUM(size) FROM acx_documents WHERE type = 'File'
+#51 - info - Callback 'documents_handle_on_used_disk_space' called for 'on_used_disk_space'. Execution result: NULL
+#52 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:09:27'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:09:27', visits = visits + 1 WHERE id = '53'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:09:27' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'admin/disk-space/usage'
+#13 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '149'
+#14 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#15 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#16 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#17 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#18 - info - BEGIN WORK
+#19 - info - Transaction level increased to 1. Message: Setting configuration values @ ConfigOptions
+#20 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'disk_space_old_versions_size'
+#21 - info - UPDATE acx_config_options SET value = 'a:1:{s:5:\"4.2.6\";i:59973815;}' WHERE name = 'disk_space_old_versions_size'
+#22 - info - COMMIT
+#23 - info - SELECT name, value FROM acx_config_options
+#24 - info - BEGIN WORK
+#25 - info - Transaction level increased to 1. Message: Setting configuration values @ ConfigOptions
+#26 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'disk_space_old_versions_size'
+#27 - info - UPDATE acx_config_options SET value = 'a:0:{}' WHERE name = 'disk_space_old_versions_size'
+#28 - info - COMMIT
+#29 - info - SELECT varchar_field_2 FROM acx_project_objects WHERE type = 'File' AND state > '0'
+#30 - info - SELECT location FROM acx_attachments WHERE state > '0'
+#31 - info - SHOW TABLES LIKE 'acx_%'
+#32 - info - SELECT location FROM acx_file_versions
+#33 - info - SELECT location FROM acx_documents WHERE type = 'file' AND state > '0'
+#34 - info - SELECT SUM(file_size) FROM acx_incoming_mail_attachments
+#35 - info - SELECT SUM(size) FROM acx_attachments WHERE state > '0' AND !(parent_id IS NULL OR parent_id = 0)
+#36 - info - SELECT SUM(size) FROM acx_attachments WHERE (parent_id IS NULL OR parent_id = 0)
+#37 - info - SELECT SUM(file_size) FROM acx_project_object_templates WHERE type = 'File'
+#38 - info - SELECT SUM(integer_field_2) FROM acx_project_objects WHERE type = 'File'
+#39 - info - SELECT SUM(size) FROM acx_file_versions
+#40 - info - SELECT SUM(size) FROM acx_documents WHERE type = 'File'
+
+routing
+
+#1 - info - Routing string 'admin/disk-space/usage'
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_admin_tabs' triggered
+#4 - info - Event 'on_used_disk_space' triggered
+#5 - info - Callback 'email_handle_on_used_disk_space' called for 'on_used_disk_space'. Execution result: NULL
+#6 - info - Callback 'preview_handle_on_used_disk_space' called for 'on_used_disk_space'. Execution result: NULL
+#7 - info - Callback 'attachments_handle_on_used_disk_space' called for 'on_used_disk_space'. Execution result: NULL
+#8 - info - Callback 'system_handle_on_used_disk_space' called for 'on_used_disk_space'. Execution result: NULL
+#9 - info - Callback 'files_handle_on_used_disk_space' called for 'on_used_disk_space'. Execution result: NULL
+#10 - info - Callback 'documents_handle_on_used_disk_space' called for 'on_used_disk_space'. Execution result: NULL
+#11 - info - Event 'on_shutdown' triggered
+
+======================================================
+
+Logged on: Saturday, 06-Sep-2014 02:09:29 GMT
+Memory usage: 14.81MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - SELECT name, value FROM acx_config_options
+#4 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:09:29'
+#5 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#6 - info - BEGIN WORK
+#7 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#8 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#9 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:09:29', visits = visits + 1 WHERE id = '53'
+#10 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:09:29' WHERE id = '1'
+#11 - info - COMMIT
+#12 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#13 - info - Routing string 'admin/repsite'
+#14 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'admin/repsite'
+#15 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '232'
+#16 - info - Event 'on_initial_javascript_assign' triggered
+#17 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#18 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#19 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#20 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#21 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#22 - info - Event 'on_admin_tabs' triggered
+#23 - info - SELECT * FROM acx_repsite_pages    ORDER BY name LIMIT 0, 20
+#24 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#25 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#26 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#27 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#28 - info - SELECT * FROM acx_repsite_pages    ORDER BY name LIMIT 0, 20
+#29 - info - SELECT COUNT(*) AS 'row_count' FROM acx_repsite_pages
+#30 - info - SELECT * FROM acx_repsite_pages ORDER BY id DESC
+#31 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#32 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - SELECT name, value FROM acx_config_options
+#4 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:09:29'
+#5 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#6 - info - BEGIN WORK
+#7 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#8 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#9 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:09:29', visits = visits + 1 WHERE id = '53'
+#10 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:09:29' WHERE id = '1'
+#11 - info - COMMIT
+#12 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#13 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'admin/repsite'
+#14 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '232'
+#15 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#16 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#17 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#18 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#19 - info - SELECT * FROM acx_repsite_pages    ORDER BY name LIMIT 0, 20
+#20 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#21 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#22 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#23 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#24 - info - SELECT * FROM acx_repsite_pages    ORDER BY name LIMIT 0, 20
+#25 - info - SELECT COUNT(*) AS 'row_count' FROM acx_repsite_pages
+#26 - info - SELECT * FROM acx_repsite_pages ORDER BY id DESC
+#27 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+
+routing
+
+#1 - info - Routing string 'admin/repsite'
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_admin_tabs' triggered
+#4 - info - Event 'on_shutdown' triggered
+
+======================================================
+
+Logged on: Saturday, 06-Sep-2014 02:09:30 GMT
+Memory usage: 12.26MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:09:30'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:09:30', visits = visits + 1 WHERE id = '53'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:09:30' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - Routing string 'admin/save-license-details'
+#13 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'admin/save-license-details'
+#14 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '206'
+#15 - info - Event 'on_initial_javascript_assign' triggered
+#16 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#17 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#18 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#19 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#20 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#21 - info - Event 'on_admin_tabs' triggered
+#22 - info - BEGIN WORK
+#23 - info - Transaction level increased to 1. Message: Setting configuration values @ ConfigOptions
+#24 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'license_details_updated_on'
+#25 - info - UPDATE acx_config_options SET value = 'i:1409969370;' WHERE name = 'license_details_updated_on'
+#26 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'latest_version'
+#27 - info - UPDATE acx_config_options SET value = 's:6:\"4.2.14\";' WHERE name = 'latest_version'
+#28 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'latest_available_version'
+#29 - info - UPDATE acx_config_options SET value = 's:6:\"4.2.14\";' WHERE name = 'latest_available_version'
+#30 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'license_expires'
+#31 - info - UPDATE acx_config_options SET value = 's:10:\"1427069009\";' WHERE name = 'license_expires'
+#32 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'license_copyright_removed'
+#33 - info - UPDATE acx_config_options SET value = 'b:1;' WHERE name = 'license_copyright_removed'
+#34 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'remove_branding_url'
+#35 - info - UPDATE acx_config_options SET value = 's:1:\"0\";' WHERE name = 'remove_branding_url'
+#36 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'renew_support_url'
+#37 - info - UPDATE acx_config_options SET value = 's:82:\"https://sites.fastspring.com/activecollab/instant/supportupgrade?referrer=l_167099\";' WHERE name = 'renew_support_url'
+#38 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'update_instructions_url'
+#39 - info - UPDATE acx_config_options SET value = 's:78:\"http://www.activecollab.com/docs/manuals/admin-version-3/upgrade/latest-stable\";' WHERE name = 'update_instructions_url'
+#40 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'new_modules_available'
+#41 - info - UPDATE acx_config_options SET value = 's:1:\"0\";' WHERE name = 'new_modules_available'
+#42 - info - COMMIT
+#43 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:09:30'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:09:30', visits = visits + 1 WHERE id = '53'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:09:30' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'admin/save-license-details'
+#13 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '206'
+#14 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#15 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#16 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#17 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#18 - info - BEGIN WORK
+#19 - info - Transaction level increased to 1. Message: Setting configuration values @ ConfigOptions
+#20 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'license_details_updated_on'
+#21 - info - UPDATE acx_config_options SET value = 'i:1409969370;' WHERE name = 'license_details_updated_on'
+#22 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'latest_version'
+#23 - info - UPDATE acx_config_options SET value = 's:6:\"4.2.14\";' WHERE name = 'latest_version'
+#24 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'latest_available_version'
+#25 - info - UPDATE acx_config_options SET value = 's:6:\"4.2.14\";' WHERE name = 'latest_available_version'
+#26 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'license_expires'
+#27 - info - UPDATE acx_config_options SET value = 's:10:\"1427069009\";' WHERE name = 'license_expires'
+#28 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'license_copyright_removed'
+#29 - info - UPDATE acx_config_options SET value = 'b:1;' WHERE name = 'license_copyright_removed'
+#30 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'remove_branding_url'
+#31 - info - UPDATE acx_config_options SET value = 's:1:\"0\";' WHERE name = 'remove_branding_url'
+#32 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'renew_support_url'
+#33 - info - UPDATE acx_config_options SET value = 's:82:\"https://sites.fastspring.com/activecollab/instant/supportupgrade?referrer=l_167099\";' WHERE name = 'renew_support_url'
+#34 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'update_instructions_url'
+#35 - info - UPDATE acx_config_options SET value = 's:78:\"http://www.activecollab.com/docs/manuals/admin-version-3/upgrade/latest-stable\";' WHERE name = 'update_instructions_url'
+#36 - info - SELECT COUNT(*) AS 'row_count' FROM acx_config_options WHERE name = 'new_modules_available'
+#37 - info - UPDATE acx_config_options SET value = 's:1:\"0\";' WHERE name = 'new_modules_available'
+#38 - info - COMMIT
+
+routing
+
+#1 - info - Routing string 'admin/save-license-details'
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_admin_tabs' triggered
+#4 - info - Event 'on_shutdown' triggered
+
+======================================================
+
+Logged on: Saturday, 06-Sep-2014 02:09:39 GMT
+Memory usage: 18.45MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - SELECT name, value FROM acx_config_options
+#4 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:09:39'
+#5 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#6 - info - BEGIN WORK
+#7 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#8 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#9 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:09:39', visits = visits + 1 WHERE id = '53'
+#10 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:09:39' WHERE id = '1'
+#11 - info - COMMIT
+#12 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#13 - info - Routing string 'admin/repsite/1/edit'
+#14 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'admin/repsite/1/edit'
+#15 - info - REPLACE INTO acx_routing_cache (path_info, name, content, last_accessed_on) VALUES ('admin/repsite/1/edit', 'repsite_admin_edit_page', 'a:4:{s:10:\"controller\";s:13:\"repsite_admin\";s:6:\"action\";s:4:\"edit\";s:6:\"module\";s:6:\"system\";s:7:\"page_id\";s:1:\"1\";}', UTC_TIMESTAMP())
+#16 - info - Event 'on_initial_javascript_assign' triggered
+#17 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#18 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#19 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#20 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#21 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#22 - info - Event 'on_admin_tabs' triggered
+#23 - info - SELECT * FROM acx_repsite_pages WHERE id = '1' LIMIT 0, 1
+#24 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#25 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - SELECT name, value FROM acx_config_options
+#4 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:09:39'
+#5 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#6 - info - BEGIN WORK
+#7 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#8 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#9 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:09:39', visits = visits + 1 WHERE id = '53'
+#10 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:09:39' WHERE id = '1'
+#11 - info - COMMIT
+#12 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#13 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'admin/repsite/1/edit'
+#14 - info - REPLACE INTO acx_routing_cache (path_info, name, content, last_accessed_on) VALUES ('admin/repsite/1/edit', 'repsite_admin_edit_page', 'a:4:{s:10:\"controller\";s:13:\"repsite_admin\";s:6:\"action\";s:4:\"edit\";s:6:\"module\";s:6:\"system\";s:7:\"page_id\";s:1:\"1\";}', UTC_TIMESTAMP())
+#15 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#16 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#17 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#18 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#19 - info - SELECT * FROM acx_repsite_pages WHERE id = '1' LIMIT 0, 1
+#20 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+
+routing
+
+#1 - info - Routing string 'admin/repsite/1/edit'
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_admin_tabs' triggered
+#4 - info - Event 'on_shutdown' triggered
+
+======================================================
+
+Logged on: Saturday, 06-Sep-2014 02:09:55 GMT
+Memory usage: 14.78MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:09:55'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:09:55', visits = visits + 1 WHERE id = '53'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:09:55' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - Routing string 'admin/repsite'
+#13 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'admin/repsite'
+#14 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '232'
+#15 - info - Event 'on_initial_javascript_assign' triggered
+#16 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#17 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#18 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#19 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#20 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#21 - info - Event 'on_admin_tabs' triggered
+#22 - info - SELECT * FROM acx_repsite_pages    ORDER BY name LIMIT 0, 20
+#23 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#24 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#25 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#26 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#27 - info - SELECT * FROM acx_repsite_pages    ORDER BY name LIMIT 0, 20
+#28 - info - SELECT COUNT(*) AS 'row_count' FROM acx_repsite_pages
+#29 - info - SELECT * FROM acx_repsite_pages ORDER BY id DESC
+#30 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#31 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:09:55'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:09:55', visits = visits + 1 WHERE id = '53'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:09:55' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'admin/repsite'
+#13 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '232'
+#14 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#15 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#16 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#17 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#18 - info - SELECT * FROM acx_repsite_pages    ORDER BY name LIMIT 0, 20
+#19 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#20 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#21 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#22 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#23 - info - SELECT * FROM acx_repsite_pages    ORDER BY name LIMIT 0, 20
+#24 - info - SELECT COUNT(*) AS 'row_count' FROM acx_repsite_pages
+#25 - info - SELECT * FROM acx_repsite_pages ORDER BY id DESC
+#26 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+
+routing
+
+#1 - info - Routing string 'admin/repsite'
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_admin_tabs' triggered
+#4 - info - Event 'on_shutdown' triggered
+
+======================================================
+
+Logged on: Saturday, 06-Sep-2014 02:10:00 GMT
+Memory usage: 14.86MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:10:00'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:10:00', visits = visits + 1 WHERE id = '53'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:10:00' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - Routing string 'admin/repsite/2/edit'
+#13 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'admin/repsite/2/edit'
+#14 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '241'
+#15 - info - Event 'on_initial_javascript_assign' triggered
+#16 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#17 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#18 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#19 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#20 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#21 - info - Event 'on_admin_tabs' triggered
+#22 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#23 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:10:00'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:10:00', visits = visits + 1 WHERE id = '53'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:10:00' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'admin/repsite/2/edit'
+#13 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '241'
+#14 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#15 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#16 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#17 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#18 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+
+routing
+
+#1 - info - Routing string 'admin/repsite/2/edit'
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_admin_tabs' triggered
+#4 - info - Event 'on_shutdown' triggered
+
+======================================================
+
+Logged on: Saturday, 06-Sep-2014 02:12:18 GMT
+Memory usage: 12.67MB
+Available groups: all, sql, routing, events
+
+all:
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:12:17'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:12:17', visits = visits + 1 WHERE id = '53'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:12:17' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - Routing string 'wireframe-updates'
+#13 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'wireframe-updates'
+#14 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '137'
+#15 - info - Event 'on_initial_javascript_assign' triggered
+#16 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#17 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#18 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#19 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#20 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#21 - info - Event 'on_wireframe_updates' triggered
+#22 - info - SELECT value FROM acx_config_options WHERE name = 'last_frequently_activity'
+#23 - info - Event 'on_load_control_tower_badge' triggered
+#24 - info - SELECT * FROM acx_incoming_mailboxes WHERE email = 'george@mangotreemobile.com'   ORDER BY name LIMIT 0, 1
+#25 - info - SELECT COUNT(*) AS 'row_count' FROM acx_outgoing_messages WHERE send_retries >= '5'
+#26 - info - SELECT COUNT(*) AS 'row_count' FROM acx_incoming_mails
+#27 - info - Callback 'email_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#28 - info - Callback 'system_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#29 - info - Callback 'environment_handle_on_wireframe_updates' called for 'on_wireframe_updates'. Execution result: NULL
+#30 - info - SELECT COUNT(acx_notifications.id) FROM acx_notifications, acx_notification_recipients WHERE acx_notifications.id = acx_notification_recipients.notification_id AND acx_notification_recipients.recipient_id = '1' AND acx_notification_recipients.seen_on IS NULL
+#31 - info - SELECT value FROM acx_config_option_values WHERE name = 'notifications_show_indicators' AND parent_type = 'User' AND parent_id = '1'
+#32 - info - Callback 'notifications_handle_on_wireframe_updates' called for 'on_wireframe_updates'. Execution result: NULL
+#33 - info - SELECT COUNT(*) AS 'row_count' FROM acx_status_updates WHERE created_by_id IN ('1', '2', '3', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14') AND created_on > NULL
+#34 - info - Callback 'status_handle_on_wireframe_updates' called for 'on_wireframe_updates'. Execution result: NULL
+#35 - info - Event 'on_shutdown' triggered
+
+sql
+
+#1 - info - SET NAMES 'utf8'
+#2 - info - SET SESSION character_set_database = 'utf8'
+#3 - info - DELETE FROM acx_user_sessions WHERE expires_on < '2014-09-06 02:12:17'
+#4 - info - SELECT acx_users.* FROM acx_users, acx_user_sessions WHERE acx_users.id = acx_user_sessions.user_id AND acx_user_sessions.id = '53' AND acx_user_sessions.session_key = 'PRQarhJMNrlc6LMC6Mnpb4zpYP670JNPK5WjFWXW'
+#5 - info - BEGIN WORK
+#6 - info - Transaction level increased to 1. Message: Logging user in @ BasicAuthenticationProvider
+#7 - info - SELECT remember, session_key, interface FROM acx_user_sessions WHERE id = '53'
+#8 - info - UPDATE acx_user_sessions SET user_ip = '222.127.29.66', user_agent = 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36', last_activity_on = UTC_TIMESTAMP(), expires_on = '2014-09-20 02:12:17', visits = visits + 1 WHERE id = '53'
+#9 - info - UPDATE acx_users SET last_activity_on = '2014-09-06 02:12:17' WHERE id = '1'
+#10 - info - COMMIT
+#11 - info - SELECT value FROM acx_config_options WHERE name = 'first_run_on'
+#12 - info - SELECT id, name, content FROM acx_routing_cache WHERE path_info = 'wireframe-updates'
+#13 - info - UPDATE acx_routing_cache SET last_accessed_on = UTC_TIMESTAMP() WHERE id = '137'
+#14 - info - SELECT * FROM acx_languages WHERE id IN ('1')   ORDER BY name 
+#15 - info - SELECT value FROM acx_config_option_values WHERE name = 'time_first_week_day' AND parent_type = 'User' AND parent_id = '1'
+#16 - info - SELECT value FROM acx_config_options WHERE name = 'time_first_week_day'
+#17 - info - SELECT * FROM acx_companies WHERE is_owner = '1'    LIMIT 0, 1
+#18 - info - SELECT value FROM acx_config_options WHERE name = 'last_frequently_activity'
+#19 - info - SELECT * FROM acx_incoming_mailboxes WHERE email = 'george@mangotreemobile.com'   ORDER BY name LIMIT 0, 1
+#20 - info - SELECT COUNT(*) AS 'row_count' FROM acx_outgoing_messages WHERE send_retries >= '5'
+#21 - info - SELECT COUNT(*) AS 'row_count' FROM acx_incoming_mails
+#22 - info - SELECT COUNT(acx_notifications.id) FROM acx_notifications, acx_notification_recipients WHERE acx_notifications.id = acx_notification_recipients.notification_id AND acx_notification_recipients.recipient_id = '1' AND acx_notification_recipients.seen_on IS NULL
+#23 - info - SELECT value FROM acx_config_option_values WHERE name = 'notifications_show_indicators' AND parent_type = 'User' AND parent_id = '1'
+#24 - info - SELECT COUNT(*) AS 'row_count' FROM acx_status_updates WHERE created_by_id IN ('1', '2', '3', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14') AND created_on > NULL
+
+routing
+
+#1 - info - Routing string 'wireframe-updates'
+
+events
+
+#1 - info - Event 'on_initial_javascript_assign' triggered
+#2 - info - Callback 'system_handle_on_initial_javascript_assign' called for 'on_initial_javascript_assign'. Execution result: NULL
+#3 - info - Event 'on_wireframe_updates' triggered
+#4 - info - Event 'on_load_control_tower_badge' triggered
+#5 - info - Callback 'email_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#6 - info - Callback 'system_handle_on_load_control_tower_badge' called for 'on_load_control_tower_badge'. Execution result: NULL
+#7 - info - Callback 'environment_handle_on_wireframe_updates' called for 'on_wireframe_updates'. Execution result: NULL
+#8 - info - Callback 'notifications_handle_on_wireframe_updates' called for 'on_wireframe_updates'. Execution result: NULL
+#9 - info - Callback 'status_handle_on_wireframe_updates' called for 'on_wireframe_updates'. Execution result: NULL
+#10 - info - Event 'on_shutdown' triggered
+
+======================================================
+

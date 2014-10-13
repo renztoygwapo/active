@@ -1,0 +1,1 @@
+if(!App.milestones){App.milestones={}}App.milestones.MilestoneDatesWidget=function(){return{init:function(wrapper_id){var wrapper=$("#"+wrapper_id);wrapper.find("input[type=radio]").click(function(){var radio=$(this);if(radio.attr("value")=="1"){wrapper.find("div.select_milestone_dates_set_range").hide()}else{wrapper.find("div.select_milestone_dates_set_range").show()}})}}}();

@@ -1,0 +1,1 @@
+App.widgets.SelectReminderTo=function(){return{init:function(wrapper_id){var wrapper=$("#"+wrapper_id);wrapper.find("input.select_reminder_to_option_radio").click(function(){wrapper.find("div.select_reminder_to_option_content").hide();var content=$(this).parent().find("div.select_reminder_to_option_content");if(content.length>0){content.show()}})}}}();

@@ -1,0 +1,5 @@
+{$context->subtasks()->getNotificationSubjectPrefix()}{lang name=$subtask->getName()|excerpt language=$language}You are now Responsible for ':name' Subtask{/lang}
+================================================================================
+{notification_wrapper title='Subtask Reassigned' context=$context context_view_url=$context_view_url recipient=$recipient sender=$sender}
+  <p>{lang reassigned_by_name=$sender->getDisplayName() url=$context_view_url name=$subtask->getName() context_name=$context->getName() context_url=$context_view_url context_type=$context->getVerboseType(true, $language) link_style=$style.link language=$language}:reassigned_by_name has just made you responsible for "<a href=":url" style=":link_style" target="_blank">:name</a>" subtask in "<a href=":context_url" style=":link_style">:context_name</a>" :context_type{/lang}.</p>
+{/notification_wrapper}

@@ -1,0 +1,18 @@
+<?php return array(
+  'New Label',
+  'No Label',
+  'There are no labels defined',
+  'Name needs to be unique',
+  'Name is required',
+  'Choose New Label',
+  'Update Label',
+  'Name',
+  'Text Color',
+  'Background Color',
+  'Create Label',
+  'Save Changes',
+  'Project Labels',
+  'Assignment Labels',
+  'All Project Labels',
+  'All Assignment Labels',
+); ?>

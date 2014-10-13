@@ -1,0 +1,8 @@
+/* Minified: component.select_calendar.less.css, component.select_calendar_color.less.css, component.select_repeat_option.css, component.select_share_type.css, section.calendar_event_form.less.css, section.ical_subscribe.less.css, section.import_calendar.less.css */
+div.add_button_wrapper{margin-top:5px}
+div.select_calendar_color table{width:auto}div.select_calendar_color table td{padding:2px}div.select_calendar_color table td.selected{background-color:red}div.select_calendar_color table td a{display:block;border:1px solid white;height:15px;width:15px}div.select_calendar_color table td a span{display:none}
+ul.repeat_until{list-style:none;padding-left:5px}ul.repeat_until li{margin:5px 0}ul.repeat_until li div.select_date{margin-left:3px}ul.repeat_until li select{margin-left:3px}ul.repeat_until li span.repeat_until_period_text{margin-left:3px}ul.repeat_until div{display:inline-block}div.starts_on_time{display:none}div.select_time{display:inline-block;margin-left:5px}div.hidden{visibility:hidden}
+div.selected_users_wrapper{border:1px solid #ccc;padding:2px;max-height:80px;overflow-y:auto;overflow-x:hidden;margin-top:5px}div.selected_users_wrapper ul.group_users{padding-left:10px!important;margin:0 0 4px 0!important}div.selected_users_wrapper div.user_group{margin-bottom:5px!important}
+#calendar_event_form select.select_calendar{max-width:70%}#calendar_event_form div.col-left{width:37%;float:left}#calendar_event_form div.col-right{width:63%;float:left}#calendar_event_form input.text_field{width:100%;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+#ical_subscribe{padding:8px 20px}#ical_subscribe img{padding-top:8px;float:left}#ical_subscribe p{margin-left:50px}
+#import_calendar div.import_calendar_wrapper{margin:8px 0}

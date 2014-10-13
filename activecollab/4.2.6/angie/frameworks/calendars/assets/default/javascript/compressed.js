@@ -1,0 +1,2 @@
+/* Minified: jquery.selectCalendarColor.js */
+jQuery.fn.selectCalendarColor=function(){return this.each(function(){var wrapper=$(this);var input=wrapper.find("input[type=hidden]");var set_selected_color=function(color,set_input){wrapper.find("td.selected").removeClass("selected");wrapper.find("td[color_value="+color+"]").addClass("selected");if(set_input){input.val(color)}};set_selected_color(input.val(),false);wrapper.find("a").click(function(){set_selected_color($(this).parent().attr("color_value"),true);return false})})};

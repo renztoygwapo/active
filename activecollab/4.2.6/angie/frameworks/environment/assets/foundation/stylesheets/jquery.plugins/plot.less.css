@@ -1,0 +1,17 @@
+.plot {
+
+  &.centered {
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  table {
+    width: auto;
+
+    td {
+      padding: 0;
+      vertical-align: middle;
+    }
+  }
+
+}

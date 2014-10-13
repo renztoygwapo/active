@@ -1,0 +1,17 @@
+<?php return array (
+  '/assets/default/stylesheets/compressed.css' => '0a8e21e2825ce11064f9a07d001626dc',
+  '/models/IPreview.class.php' => '0c64251781a86c47d982019a3fcb502d',
+  '/models/FwThumbnails.class.php' => '0ccff975e366522bb008c1d2b3d8f172',
+  '/init.php' => '21cae197d9051dc7c0d5608197595d97',
+  '/views/default/fw_preview/preview_content.tpl' => '23d05bb0e29f7735bd4d132aa00a9cfa',
+  '/proxies/FwForwardThumbnailProxy.class.php' => '5fa57c317f0cb3656f97a30a0720622f',
+  '/widgets/gallery_view/widget.gallery_view.css' => '6731198177f41f800b87f254c11ad6ba',
+  '/PreviewFramework.class.php' => '79f88dc3cd771e39820a7540cc6533ed',
+  '/widgets/gallery_view/widget.gallery_view.js' => '882040ec479a123ba284a964e08a71ec',
+  '/resources/dictionary.serverside.php' => 'be51f06479e6148b25d6973daafe3e7e',
+  '/resources/dictionary.clientside.php' => 'cc166b0c5d29e0e3d7b23fb6f2ebb0c5',
+  '/handlers/on_used_disk_space.php' => 'd464c875520070667182cd39d791f761',
+  '/models/IPreviewImplementation.class.php' => 'da8b863aff17c85c9e522e0fed35c7ec',
+  '/controllers/FwPreviewDiskSpaceAdminController.class.php' => 'e18c8c6ced7005332ea027d8a0723a98',
+  '/controllers/FwPreviewController.class.php' => 'f9b99fe5205cfc9f84719b91361242e6',
+);

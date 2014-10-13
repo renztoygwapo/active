@@ -1,0 +1,17 @@
+<?php return array(
+  'Highest',
+  'High',
+  'Normal',
+  'Low',
+  'Lowest',
+  'Change Priority',
+  'Priority successfully changed',
+  'Due Today',
+  '1 Day Late',
+  'Due Tomorrow',
+  'Due in :days Days',
+  ':days Days Late',
+  'Completed by :user on :date',
+  'Open',
+  'Change',
+); ?>

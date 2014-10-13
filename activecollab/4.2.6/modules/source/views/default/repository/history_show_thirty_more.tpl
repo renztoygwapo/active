@@ -1,0 +1,1 @@
+{include file=get_view_path('_history_loop', 'repository', $smarty.const.SOURCE_MODULE)}

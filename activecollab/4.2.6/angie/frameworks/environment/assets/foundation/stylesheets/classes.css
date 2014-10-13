@@ -1,0 +1,109 @@
+.left { text-align: left !important; }
+.right { text-align: right !important; }
+.center { text-align: center !important; }
+
+.top { vertical-align: top !important; }
+.middle { vertical-align: middle !important; }
+.bottom { vertical-align: bottom !important; }
+
+.float_left { float: left; }
+.float_right { float: right; }
+.clear { clear: both; }
+
+.auto { width: auto; }
+.block { display: block; }
+.inline {
+  display: inline;
+  width: auto;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+/** Quick classes **/
+
+.ok {
+  color: green !important;
+}
+
+.ok.inverted {
+  background: green !important;
+  color: white !important;
+}
+
+.nok {
+  color: red !important;
+}
+
+.nok.inverted {
+  background: red !important;
+  color: white !important;
+}
+
+.help_available {
+  border-bottom: 1px dotted #ccc;
+  cursor: help;
+}
+
+/** Overflow **/
+
+.overflow_visible {
+  overflow: visible !important;
+}
+
+/** Pills, simple, label like indicators **/
+
+.pill {
+  margin: 0 1px 0 1px;
+  padding: 1px 6px;
+  
+  border-radius: 9px;
+  
+  font-size: 9px;
+  font-weight: bold;
+  background: #ccc;
+  letter-spacing: 0.5px;
+  white-space: pre;
+}
+
+.pill.ok {
+	background: green;
+	color: white;
+}
+
+.pill.not_important {
+	background: green;
+  color: white;
+}
+
+.pill.error, .pill.important {
+	background: red;
+  color: white;
+}
+
+.pill .left_half {
+  border-right: 1px solid #777;
+  padding-right: 2px;
+}
+
+.pill .right_half {
+  padding-left: 3px;
+}
+
+/** Slide-Down Settings **/
+
+.slide_down_settings {
+  margin: 8px 23px;
+  padding: 2px 12px;
+  border: 1px dotted #ccc;
+}
+
+.slide_down_settings.borderless {
+	padding: 2px;
+	border: 0;
+}

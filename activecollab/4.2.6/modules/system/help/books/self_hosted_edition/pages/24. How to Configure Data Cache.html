@@ -1,0 +1,148 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body{
+  color:#444;
+  font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman',
+              "Hiragino Sans GB", "STXihei", "微软雅黑", serif;
+  font-size:12px;
+  line-height:1.5em;
+  background:#fefefe;
+  width: 45em;
+  margin: 10px auto;
+  padding: 1em;
+  outline: 1300px solid #FAFAFA;
+}
+
+a{ color: #0645ad; text-decoration:none;}
+a:visited{ color: #0b0080; }
+a:hover{ color: #06e; }
+a:active{ color:#faa700; }
+a:focus{ outline: thin dotted; }
+a:hover, a:active{ outline: 0; }
+
+span.backtick {
+  border:1px solid #EAEAEA;
+  border-radius:3px;
+  background:#F8F8F8;
+  padding:0 3px 0 3px;
+}
+
+::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+::selection{background:rgba(255,255,0,0.3);color:#000}
+
+a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
+a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
+
+p{
+margin:1em 0;
+}
+
+img{
+max-width:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+font-weight:normal;
+color:#111;
+line-height:1em;
+}
+h4,h5,h6{ font-weight: bold; }
+h1{ font-size:2.5em; }
+h2{ font-size:2em; border-bottom:1px solid silver; padding-bottom: 5px; }
+h3{ font-size:1.5em; }
+h4{ font-size:1.2em; }
+h5{ font-size:1em; }
+h6{ font-size:0.9em; }
+
+blockquote{
+color:#666666;
+margin:0;
+padding-left: 3em;
+border-left: 0.5em #EEE solid;
+}
+hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
+
+
+pre , code, kbd, samp { 
+  color: #000; 
+  font-family: monospace; 
+  font-size: 0.88em; 
+  border-radius:3px;
+  background-color: #F8F8F8;
+  border: 1px solid #CCC; 
+}
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 5px 12px;}
+pre code { border: 0px !important; padding: 0;}
+code { padding: 0 3px 0 3px; }
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
+li p:last-child { margin:0 }
+dd { margin: 0 0 0 2em; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+@media only screen and (min-width: 480px) {
+body{font-size:14px;}
+}
+
+@media only screen and (min-width: 768px) {
+body{font-size:16px;}
+}
+
+@media print {
+  * { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; }
+  body{font-size:12pt; max-width:100%; outline:none;}
+  a, a:visited { text-decoration: underline; }
+  hr { height: 1px; border:0; border-bottom:1px solid black; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; padding-right: 1em; page-break-inside: avoid; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page :left { margin: 15mm 20mm 15mm 10mm; }
+  @page :right { margin: 15mm 10mm 15mm 20mm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+</style><title>24. How to Configure Data Cache</title></head><body><ul>
+<li>Title: How to configure the data cache?</li>
+<li>Slug: data-cache</li>
+</ul>
+<p>================================================================</p>
+<p>activeCollab uses file system data caching. While this makes the system a bit faster than when there is no caching at all, we strongly recommend that you use memory caching instead. </p>
+<p>In this article, we will help you learn how to use different memory caching methods to get the best results and to increase the performance of your activeCollab.</p>
+<p>&lt;{sub slug="memcached"}&gt;Configuring memcached Data Cache&lt;{/sub}&gt;</p>
+<p>To configure activeCollab to use <a href="http://au2.php.net/memcached">memcached</a>, please add the following lines to your config/config.php :</p>
+<p>&lt;{code highlight=php}&gt;const CACHE_BACKEND = 'memcached';
+const CACHE_MEMCACHED_SERVERS = '127.0.0.1:11211';&lt;{/code}&gt;</p>
+<p>Please note that &lt;{code}&gt;CACHE_MEMCACHED_SERVERS&lt;{/code}&gt; can be a comma separated list of memcached servers, and that the port bit in address is optional (if omitted, activeCollab will use the default port).</p>
+<p>The configuration of the memcached server itself is out of the scope of this article, but the default configuration should work fine for most environments.</p>
+<p>&lt;{sub slug="apc"}&gt;Configuring APC Data Cache&lt;{/sub}&gt;</p>
+<p>If you are using <a href="http://www.php.net/apc/">APC</a> as both, data and opcode cache, our recommendation would be to give it at least 128M. Any amount less than 128M could (and probably will) cause fragmentation of APC memory, which can lead to degraded application performance.</p>
+<p>To change the size of the APC shared memory, please add/change the following configuration option in &lt;{path}&gt;php.ini&lt;{/path}&gt; (or the relevant configuration file for APC, eg. &lt;{path}&gt;/etc/php/conf.d/apc.ini&lt;{/path}&gt; on most Debian systems):</p>
+<p>&lt;{code inline=false}&gt;- apc.shm_size = 128M&lt;{/code}&gt;</p>
+<p>This is just a minimum recommendation. Large setups with a lot of users, projects, and data will benefit from a larger cache.</p>
+<p>&lt;{sub slug="apc-as-opcode"}&gt;Configuring APC as Opcode Only&lt;{/sub}&gt;</p>
+<p>In the case of a combination of APC and memcached, activeCollab will use APC as an opcode cache only (you need to have a proper memcached setup, as described above). In such cases, you should decrease the APC shared memory amount to 64M, as the data cache will go to memcached. Again, change &lt;{term}&gt;apc.shm_size&lt;{/term}&gt;:</p>
+<p>&lt;{code inline=false}&gt;- apc.shm_size = 64M&lt;{/code}&gt;</p>
+<p>&lt;{sub slug="opcache"}&gt;Configuring OPCache&lt;{/sub}&gt;</p>
+<p>activeCollab works out of the box with <a href="http://no2.php.net/opcache">OPCache</a>. OPCache is an opcode cache only and, as opposed to APC, it cannot be used as a data cache. This is why we highly recommend you to use  OPCache in combination with memcached to get the best results. </p>
+<p>The default OPCache runtime configuration is quite all right. We recommend at least 64M of memory for OPCache - this is configured out of the box, so there is no need for an additional setup. Again, if you have a large setup, you probably want to give more memory to OPCache by changing following configuration option:</p>
+<p>&lt;{code inline=false}&gt;- opcache.memory_consumption = 128&lt;{/code}&gt;</p>
+<p>In this example we have changed the memory size to 128M. You will notice that there is no &lt;{term}&gt;M&lt;{/term}&gt; suffix here, because there is no need to use it - that is the correct way of setting it up.</p></body></html>

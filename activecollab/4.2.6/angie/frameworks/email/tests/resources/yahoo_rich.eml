@@ -1,0 +1,892 @@
+From MAILER-DAEMON Fri Jul  8 12:08:34 2011
+Delivered-To: goran.radulovic@gmail.com
+Received: by 10.42.180.135 with SMTP id bu7csp25881icb;
+        Mon, 9 Apr 2012 06:42:11 -0700 (PDT)
+Received: by 10.229.77.133 with SMTP id g5mr2785917qck.98.1333978930085;
+        Mon, 09 Apr 2012 06:42:10 -0700 (PDT)
+Return-Path: <radulovic.goran@ymail.com>
+Received: from nm11-vm0.bullet.mail.bf1.yahoo.com (nm11-vm0.bullet.mail.bf1.yahoo.com. [98.139.213.136])
+        by mx.google.com with SMTP id gg2si13149232qab.60.2012.04.09.06.42.09;
+        Mon, 09 Apr 2012 06:42:10 -0700 (PDT)
+Received-SPF: neutral (google.com: 98.139.213.136 is neither permitted nor denied by best guess record for domain of radulovic.goran@ymail.com) client-ip=98.139.213.136;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 98.139.213.136 is neither permitted nor denied by best guess record for domain of radulovic.goran@ymail.com) smtp.mail=radulovic.goran@ymail.com; dkim=pass (test mode) header.i=@ymail.com
+Received: from [98.139.212.153] by nm11.bullet.mail.bf1.yahoo.com with NNFMP; 09 Apr 2012 13:42:08 -0000
+Received: from [98.139.212.232] by tm10.bullet.mail.bf1.yahoo.com with NNFMP; 09 Apr 2012 13:42:08 -0000
+Received: from [127.0.0.1] by omp1041.mail.bf1.yahoo.com with NNFMP; 09 Apr 2012 13:42:08 -0000
+X-Yahoo-Newman-Property: ymail-3
+X-Yahoo-Newman-Id: 528844.37931.bm@omp1041.mail.bf1.yahoo.com
+Received: (qmail 48845 invoked by uid 60001); 9 Apr 2012 13:42:08 -0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ymail.com; s=s1024; t=1333978928; bh=wqSNXvSxzYyfSuSi/LM1U4Us/2jBoFwvymMbp3Uwwos=; h=X-YMail-OSG:Received:X-Mailer:References:Message-ID:Date:From:Reply-To:Subject:To:In-Reply-To:MIME-Version:Content-Type; b=OvaeXj32ohOzb370Imq8QVESF5/6U6tQXbLR5GkwCCWuW55XSWMuO+DXZ4O2rKihydYE5+IWPgVsAdMAq7fI1YS3ojU3mYnSVIoU0r4Gwy0h2izyOD9ZgyLUoseoeB4JFZBcXvywpnQ9AsHp+JiBnKQuBDB1adjYW1stSneVB0I=
+DomainKey-Signature:a=rsa-sha1; q=dns; c=nofws;
+  s=s1024; d=ymail.com;
+  h=X-YMail-OSG:Received:X-Mailer:References:Message-ID:Date:From:Reply-To:Subject:To:In-Reply-To:MIME-Version:Content-Type;
+  b=EornPIPvWW7tfxO9p3u7Fp1/AeaFR0sqDaw8AwGnuevHxTBCBDBTzYowGmuORoKQqIj8rKp+shR7I+RmxKppUArSll46kCoaXF0aSU76fvuFFE+KViIp8Nh+osTnAdWb1rqvBT92Xd4qOQbYapBFCre6fHOBytkZBbuBPGJJb8w=;
+X-YMail-OSG: W1w.e2wVM1mR8SvtnYjTR.s_jasHmVOpx8.jL_hp2w87NTJ
+ W6QpcJjFT98Pw.39WT3gtmabVKp4vDChiyMy2BldgnnIsaCGGJ.RVzY1tj01
+ WZ3budY67xFjvhw0tAN.hKpN5JYdLwnQE0Ler6GTd2hp3zhr5pIeK0aPRMZw
+ hbU5u_bO5kPrXRxnBoBqFvNOSgZafhLSFkEoDztJKVY53OJTy3aJSqDUcIjr
+ 30LU5V0dgyMrKFiEtiIq1nf28n4icIlAFdS_YANw7oZffIzZN8zNAgkVyTo6
+ UFspHSJ9J8neHQ5IXMEqYXpVlINi.88Fla14xesI7tbRX60iINMeDThQPHIP
+ Xn_DONOBGNxrwixLcc_JPLoA7oxOhX0wNtotkZFGqamvjLfnkVILfcDS8yob
+ LRZg.yHQoMsxQdliLsoy66tuGFfj9zStP6whOjByRGwGmgIZEh.fe9PTWmai
+ 0K0wAGRA-
+Received: from [188.2.86.185] by web140510.mail.bf1.yahoo.com via HTTP; Mon, 09 Apr 2012 06:42:08 PDT
+X-Mailer: YahooMailWebService/0.8.117.340979
+References: <51DEA374-04C1-4F79-8BC2-9AE6D8DC4CB7@gmail.com>
+Message-ID: <1333978928.39207.YahooMailNeo@web140510.mail.bf1.yahoo.com>
+Date: Mon, 9 Apr 2012 06:42:08 -0700 (PDT)
+From: Goran Radulovic <radulovic.goran@ymail.com>
+Reply-To: Goran Radulovic <radulovic.goran@ymail.com>
+Subject: Re: New comment on 'Publicly shared task' task {TASK/68/40}
+To: "goran.radulovic@gmail.com" <goran.radulovic@gmail.com>
+In-Reply-To: <51DEA374-04C1-4F79-8BC2-9AE6D8DC4CB7@gmail.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="1124037609-235528621-1333978928=:39207"
+X-IMAPbase: 1333979135 1
+Status: RO
+X-Status: 
+X-Keywords:                      
+X-UID: 1
+
+--1124037609-235528621-1333978928=:39207
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Email Reply=0A=C2=A0=0A--=0AOvo je moj potpis=0A=0A=0A_____________________=
+___________=0A From: Goran Radulovic <goran.radulovic@gmail.com>=0ATo: Gora=
+n Radulovic <radulovic.goran@ymail.com> =0ASent: Sunday, April 8, 2012 9:24=
+ PM=0ASubject: New comment on 'Publicly shared task' task {TASK/68/40}=0A =
+=0A=0A-- REPLY ABOVE THIS LINE --=0A=0AProjects=0ATask: Publicly =0Ashared task =
+=0AProject: activeCollab - Sprint =0A2 =0ACategory: Bug =0AReports =0APubli=
+c Page: Visit  See this Task =0Ain Browser Created by =0AJovana =0ADa=C4=8D=
+i=C4=87    =0A  Jovana =0ADa=C4=8Di=C4=87 Apr  6, 2012  =0ATestiram da =0Al=
+i ce da se posalje notifikacija  =0A  Jovana =0ADa=C4=8Di=C4=87 Apr  3, 201=
+2  =0Amax-width: 1200px; margin: 0px auto  =0A  Jovana =0ADa=C4=8Di=C4=87 A=
+pr  3, 2012  =0AThe =0AAndalusian is closely related to the Lusitano of Por=
+tugal, and has been used =0Ato develop many other breeds, especially in Eur=
+ope and the Americas. Modern =0AAndalusians are used for many equestrian ac=
+tivities, including dressage, show =0Ajumping and driving. The breed is als=
+o used extensively in movies, especially =0Ahistorical pictures and fantasy=
+ epics.  =0A  Jovana =0ADa=C4=8Di=C4=87 Apr  3, 2012  =0Aotisao =0Asam  =0A=
+  Don Johnson Dec 17, 2011  =0APuddle named =0AiPod was spotlight of the mo=
+vie.    Harisova zena je Milina  =0A  Goran =0ARadulovic Dec 16, 2011  =0AI=
+ think you =0Aneed to check your facts straight  =0A  Michael Jordan Dec 16=
+, 2011  =0ATrue at First =0ALight is a book by American novelist Ernest Hem=
+ingway about his 1953=E2=80=9354 =0AEast African safari with his fourth wif=
+e Mary, released posthumously in his =0Acentennial year in 1999. The book r=
+eceived mostly negative or lukewarm =0Areviews from the popular press and s=
+parked a literary controversy regarding =0Ahow, and whether, an author's wo=
+rk should be reworked and published after his =0Adeath. Unlike critics of t=
+he popular press, Hemingway scholars generally =0Aconsider True at First Li=
+ght to be complex and a worthy addition in his canon =0Aof later fiction. I=
+n January 1954  =0A  Goran =0ARadulovic Dec 16, 2011  =0AAnd this is a =0As=
+econd one.  What do you think?  =0A  Goran Radulovi=C4=87 Dec 16, 2011  =0A=
+This is a =0Afrist comment to a shared task  =0A  Oliver =0AMaksimovi=C4=87=
+ Dec  5, 2011  =0AA, nisam =0Adovoljno obratio paznju, project manager po d=
+efaultu nema people management, =0Aali moze da ima i tu dozvolu.=0AZnaci, b=
+ice ovako: project manager moze =0Ada se uloguje kao people manager samo ak=
+o i project manager ima "people =0Amanagement", jer tad logovanjem kao peop=
+le manager ne dobija nikakve vise =0Adozvole od onih koje vec ima.   =0APow=
+ered by activeCollab
+--1124037609-235528621-1333978928=:39207
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><body><div style=3D"color:#000; background-color:#fff; =
+font-family:times new roman, new york, times, =
+serif;font-size:12pt"><div><span>Email Reply</span></div><div> =
+</div><div>--<br>Ovo je moj potpis<br></div>  <div style=3D"font-size: =
+12pt; font-family: 'times new roman', 'new york', times, serif; "> <div =
+style=3D"font-size: 12pt; font-family: 'times new roman', 'new york', =
+times, serif; "> <div dir=3D"ltr"> <font size=3D"2" face=3D"Arial"> <hr =
+size=3D"1">  <b><span style=3D"font-weight:bold;">From:</span></b> Goran =
+Radulovic <goran.radulovic@gmail.com><br> <b><span style=3D"font-weight: =
+bold;">To:</span></b> Goran Radulovic <radulovic.goran@ymail.com> <br> =
+<b><span style=3D"font-weight: bold;">Sent:</span></b> Sunday, April 8, =
+2012 9:24 PM<br> <b><span style=3D"font-weight: =
+bold;">Subject:</span></b> New comment on 'Publicly shared task' task =
+{TASK/68/40}<br> </font> </div> <br>
+<div id=3D"yiv1729841581"><div><style type=3D"text/css">#yiv1729841581 =
+html {margin:0px;padding:0px;}</style><div =
+class=3D"yiv1729841581email_wrapper"><div =
+class=3D"yiv1729841581reply_above" style=3D"
+text-transform:uppercase;line-height:22px;color:#a3a59f;text-align:center=
+;
+padding-top:1px;"><img =
+src=3D"http://trunk.activecollab.dev/assets/images/email/default//email/r=
+eply-above.png" style=3D"margin-right:7px;">-- Reply above this line =
+--<img =
+src=3D"http://trunk.activecollab.dev/assets/images/email/default//email/r=
+eply-above.png" style=3D"margin-left:7px;"></div><div style=3D"
+background:url(http://trunk.activecollab.dev/assets/images/email/default/=
+/email/header-background.png) repeat-x left top;border-top:1px solid =
+#d7d8cf;"><div style=3D"
+text-align:center;padding-top:20px;"><img =
+src=3D"http://trunk.activecollab.dev/brand/logo.80x80.png" =
+alt=3D"Projects" style=3D"vertical-align:middle;height:60px;"><br><span =
+style=3D"
+font-size:13px;font-weight:bold;">Projects</span></div><div style=3D"
+margin-bottom:10px;text-align:center;max-width:1200px;margin-left:auto;
+margin-right:auto;">
+      <table cellspacing=3D"0" cellpadding=3D"0" style=3D"width:100%;
+text-align:left;margin:0px auto;">
+        <tbody><tr>
+    	  <td align=3D"left" valign=3D"top" style=3D"width:35%;padding:10px =
+30px;">
+    		  <table cellspacing=3D"3" border=3D"0"><tbody><tr>
+				<td align=3D"left" valign=3D"top" style=3D"width: 100px; font-size: =
+11px; font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; ">Task:</td>
+				<td align=3D"left" valign=3D"top" style=3D"font-size: 11px; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; "><a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dprojects/acti=
+vecollab/tasks/40" style=3D"color: rgb(149, 0, 0); cursor: pointer; =
+text-decoration: none; font-size: 11px; font-style: normal; =
+font-variant: normal; font-weight: normal; line-height: normal; =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; =
+">Publicly=20
+shared task</a></td>
+			</tr><tr>
+				<td align=3D"left" valign=3D"top" style=3D"width: 100px; font-size: =
+11px; font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; ">Project:</td>
+				<td align=3D"left" valign=3D"top" style=3D"font-size: 11px; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; "><a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dprojects/acti=
+vecollab" style=3D"color: rgb(149, 0, 0); cursor: pointer; =
+text-decoration: none; font-size: 11px; font-style: normal; =
+font-variant: normal; font-weight: normal; line-height: normal; =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; =
+">activeCollab</a> - <a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dprojects/acti=
+vecollab/milestones/31298" style=3D"color: rgb(149, 0, 0); cursor: =
+pointer; text-decoration: none; font-size: 11px; font-style: normal; =
+font-variant: normal; font-weight: normal; line-height: normal; =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+ ">Sprint=20
+2</a></td>
+			</tr><tr>
+				<td align=3D"left" valign=3D"top" style=3D"width: 100px; font-size: =
+11px; font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; ">Category:</td>
+				<td align=3D"left" valign=3D"top" style=3D"font-size: 11px; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; "><a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dprojects/acti=
+vecollab/tasks/categories/218" style=3D"color: rgb(149, 0, 0); cursor: =
+pointer; text-decoration: none; font-size: 11px; font-style: normal; =
+font-variant: normal; font-weight: normal; line-height: normal; =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; =
+">Bug=20
+Reports</a></td>
+			</tr><tr>
+				<td align=3D"left" valign=3D"top" style=3D"width: 100px; font-size: =
+11px; font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; ">Public Page:</td>
+				<td align=3D"left" valign=3D"top" style=3D"font-size: 11px; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; "><a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Ds/request/u90=
+aDT4gaX298" style=3D"color: rgb(149, 0, 0); cursor: pointer; =
+text-decoration: none; font-size: 11px; font-style: normal; =
+font-variant: normal; font-weight: normal; line-height: normal; =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; =
+">Visit</a></td>
+			</tr></tbody></table>
+    	</td><td align=3D"center" =
+style=3D"vertical-align:middle;width:30%;"><a rel=3D"nofollow" =
+target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dprojects/acti=
+vecollab/tasks/40" style=3D"background:#FFF =
+url(http://trunk.activecollab.dev/assets/images/environment/default//icon=
+s/16x16/proceed.png) no-repeat 5px center;border:1px solid #d9d9d1;
+padding:5px 12px 4px 25px;color:#555;text-decoration:none;">See this =
+Task=20
+in Browser</a></td><td align=3D"right" valign=3D"top" =
+style=3D"width:35%;
+vertical-align:middle;padding:10px 30px 10px 10px;"><table =
+cellspacing=3D"0" border=3D"0" style=3D"vertical-align:middle;">
+  			<tbody><tr>
+  				<td align=3D"right" valign=3D"middle" =
+style=3D"vertical-align:middle;
+padding-right:7px;">
+  					<table cellspacing=3D"0" border=3D"0">
+  						<tbody><tr>
+  							<td align=3D"right" valign=3D"top" style=3D"font-size: 11px; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; ">Created by</td>
+  						</tr>
+  						<tr>
+  							<td align=3D"right" valign=3D"top"><a rel=3D"nofollow" =
+target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dpeople/1/user=
+s/35" style=3D"color: rgb(149, 0, 0); cursor: pointer; text-decoration: =
+none; font-size: 11px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; ">Jovana=20
+DaD
+iD=07</a></td>
+  						</tr>
+  					</tbody></table>
+  				</td>
+  				<td align=3D"center" valign=3D"middle" style=3D"width:40px;"><a =
+rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dpeople/1/user=
+s/35"><img =
+src=3D"http://trunk.activecollab.dev/avatars/default.40x40.png" =
+style=3D"vertical-align:top;"></a></td>
+  			</tr>
+  		</tbody></table></td></tr></tbody></table></div>
+<div style=3D"max-width:1200px;margin:0px auto;"><table =
+cellspacing=3D"0" cellpadding=3D"0" style=3D"border:1px solid =
+#EEEFEC;background-color:#EFF1E7;">
+    <tbody><tr>
+    	<td align=3D"center" valign=3D"top" style=3D"font-size: 11px; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; "><div style=3D"text-align: left; padding-top: =
+10px; padding-right: 15px; padding-bottom: 10px; padding-left: 15px; =
+border-left-width: 1px; border-left-style: solid; border-left-color: =
+rgb(215, 217, 207); border-right-width: 1px; border-right-style: solid; =
+border-right-color: rgb(215, 217, 207); border-bottom-width: 1px; =
+border-bottom-style: solid; border-bottom-color: rgb(215, 217, 207); =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; background-color: rgb(244, 247, 192); =
+border-top-width: 1px; border-top-style: solid; border-top-color: =
+rgb(215, 217, 207); font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; ">
+  			<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+style=3D"vertical-align:middle;">
+      			<tbody><tr>
+      				<td align=3D"left" valign=3D"middle" style=3D"margin-top: 5px; =
+margin-right: 5px; margin-bottom: 5px; margin-left: 5px; width: 60px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; vertical-align: top; font-family: 'Lucida =
+Grande', Verdana, Arial, Helvetica, sans-serif; ">
+      					<a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dpeople/1/user=
+s/35" style=3D"color: rgb(149, 0, 0); cursor: pointer; text-decoration: =
+none; font-size: 11px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; "><img =
+src=3D"http://trunk.activecollab.dev/avatars/default.40x40.png" =
+style=3D"vertical-align:top;"></a>
+      				=09
+      				</td>
+      				<td align=3D"left" valign=3D"top" =
+style=3D"vertical-align:middle;">
+      					<table cellspacing=3D"0" border=3D"0">
+      						<tbody><tr>
+      							<td align=3D"left" valign=3D"top" style=3D"font-size: 11px; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; ">
+      							<a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dpeople/1/user=
+s/35" style=3D"color: rgb(149, 0, 0); cursor: pointer; text-decoration: =
+none; font-size: 11px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; ">Jovana=20
+DaD
+iD=07</a>
+      							<span style=3D"color: rgb(145, 145, 141); margin-left: =
+20px; font-size: 9px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; ">Apr  6, 2012</span>
+      						</td>
+      						</tr>
+      						<tr>
+      							<td align=3D"left" valign=3D"top" style=3D"padding-top: =
+8px; padding-right: 0px; padding-bottom: 8px; padding-left: 0px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; font-family: 'Lucida Grande', Verdana, =
+Arial, Helvetica, sans-serif; "><div>Testiram da=20
+li ce da se posalje notifikacija</div></td>
+      						</tr></tbody></table>
+      				</td>
+      			</tr>
+      		</tbody></table>
+  		  </div><div style=3D"text-align: left; padding-top: 10px; =
+padding-right: 15px; padding-bottom: 10px; padding-left: 15px; =
+border-left-width: 1px; border-left-style: solid; border-left-color: =
+rgb(215, 217, 207); border-right-width: 1px; border-right-style: solid; =
+border-right-color: rgb(215, 217, 207); border-bottom-width: 1px; =
+border-bottom-style: solid; border-bottom-color: rgb(215, 217, 207); =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; background-color: rgb(239, 241, 231); =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; ">
+  			<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+style=3D"vertical-align:middle;">
+      			<tbody><tr>
+      				<td align=3D"left" valign=3D"middle" style=3D"margin-top: 5px; =
+margin-right: 5px; margin-bottom: 5px; margin-left: 5px; width: 60px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; vertical-align: top; font-family: 'Lucida =
+Grande', Verdana, Arial, Helvetica, sans-serif; ">
+      					<a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dpeople/1/user=
+s/35" style=3D"color: rgb(149, 0, 0); cursor: pointer; text-decoration: =
+none; font-size: 11px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; "><img =
+src=3D"http://trunk.activecollab.dev/avatars/default.40x40.png" =
+style=3D"vertical-align:top;"></a>
+      				=09
+      				</td>
+      				<td align=3D"left" valign=3D"top" =
+style=3D"vertical-align:middle;">
+      					<table cellspacing=3D"0" border=3D"0">
+      						<tbody><tr>
+      							<td align=3D"left" valign=3D"top" style=3D"font-size: 11px; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; ">
+      							<a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dpeople/1/user=
+s/35" style=3D"color: rgb(149, 0, 0); cursor: pointer; text-decoration: =
+none; font-size: 11px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; ">Jovana=20
+DaD
+iD=07</a>
+      							<span style=3D"color: rgb(145, 145, 141); margin-left: =
+20px; font-size: 9px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; ">Apr  3, 2012</span>
+      						</td>
+      						</tr>
+      						<tr>
+      							<td align=3D"left" valign=3D"top" style=3D"padding-top: =
+8px; padding-right: 0px; padding-bottom: 8px; padding-left: 0px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; font-family: 'Lucida Grande', Verdana, =
+Arial, Helvetica, sans-serif; "><div =
+class=3D"yiv1729841581p1">max-width: 1200px; margin: 0px auto</div></td>
+      						</tr></tbody></table>
+      				</td>
+      			</tr>
+      		</tbody></table>
+  		  </div><div style=3D"text-align: left; padding-top: 10px; =
+padding-right: 15px; padding-bottom: 10px; padding-left: 15px; =
+border-left-width: 1px; border-left-style: solid; border-left-color: =
+rgb(215, 217, 207); border-right-width: 1px; border-right-style: solid; =
+border-right-color: rgb(215, 217, 207); border-bottom-width: 1px; =
+border-bottom-style: solid; border-bottom-color: rgb(215, 217, 207); =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; background-color: rgb(239, 241, 231); =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; ">
+  			<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+style=3D"vertical-align:middle;">
+      			<tbody><tr>
+      				<td align=3D"left" valign=3D"middle" style=3D"margin-top: 5px; =
+margin-right: 5px; margin-bottom: 5px; margin-left: 5px; width: 60px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; vertical-align: top; font-family: 'Lucida =
+Grande', Verdana, Arial, Helvetica, sans-serif; ">
+      					<a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dpeople/1/user=
+s/35" style=3D"color: rgb(149, 0, 0); cursor: pointer; text-decoration: =
+none; font-size: 11px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; "><img =
+src=3D"http://trunk.activecollab.dev/avatars/default.40x40.png" =
+style=3D"vertical-align:top;"></a>
+      				=09
+      				</td>
+      				<td align=3D"left" valign=3D"top" =
+style=3D"vertical-align:middle;">
+      					<table cellspacing=3D"0" border=3D"0">
+      						<tbody><tr>
+      							<td align=3D"left" valign=3D"top" style=3D"font-size: 11px; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; ">
+      							<a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dpeople/1/user=
+s/35" style=3D"color: rgb(149, 0, 0); cursor: pointer; text-decoration: =
+none; font-size: 11px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; ">Jovana=20
+DaD
+iD=07</a>
+      							<span style=3D"color: rgb(145, 145, 141); margin-left: =
+20px; font-size: 9px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; ">Apr  3, 2012</span>
+      						</td>
+      						</tr>
+      						<tr>
+      							<td align=3D"left" valign=3D"top" style=3D"padding-top: =
+8px; padding-right: 0px; padding-bottom: 8px; padding-left: 0px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; font-family: 'Lucida Grande', Verdana, =
+Arial, Helvetica, sans-serif; "><div><span =
+style=3D"line-height:16px;text-align:left;background-color:#ffffff;">The =
+
+Andalusian is closely related to the Lusitano of Portugal, and has been =
+used=20
+to develop many other breeds, especially in Europe and the Americas. =
+Modern=20
+Andalusians are used for many equestrian activities, including dressage, =
+show=20
+jumping and driving. The breed is also used extensively in movies, =
+especially=20
+historical pictures and fantasy epics.</span></div></td>
+      						</tr></tbody></table>
+      				</td>
+      			</tr>
+      		</tbody></table>
+  		  </div><div style=3D"text-align: left; padding-top: 10px; =
+padding-right: 15px; padding-bottom: 10px; padding-left: 15px; =
+border-left-width: 1px; border-left-style: solid; border-left-color: =
+rgb(215, 217, 207); border-right-width: 1px; border-right-style: solid; =
+border-right-color: rgb(215, 217, 207); border-bottom-width: 1px; =
+border-bottom-style: solid; border-bottom-color: rgb(215, 217, 207); =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; background-color: rgb(239, 241, 231); =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; ">
+  			<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+style=3D"vertical-align:middle;">
+      			<tbody><tr>
+      				<td align=3D"left" valign=3D"middle" style=3D"margin-top: 5px; =
+margin-right: 5px; margin-bottom: 5px; margin-left: 5px; width: 60px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; vertical-align: top; font-family: 'Lucida =
+Grande', Verdana, Arial, Helvetica, sans-serif; ">
+      					<a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dpeople/1/user=
+s/35" style=3D"color: rgb(149, 0, 0); cursor: pointer; text-decoration: =
+none; font-size: 11px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; "><img =
+src=3D"http://trunk.activecollab.dev/avatars/default.40x40.png" =
+style=3D"vertical-align:top;"></a>
+      				=09
+      				</td>
+      				<td align=3D"left" valign=3D"top" =
+style=3D"vertical-align:middle;">
+      					<table cellspacing=3D"0" border=3D"0">
+      						<tbody><tr>
+      							<td align=3D"left" valign=3D"top" style=3D"font-size: 11px; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; ">
+      							<a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dpeople/1/user=
+s/35" style=3D"color: rgb(149, 0, 0); cursor: pointer; text-decoration: =
+none; font-size: 11px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; ">Jovana=20
+DaD
+iD=07</a>
+      							<span style=3D"color: rgb(145, 145, 141); margin-left: =
+20px; font-size: 9px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; ">Apr  3, 2012</span>
+      						</td>
+      						</tr>
+      						<tr>
+      							<td align=3D"left" valign=3D"top" style=3D"padding-top: =
+8px; padding-right: 0px; padding-bottom: 8px; padding-left: 0px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; font-family: 'Lucida Grande', Verdana, =
+Arial, Helvetica, sans-serif; "><div>otisao=20
+sam</div></td>
+      						</tr></tbody></table>
+      				</td>
+      			</tr>
+      		</tbody></table>
+  		  </div><div style=3D"text-align: left; padding-top: 10px; =
+padding-right: 15px; padding-bottom: 10px; padding-left: 15px; =
+border-left-width: 1px; border-left-style: solid; border-left-color: =
+rgb(215, 217, 207); border-right-width: 1px; border-right-style: solid; =
+border-right-color: rgb(215, 217, 207); border-bottom-width: 1px; =
+border-bottom-style: solid; border-bottom-color: rgb(215, 217, 207); =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; background-color: rgb(239, 241, 231); =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; ">
+  			<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+style=3D"vertical-align:middle;">
+      			<tbody><tr>
+      				<td align=3D"left" valign=3D"middle" style=3D"margin-top: 5px; =
+margin-right: 5px; margin-bottom: 5px; margin-left: 5px; width: 60px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; vertical-align: top; font-family: 'Lucida =
+Grande', Verdana, Arial, Helvetica, sans-serif; ">
+      					<a rel=3D"nofollow" =
+ymailto=3D"mailto:don.johnson@example.com" target=3D"_blank" =
+href=3D"mailto:don.johnson@example.com" style=3D"color: rgb(149, 0, 0); =
+cursor: pointer; text-decoration: none; font-size: 11px; font-style: =
+normal; font-variant: normal; font-weight: normal; line-height: normal; =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; =
+"><img src=3D"http://trunk.activecollab.dev/avatars/default.40x40.png" =
+style=3D"vertical-align:top;"></a>
+      				=09
+      				</td>
+      				<td align=3D"left" valign=3D"top" =
+style=3D"vertical-align:middle;">
+      					<table cellspacing=3D"0" border=3D"0">
+      						<tbody><tr>
+      							<td align=3D"left" valign=3D"top" style=3D"font-size: 11px; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; ">
+      							<a rel=3D"nofollow" =
+ymailto=3D"mailto:don.johnson@example.com" target=3D"_blank" =
+href=3D"mailto:don.johnson@example.com" style=3D"color: rgb(149, 0, 0); =
+cursor: pointer; text-decoration: none; font-size: 11px; font-style: =
+normal; font-variant: normal; font-weight: normal; line-height: normal; =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; =
+">Don Johnson</a>
+      							<span style=3D"color: rgb(145, 145, 141); margin-left: =
+20px; font-size: 9px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; ">Dec 17, 2011</span>
+      						</td>
+      						</tr>
+      						<tr>
+      							<td align=3D"left" valign=3D"top" style=3D"padding-top: =
+8px; padding-right: 0px; padding-bottom: 8px; padding-left: 0px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; font-family: 'Lucida Grande', Verdana, =
+Arial, Helvetica, sans-serif; ">Puddle named=20
+iPod was spotlight of the movie.    Harisova zena je Milina</td>
+      						</tr></tbody></table>
+      				</td>
+      			</tr>
+      		</tbody></table>
+  		  </div><div style=3D"text-align: left; padding-top: 10px; =
+padding-right: 15px; padding-bottom: 10px; padding-left: 15px; =
+border-left-width: 1px; border-left-style: solid; border-left-color: =
+rgb(215, 217, 207); border-right-width: 1px; border-right-style: solid; =
+border-right-color: rgb(215, 217, 207); border-bottom-width: 1px; =
+border-bottom-style: solid; border-bottom-color: rgb(215, 217, 207); =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; background-color: rgb(239, 241, 231); =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; ">
+  			<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+style=3D"vertical-align:middle;">
+      			<tbody><tr>
+      				<td align=3D"left" valign=3D"middle" style=3D"margin-top: 5px; =
+margin-right: 5px; margin-bottom: 5px; margin-left: 5px; width: 60px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; vertical-align: top; font-family: 'Lucida =
+Grande', Verdana, Arial, Helvetica, sans-serif; ">
+      					<a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dpeople/1/user=
+s/3" style=3D"color: rgb(149, 0, 0); cursor: pointer; text-decoration: =
+none; font-size: 11px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; "><img =
+src=3D"http://trunk.activecollab.dev/avatars/default.40x40.png" =
+style=3D"vertical-align:top;"></a>
+      				=09
+      				</td>
+      				<td align=3D"left" valign=3D"top" =
+style=3D"vertical-align:middle;">
+      					<table cellspacing=3D"0" border=3D"0">
+      						<tbody><tr>
+      							<td align=3D"left" valign=3D"top" style=3D"font-size: 11px; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; ">
+      							<a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dpeople/1/user=
+s/3" style=3D"color: rgb(149, 0, 0); cursor: pointer; text-decoration: =
+none; font-size: 11px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; ">Goran=20
+Radulovic</a>
+      							<span style=3D"color: rgb(145, 145, 141); margin-left: =
+20px; font-size: 9px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; ">Dec 16, 2011</span>
+      						</td>
+      						</tr>
+      						<tr>
+      							<td align=3D"left" valign=3D"top" style=3D"padding-top: =
+8px; padding-right: 0px; padding-bottom: 8px; padding-left: 0px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; font-family: 'Lucida Grande', Verdana, =
+Arial, Helvetica, sans-serif; ">I think you=20
+need to check your facts straight</td>
+      						</tr></tbody></table>
+      				</td>
+      			</tr>
+      		</tbody></table>
+  		  </div><div style=3D"text-align: left; padding-top: 10px; =
+padding-right: 15px; padding-bottom: 10px; padding-left: 15px; =
+border-left-width: 1px; border-left-style: solid; border-left-color: =
+rgb(215, 217, 207); border-right-width: 1px; border-right-style: solid; =
+border-right-color: rgb(215, 217, 207); border-bottom-width: 1px; =
+border-bottom-style: solid; border-bottom-color: rgb(215, 217, 207); =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; background-color: rgb(239, 241, 231); =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; ">
+  			<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+style=3D"vertical-align:middle;">
+      			<tbody><tr>
+      				<td align=3D"left" valign=3D"middle" style=3D"margin-top: 5px; =
+margin-right: 5px; margin-bottom: 5px; margin-left: 5px; width: 60px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; vertical-align: top; font-family: 'Lucida =
+Grande', Verdana, Arial, Helvetica, sans-serif; ">
+      					<a rel=3D"nofollow" ymailto=3D"mailto:michael@example.com" =
+target=3D"_blank" href=3D"mailto:michael@example.com" style=3D"color: =
+rgb(149, 0, 0); cursor: pointer; text-decoration: none; font-size: 11px; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; "><img =
+src=3D"http://trunk.activecollab.dev/avatars/default.40x40.png" =
+style=3D"vertical-align:top;"></a>
+      				=09
+      				</td>
+      				<td align=3D"left" valign=3D"top" =
+style=3D"vertical-align:middle;">
+      					<table cellspacing=3D"0" border=3D"0">
+      						<tbody><tr>
+      							<td align=3D"left" valign=3D"top" style=3D"font-size: 11px; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; ">
+      							<a rel=3D"nofollow" ymailto=3D"mailto:michael@example.com" =
+target=3D"_blank" href=3D"mailto:michael@example.com" style=3D"color: =
+rgb(149, 0, 0); cursor: pointer; text-decoration: none; font-size: 11px; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; ">Michael Jordan</a>
+      							<span style=3D"color: rgb(145, 145, 141); margin-left: =
+20px; font-size: 9px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; ">Dec 16, 2011</span>
+      						</td>
+      						</tr>
+      						<tr>
+      							<td align=3D"left" valign=3D"top" style=3D"padding-top: =
+8px; padding-right: 0px; padding-bottom: 8px; padding-left: 0px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; font-family: 'Lucida Grande', Verdana, =
+Arial, Helvetica, sans-serif; ">True at First=20
+Light is a book by American novelist Ernest Hemingway about his =
+1953b=1354=20
+East African safari with his fourth wife Mary, released posthumously in =
+his=20
+centennial year in 1999. The book received mostly negative or lukewarm=20
+reviews from the popular press and sparked a literary controversy =
+regarding=20
+how, and whether, an author's work should be reworked and published =
+after his=20
+death. Unlike critics of the popular press, Hemingway scholars generally =
+
+consider True at First Light to be complex and a worthy addition in his =
+canon=20
+of later fiction. In January 1954</td>
+      						</tr></tbody></table>
+      				</td>
+      			</tr>
+      		</tbody></table>
+  		  </div><div style=3D"text-align: left; padding-top: 10px; =
+padding-right: 15px; padding-bottom: 10px; padding-left: 15px; =
+border-left-width: 1px; border-left-style: solid; border-left-color: =
+rgb(215, 217, 207); border-right-width: 1px; border-right-style: solid; =
+border-right-color: rgb(215, 217, 207); border-bottom-width: 1px; =
+border-bottom-style: solid; border-bottom-color: rgb(215, 217, 207); =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; background-color: rgb(239, 241, 231); =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; ">
+  			<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+style=3D"vertical-align:middle;">
+      			<tbody><tr>
+      				<td align=3D"left" valign=3D"middle" style=3D"margin-top: 5px; =
+margin-right: 5px; margin-bottom: 5px; margin-left: 5px; width: 60px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; vertical-align: top; font-family: 'Lucida =
+Grande', Verdana, Arial, Helvetica, sans-serif; ">
+      					<a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dpeople/1/user=
+s/3" style=3D"color: rgb(149, 0, 0); cursor: pointer; text-decoration: =
+none; font-size: 11px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; "><img =
+src=3D"http://trunk.activecollab.dev/avatars/default.40x40.png" =
+style=3D"vertical-align:top;"></a>
+      				=09
+      				</td>
+      				<td align=3D"left" valign=3D"top" =
+style=3D"vertical-align:middle;">
+      					<table cellspacing=3D"0" border=3D"0">
+      						<tbody><tr>
+      							<td align=3D"left" valign=3D"top" style=3D"font-size: 11px; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; ">
+      							<a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dpeople/1/user=
+s/3" style=3D"color: rgb(149, 0, 0); cursor: pointer; text-decoration: =
+none; font-size: 11px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; ">Goran=20
+Radulovic</a>
+      							<span style=3D"color: rgb(145, 145, 141); margin-left: =
+20px; font-size: 9px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; ">Dec 16, 2011</span>
+      						</td>
+      						</tr>
+      						<tr>
+      							<td align=3D"left" valign=3D"top" style=3D"padding-top: =
+8px; padding-right: 0px; padding-bottom: 8px; padding-left: 0px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; font-family: 'Lucida Grande', Verdana, =
+Arial, Helvetica, sans-serif; ">And this is a=20
+second one.  What do you think?</td>
+      						</tr></tbody></table>
+      				</td>
+      			</tr>
+      		</tbody></table>
+  		  </div><div style=3D"text-align: left; padding-top: 10px; =
+padding-right: 15px; padding-bottom: 10px; padding-left: 15px; =
+border-left-width: 1px; border-left-style: solid; border-left-color: =
+rgb(215, 217, 207); border-right-width: 1px; border-right-style: solid; =
+border-right-color: rgb(215, 217, 207); border-bottom-width: 1px; =
+border-bottom-style: solid; border-bottom-color: rgb(215, 217, 207); =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; background-color: rgb(239, 241, 231); =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; ">
+  			<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+style=3D"vertical-align:middle;">
+      			<tbody><tr>
+      				<td align=3D"left" valign=3D"middle" style=3D"margin-top: 5px; =
+margin-right: 5px; margin-bottom: 5px; margin-left: 5px; width: 60px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; vertical-align: top; font-family: 'Lucida =
+Grande', Verdana, Arial, Helvetica, sans-serif; ">
+      					<a rel=3D"nofollow" =
+ymailto=3D"mailto:goran.radulovic@gmail.com" target=3D"_blank" =
+href=3D"mailto:goran.radulovic@gmail.com" style=3D"color: rgb(149, 0, =
+0); cursor: pointer; text-decoration: none; font-size: 11px; font-style: =
+normal; font-variant: normal; font-weight: normal; line-height: normal; =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; =
+"><img src=3D"http://trunk.activecollab.dev/avatars/default.40x40.png" =
+style=3D"vertical-align:top;"></a>
+      				=09
+      				</td>
+      				<td align=3D"left" valign=3D"top" =
+style=3D"vertical-align:middle;">
+      					<table cellspacing=3D"0" border=3D"0">
+      						<tbody><tr>
+      							<td align=3D"left" valign=3D"top" style=3D"font-size: 11px; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; ">
+      							<a rel=3D"nofollow" =
+ymailto=3D"mailto:goran.radulovic@gmail.com" target=3D"_blank" =
+href=3D"mailto:goran.radulovic@gmail.com" style=3D"color: rgb(149, 0, =
+0); cursor: pointer; text-decoration: none; font-size: 11px; font-style: =
+normal; font-variant: normal; font-weight: normal; line-height: normal; =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; =
+">Goran RaduloviD=07</a>
+      							<span style=3D"color: rgb(145, 145, 141); margin-left: =
+20px; font-size: 9px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; ">Dec 16, 2011</span>
+      						</td>
+      						</tr>
+      						<tr>
+      							<td align=3D"left" valign=3D"top" style=3D"padding-top: =
+8px; padding-right: 0px; padding-bottom: 8px; padding-left: 0px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; font-family: 'Lucida Grande', Verdana, =
+Arial, Helvetica, sans-serif; ">This is a=20
+frist comment to a shared task</td>
+      						</tr></tbody></table>
+      				</td>
+      			</tr>
+      		</tbody></table>
+  		  </div><div style=3D"text-align: left; padding-top: 10px; =
+padding-right: 15px; padding-bottom: 10px; padding-left: 15px; =
+border-left-width: 1px; border-left-style: solid; border-left-color: =
+rgb(215, 217, 207); border-right-width: 1px; border-right-style: solid; =
+border-right-color: rgb(215, 217, 207); border-bottom-width: 1px; =
+border-bottom-style: solid; border-bottom-color: rgb(215, 217, 207); =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; background-color: rgb(239, 241, 231); =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; ">
+  			<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+style=3D"vertical-align:middle;">
+      			<tbody><tr>
+      				<td align=3D"left" valign=3D"middle" style=3D"margin-top: 5px; =
+margin-right: 5px; margin-bottom: 5px; margin-left: 5px; width: 60px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; vertical-align: top; font-family: 'Lucida =
+Grande', Verdana, Arial, Helvetica, sans-serif; ">
+      					<a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dpeople/1/user=
+s/15" style=3D"color: rgb(149, 0, 0); cursor: pointer; text-decoration: =
+none; font-size: 11px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; "><img =
+src=3D"http://trunk.activecollab.dev/avatars/default.40x40.png" =
+style=3D"vertical-align:top;"></a>
+      				=09
+      				</td>
+      				<td align=3D"left" valign=3D"top" =
+style=3D"vertical-align:middle;">
+      					<table cellspacing=3D"0" border=3D"0">
+      						<tbody><tr>
+      							<td align=3D"left" valign=3D"top" style=3D"font-size: 11px; =
+font-style: normal; font-variant: normal; font-weight: normal; =
+line-height: normal; font-family: 'Lucida Grande', Verdana, Arial, =
+Helvetica, sans-serif; ">
+      							<a rel=3D"nofollow" target=3D"_blank" =
+href=3D"http://trunk.activecollab.dev/index.php?path_info=3Dpeople/1/user=
+s/15" style=3D"color: rgb(149, 0, 0); cursor: pointer; text-decoration: =
+none; font-size: 11px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; ">Oliver=20
+MaksimoviD=07</a>
+      							<span style=3D"color: rgb(145, 145, 141); margin-left: =
+20px; font-size: 9px; font-style: normal; font-variant: normal; =
+font-weight: normal; line-height: normal; font-family: 'Lucida Grande', =
+Verdana, Arial, Helvetica, sans-serif; ">Dec  5, 2011</span>
+      						</td>
+      						</tr>
+      						<tr>
+      							<td align=3D"left" valign=3D"top" style=3D"padding-top: =
+8px; padding-right: 0px; padding-bottom: 8px; padding-left: 0px; =
+font-size: 11px; font-style: normal; font-variant: normal; font-weight: =
+normal; line-height: normal; font-family: 'Lucida Grande', Verdana, =
+Arial, Helvetica, sans-serif; "><div>A, nisam=20
+dovoljno obratio paznju, project manager po defaultu nema people =
+management,=20
+ali moze da ima i tu dozvolu.</div><div>Znaci, bice ovako: project =
+manager moze=20
+da se uloguje kao people manager samo ako i project manager ima "people=20
+management", jer tad logovanjem kao people manager ne dobija nikakve =
+vise=20
+dozvole od onih koje vec ima.</div></td>
+      						</tr></tbody></table>
+      				</td>
+      			</tr>
+      		</tbody></table>
+  		  </div></td></tr></tbody></table></div><div style=3D"padding:25px =
+0px 25px 0px;"><div style=3D"text-align:center;">Powered by  <a =
+rel=3D"nofollow" style=3D"color: rgb(149, 0, 0); cursor: pointer; =
+text-decoration: none; font-size: 11px; font-style: normal; =
+font-variant: normal; font-weight: normal; line-height: normal; =
+font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif; =
+">activeCollab</a></div></div></div></div>
+</div></div><br><br> </div> </div>  </div></body></html>
+--1124037609-235528621-1333978928=:39207--
+

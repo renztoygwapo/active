@@ -1,0 +1,99 @@
+#application_upgrader {
+	margin: 50px auto;
+	text-align: left;
+	width: 600px;
+}
+
+#application_upgrader div.upgrader_section {
+	margin: 20px 0;
+}
+
+#application_upgrader div.upgrader_section div.body {
+	padding: 0 20px;
+}
+
+/** Base form elements **/
+
+#application_upgrader form p.wrap_form_element {
+	overflow: hidden;
+}
+
+#application_upgrader form label {
+	width: 120px;
+	float: left;
+	display: block;
+}
+
+/** Validation errors **/
+
+#application_upgrader div.upgrader_section.has_errors h1 span {
+  color: red;
+}
+
+#application_upgrader div.upgrader_section div.body div.validation_errors p {
+	font-style: italic;
+}
+
+#application_upgrader div.upgrader_section div.body div.validation_errors ul li {
+	color: red;
+}
+
+/** Validation log **/
+
+ul.validation_log {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.validation_log li {
+	margin: 4px 0;
+}
+
+ul.validation_log li span.status {
+	font-weight: bold;
+}
+
+ul.validation_log li.ok span.status {
+	color: green;
+}
+
+ul.validation_log li.error span.status {
+	color: red;
+}
+
+ul.validation_log li span.explanation {
+	display: block;
+	font-style: italic;
+	font-size: 90%;
+	margin: 4px 0;
+	padding-left: 10px;
+}
+
+/** Upgrade actions **/
+
+#upgrader_actions_list {
+  margin: 10px 0;
+  list-style: none;
+}
+
+#upgrader_actions_list li {
+  padding: 4px 0;
+}
+
+#upgrader_actions_list li.not_executed {
+	color: #ccc;
+}
+
+#upgrader_actions_list li.executing {
+	font-style: italic;
+	color: black;
+}
+
+#upgrader_actions_list li.executed.ok {
+  color: green;
+}
+
+#upgrader_actions_list li.executed.error {
+  color: red;
+}

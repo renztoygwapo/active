@@ -1,0 +1,26 @@
+<?php
+
+  /**
+   * Nudge notification
+   *
+   * @package angie.frameworks.reminders
+   * @subpackage notifications
+   */
+  class FwNudgeNotification extends BaseReminderNotification {
+
+    /**
+     * Return notification message
+     *
+     * @param IUser $user
+     * @return string
+     */
+    function getMessage(IUser $user) {
+      $parent = $this->getParent();
+
+      return lang("Nudge about ':name' :type", array(
+        'name' => $parent instanceof ApplicationObject ? $parent->getName() : '',
+        'type' => $parent instanceof ApplicationObject ? $parent->getVerboseType(true, $user->getLanguage()) : ''
+      ), true, $user->getLanguage());
+    } // getMessage
+
+  }

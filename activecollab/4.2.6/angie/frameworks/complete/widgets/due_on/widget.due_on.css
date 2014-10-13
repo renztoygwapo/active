@@ -1,0 +1,1 @@
+time.due_on:hover{cursor:help;border-bottom:1px dotted #ccc}time.due_on.late,time.due_on.today{color:red}time.due_on.upcoming{color:green}

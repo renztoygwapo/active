@@ -1,0 +1,5 @@
+{$context->complete()->getNotificationSubjectPrefix()}{lang name=$subtask->getName()|excerpt language=$language}':name' Subtask Reopened{/lang}
+================================================================================
+{notification_wrapper title='Subtask Reopened' context=$context context_view_url=$context_view_url recipient=$recipient sender=$sender}
+  <p>{lang reopened_by=$sender->getDisplayName() url=$context_view_url name=$subtask->getName() context_url=$context_view_url context_name=$context->getName() context_type=$context->getVerboseType(true, $language) link_style=$style.link language=$language}:reopened_by has just reopened "<a href=":url" style=":link_style" >:name</a>" subtask from "<a href=":context_url" style=":link_style" target="_blank">:context_name</a>" :context_type{/lang}.</p>
+{/notification_wrapper}

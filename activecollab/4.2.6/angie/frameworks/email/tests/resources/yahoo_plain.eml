@@ -1,0 +1,143 @@
+From MAILER-DAEMON Fri Jul  8 12:08:34 2011
+Delivered-To: goran.radulovic@gmail.com
+Received: by 10.42.180.135 with SMTP id bu7csp25913icb;
+        Mon, 9 Apr 2012 06:42:30 -0700 (PDT)
+Received: by 10.224.177.17 with SMTP id bg17mr9094668qab.76.1333978949751;
+        Mon, 09 Apr 2012 06:42:29 -0700 (PDT)
+Return-Path: <radulovic.goran@ymail.com>
+Received: from nm2-vm0.bullet.mail.bf1.yahoo.com (nm2-vm0.bullet.mail.bf1.yahoo.com. [98.139.213.127])
+        by mx.google.com with SMTP id b7si5693994qcy.175.2012.04.09.06.42.29;
+        Mon, 09 Apr 2012 06:42:29 -0700 (PDT)
+Received-SPF: neutral (google.com: 98.139.213.127 is neither permitted nor denied by best guess record for domain of radulovic.goran@ymail.com) client-ip=98.139.213.127;
+Authentication-Results: mx.google.com; spf=neutral (google.com: 98.139.213.127 is neither permitted nor denied by best guess record for domain of radulovic.goran@ymail.com) smtp.mail=radulovic.goran@ymail.com; dkim=pass (test mode) header.i=@ymail.com
+Received: from [98.139.212.152] by nm2.bullet.mail.bf1.yahoo.com with NNFMP; 09 Apr 2012 13:42:28 -0000
+Received: from [98.139.212.241] by tm9.bullet.mail.bf1.yahoo.com with NNFMP; 09 Apr 2012 13:42:28 -0000
+Received: from [127.0.0.1] by omp1050.mail.bf1.yahoo.com with NNFMP; 09 Apr 2012 13:42:28 -0000
+X-Yahoo-Newman-Property: ymail-3
+X-Yahoo-Newman-Id: 969115.2694.bm@omp1050.mail.bf1.yahoo.com
+Received: (qmail 41423 invoked by uid 60001); 9 Apr 2012 13:42:28 -0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ymail.com; s=s1024; t=1333978948; bh=vOIvtCz1D0ZE/HwxyrJ1pyWh1Xl8R9mQf8LeoWB0y1I=; h=X-YMail-OSG:Received:X-Mailer:References:Message-ID:Date:From:Reply-To:Subject:To:In-Reply-To:MIME-Version:Content-Type:Content-Transfer-Encoding; b=gKmgGBzoyeq5aExc+WP89qHPoj0tr2961hnYIbENAjVzUVTf1sxk3GfGC04AW3/rY5C+SUmdRYdNwRGk3k9CXiEb+Gyab7+touSC5o7WisMkWwb0BfOsn3qwpShO4WOQFa7DmTpXzvWaWUS5qE0s7540wnFLdyi+20gJ/bMfQa8=
+DomainKey-Signature:a=rsa-sha1; q=dns; c=nofws;
+  s=s1024; d=ymail.com;
+  h=X-YMail-OSG:Received:X-Mailer:References:Message-ID:Date:From:Reply-To:Subject:To:In-Reply-To:MIME-Version:Content-Type:Content-Transfer-Encoding;
+  b=Dd9mizGRnnBns9EdUxWOah773yD82PPWSec0OVSSuEHBNGH1OlsilykUUDariOch8qAc2ePz4yPVhwncWRsa89LUHH/4VZOGiwMuRU2qMcU9wf2/PHxG1h6R0nMu2eUqFs6OfVTwGS68bDLsRpZsprIuZ4Vs+JVfhDnK9A6qKWc=;
+X-YMail-OSG: uR.kZSkVM1nRfltyo3jB1JSToBKUurXjNrEGynbji0E2wjU
+ J7e676xAdHMg2axex_sT3xb5u6akhffC0bZUedOBE4ltg8AJGUWRmeaZ.7bH
+ pSz.e4BSYQvZFbI4EUP1ipAdxX9O46WUxBcp8_LeRlAhPnQZLxl11nRpRtaD
+ o1zBf3uWCk0Cam9RXKZVmXz7.vXHfCf9mEPh86aXc9wDMkH4puWaAaCTLD4R
+ W3laqRbf8hiygtkZkad6LcAjVTTpSfHo.WABATgCdSIozhSylCGGbA6bdP9p
+ jBeuF8YhiNdL2Of6lA1lZ7pWzSDpkEg8wDntmsgNaBb1c1WGeHCRN0qw3MFu
+ 0fXJ7h_X33LZ.mtGgx.ZYBV8Ekr_Pfqf5BF3QzgOR9a9pubt69114fE2er_8
+ Zjd.HL2slzRJIx9OCv_.KvMt4vIpLJUPxtSGY1Es_hvHHrpZ4MXaMAw.QX0t
+ xOODNNsM-
+Received: from [188.2.86.185] by web140518.mail.bf1.yahoo.com via HTTP; Mon, 09 Apr 2012 06:42:28 PDT
+X-Mailer: YahooMailWebService/0.8.117.340979
+References: <51DEA374-04C1-4F79-8BC2-9AE6D8DC4CB7@gmail.com>
+Message-ID: <1333978948.39651.YahooMailNeo@web140518.mail.bf1.yahoo.com>
+Date: Mon, 9 Apr 2012 06:42:28 -0700 (PDT)
+From: Goran Radulovic <radulovic.goran@ymail.com>
+Reply-To: Goran Radulovic <radulovic.goran@ymail.com>
+Subject: Re: New comment on 'Publicly shared task' task {TASK/68/40}
+To: "goran.radulovic@gmail.com" <goran.radulovic@gmail.com>
+In-Reply-To: <51DEA374-04C1-4F79-8BC2-9AE6D8DC4CB7@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+X-IMAPbase: 1333979740 1
+Status: RO
+X-Status: 
+X-Keywords:                      
+X-UID: 1
+
+Email Reply
+
+--
+Ovo je moj potpis
+
+
+________________________________
+From: Goran Radulovic <goran.radulovic@gmail.com>
+To: Goran Radulovic <radulovic.goran@ymail.com>=20
+Sent: Sunday, April 8, 2012 9:24 PM
+Subject: New comment on 'Publicly shared task' task {TASK/68/40}
+
+
+-- Reply above this line --
+
+Projects
+Task: Publicly=20
+shared task=20
+Project: activeCollab - Sprint=20
+2=20
+Category: Bug=20
+Reports=20
+Public Page: Visit=C2=A0=C2=A0See this Task=20
+in Browser Created by=20
+Jovana=20
+Da=C4?i=C4?=C2=A0=C2=A0=C2=A0=C2=A0
+=C2=A0=C2=A0Jovana=20
+Da=C4?i=C4? Apr=C2=A0=C2=A06, 2012=C2=A0=C2=A0
+Testiram da=20
+li ce da se posalje notifikacija=C2=A0=C2=A0
+=C2=A0=C2=A0Jovana=20
+Da=C4?i=C4? Apr=C2=A0=C2=A03, 2012=C2=A0=C2=A0
+max-width: 1200px; margin: 0px auto=C2=A0=C2=A0
+=C2=A0=C2=A0Jovana=20
+Da=C4?i=C4? Apr=C2=A0=C2=A03, 2012=C2=A0=C2=A0
+The=20
+Andalusian is closely related to the Lusitano of Portugal, and has been =
+used=20
+to develop many other breeds, especially in Europe and the Americas. =
+Modern=20
+Andalusians are used for many equestrian activities, including dressage, =
+show=20
+jumping and driving. The breed is also used extensively in movies, =
+especially=20
+historical pictures and fantasy epics.=C2=A0=C2=A0
+=C2=A0=C2=A0Jovana=20
+Da=C4?i=C4? Apr=C2=A0=C2=A03, 2012=C2=A0=C2=A0
+otisao=20
+sam=C2=A0=C2=A0
+=C2=A0=C2=A0Don Johnson Dec 17, 2011=C2=A0=C2=A0
+Puddle named=20
+iPod was spotlight of the movie.=C2=A0=C2=A0=C2=A0=C2=A0Harisova zena je =
+Milina=C2=A0=C2=A0
+=C2=A0=C2=A0Goran=20
+Radulovic Dec 16, 2011=C2=A0=C2=A0
+I think you=20
+need to check your facts straight=C2=A0=C2=A0
+=C2=A0=C2=A0Michael Jordan Dec 16, 2011=C2=A0=C2=A0
+True at First=20
+Light is a book by American novelist Ernest Hemingway about his =
+1953=E2??54=20
+East African safari with his fourth wife Mary, released posthumously in =
+his=20
+centennial year in 1999. The book received mostly negative or lukewarm=20
+reviews from the popular press and sparked a literary controversy =
+regarding=20
+how, and whether, an author's work should be reworked and published =
+after his=20
+death. Unlike critics of the popular press, Hemingway scholars generally =
+
+consider True at First Light to be complex and a worthy addition in his =
+canon=20
+of later fiction. In January 1954=C2=A0=C2=A0
+=C2=A0=C2=A0Goran=20
+Radulovic Dec 16, 2011=C2=A0=C2=A0
+And this is a=20
+second one.=C2=A0=C2=A0What do you think?=C2=A0=C2=A0
+=C2=A0=C2=A0Goran Radulovi=C4? Dec 16, 2011=C2=A0=C2=A0
+This is a=20
+frist comment to a shared task=C2=A0=C2=A0
+=C2=A0=C2=A0Oliver=20
+Maksimovi=C4? Dec=C2=A0=C2=A05, 2011=C2=A0=C2=A0
+A, nisam=20
+dovoljno obratio paznju, project manager po defaultu nema people =
+management,=20
+ali moze da ima i tu dozvolu.
+Znaci, bice ovako: project manager moze=20
+da se uloguje kao people manager samo ako i project manager ima "people=20
+management", jer tad logovanjem kao people manager ne dobija nikakve =
+vise=20
+dozvole od onih koje vec ima.=C2=A0=C2=A0=20
+Powered by activeCollab=C2=A0
