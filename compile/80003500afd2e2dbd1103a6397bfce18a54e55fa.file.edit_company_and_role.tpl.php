@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2014-10-13 07:37:32
+<?php /* Smarty version Smarty-3.1.12, created on 2014-10-14 04:08:48
          compiled from "C:\wamp\www\active\activecollab\4.2.6\modules\system\views\default\users\edit_company_and_role.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:16233543b8058bd1fe4-82589648%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '80003500afd2e2dbd1103a6397bfce18a54e55fa' => 
     array (
       0 => 'C:\\wamp\\www\\active\\activecollab\\4.2.6\\modules\\system\\views\\default\\users\\edit_company_and_role.tpl',
-      1 => 1413185832,
+      1 => 1413259716,
       2 => 'file',
     ),
   ),
